@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/fisa/python/pycamp2010/opencv/repo'
-let g:netrw_dirhist_2='/home/fisa/subituqueja'
-let g:netrw_dirhist_3='/media/FISA/temporales/subituqueja'
-let g:netrw_dirhist_4='/home/fisa'
-let g:netrw_dirhist_5='/home/fisa/subituqueja'
