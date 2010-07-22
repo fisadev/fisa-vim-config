@@ -1,4 +1,4 @@
-"syntax on
+syntax on
 
 " resaltamos las lineas de más de 80 columnas en los .py
 highlight OverLength ctermbg=red ctermfg=white guibg=#FF3333 guifg=#EEEEEE
