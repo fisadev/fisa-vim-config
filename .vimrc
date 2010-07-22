@@ -53,6 +53,10 @@ imap <C-J> <C-X><C-O>
 " Mostrar lista de todo's
 map <F2> :TaskList<CR>
 
+" borra los espacios extras al final de las lineas
+" (guarda antes la posición y la restablece luego)
+autocmd BufWritePre *.py mark z | %s/ *$//e | 'z
+
 " Colores y mas configuraciones del autocompletado
 highlight Pmenu ctermbg=4 guibg=LightGray
 " highlight PmenuSel ctermbg=8 guibg=DarkBlue guifg=Red
