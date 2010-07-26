@@ -14,6 +14,9 @@ colorscheme delek
 " busqueda incremental (a medida que se escribe)
 set incsearch
 
+" resulados de busquedas resaltados
+set hlsearch
+
 " numeros de linea
 set nu
 
