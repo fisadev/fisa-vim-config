@@ -4,6 +4,9 @@
 :set softtabstop=4
 :set shiftwidth=4
 
+" siempre ver barra de estado
+set ls=2
+
 " plugins por tipo de archivo
 filetype plugin on
 filetype indent on
