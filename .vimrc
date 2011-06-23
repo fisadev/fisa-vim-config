@@ -63,6 +63,9 @@ map <F2> :TaskList<CR>
 " (guarda antes la posición y la restablece luego)
 autocmd BufWritePre *.py mark z | %s/ *$//e | 'z
 
+" guardar como sudo
+ca w!! w !sudo tee "%"
+
 " Colores y mas configuraciones del autocompletado
 highlight Pmenu ctermbg=4 guibg=LightGray
 " highlight PmenuSel ctermbg=8 guibg=DarkBlue guifg=Red
