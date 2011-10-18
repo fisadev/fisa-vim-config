@@ -114,3 +114,4 @@ map <F12> :Dbg up<CR>
 
 " fuzzyfinder
 nmap ,f :FufCoverageFile<CR>
+nmap tf :tabnew<CR>:FufCoverageFile<CR>
