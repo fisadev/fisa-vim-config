@@ -112,3 +112,5 @@ map <F10> :Dbg watch<CR>
 map <F11> :Dbg down<CR>
 map <F12> :Dbg up<CR>
 
+" fuzzyfinder
+nmap ,f :FufCoverageFile<CR>
