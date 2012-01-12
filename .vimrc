@@ -1,3 +1,6 @@
+" no vi-compatible
+set nocompatible
+
 " manejo de tabs y espacios
 :set expandtab
 :set tabstop=4
