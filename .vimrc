@@ -10,6 +10,9 @@ set nocompatible
 " siempre ver barra de estado
 set ls=2
 
+call pathogen#infect()
+call pathogen#helptags()
+
 " plugins por tipo de archivo
 filetype plugin on
 filetype indent on
