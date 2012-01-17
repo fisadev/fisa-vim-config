@@ -45,6 +45,7 @@ let Tlist_Compact_Format = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_File_Fold_Auto_Close = 1
+let Tlist_Enable_Fold_Column = 0
 
 " Activar navegador de archivos
 map <F3> :NERDTreeToggle<CR>
