@@ -120,5 +120,7 @@ map <F11> :Dbg down<CR>
 map <F12> :Dbg up<CR>
 
 " fuzzyfinder
-nmap ,f :FufCoverageFile<CR>
-nmap tf :tabnew<CR>:FufCoverageFile<CR>
+nmap ,e :FufCoverageFile<CR>
+nmap ,t :tabnew<CR>:FufCoverageFile<CR>
+nmap ,g :FufBufferTag<CR>
+nmap ,f :FufLine<CR>
