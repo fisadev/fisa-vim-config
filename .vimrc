@@ -1,45 +1,45 @@
 " no vi-compatible
 set nocompatible
 
-" manejo de tabs y espacios
+" tabs and spaces handling
 :set expandtab
 :set tabstop=4
 :set softtabstop=4
 :set shiftwidth=4
 
-" siempre ver barra de estado
+" always show status bar
 set ls=2
 
+" start the plugin manager
 call pathogen#infect()
 call pathogen#helptags()
 
-" plugins por tipo de archivo
+" allow plugins by file type
 filetype plugin on
 filetype indent on
 
 " color
 colorscheme delek
 
-" busqueda incremental (a medida que se escribe)
+" incremental search
 set incsearch
 
-" resulados de busquedas resaltados
+" highlighted search results
 set hlsearch
 
-" numeros de linea
+" line numbers
 set nu
 
-" Taglist variables
-" Display function name in status bar:
+" taglist (class/module browser) settings
+" display function name in status bar
 let g:ctags_statusline=1
-" Automatically start script
+" automatically start script
 let generate_tags=1
-" Displays taglist results in a vertical window:
+" displays taglist results in a vertical window
 let Tlist_Use_Horiz_Window=0
-" Shorter commands to toggle Taglist display
-nnoremap TT :TlistToggle<CR>
+" toggle Taglist display
 map <F4> :TlistToggle<CR>
-" Various Taglist diplay config:
+" various Taglist diplay config:
 let Tlist_Use_Right_Window = 1
 let Tlist_Compact_Format = 1
 let Tlist_Exit_OnlyWindow = 1
@@ -47,33 +47,33 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_File_Fold_Auto_Close = 1
 let Tlist_Enable_Fold_Column = 0
 
-" Activar navegador de archivos
+" NERDTree (better file browser) toggle
 map <F3> :NERDTreeToggle<CR>
 
-" Accesos directos para tabs
+" tab navigation
 map tn :tabn<CR>
 map tp :tabp<CR>
 map tm :tabm<CR>
 map tt :tabnew 
 
-" Cerrar sola ventana de ayuda de completado
+" automatically close autocompletition window
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-" acceso directo para autocompletado
+" old autocomplete keyboard shortcut
 imap <C-J> <C-X><C-O>
 
-" Mostrar lista de todo's
+" show pending tasks list
 map <F2> :TaskList<CR>
 
-" borra los espacios extras al final de las lineas
-" (guarda antes la posición y la restablece luego)
+" deletes meaningless spaces at line endings of python files
+" (and restores cursor position)
 autocmd BufWritePre *.py mark z | %s/ *$//e | 'z
 
-" guardar como sudo
+" save as sudo
 ca w!! w !sudo tee "%"
 
-" Colores y mas configuraciones del autocompletado
+" colors and settings of autocompletition
 highlight Pmenu ctermbg=4 guibg=LightGray
 " highlight PmenuSel ctermbg=8 guibg=DarkBlue guifg=Red
 " highlight PmenuSbar ctermbg=7 guibg=DarkGray
@@ -106,10 +106,10 @@ let OmniCpp_MayCompleteDot = 0
 let OmniCpp_MayCompleteArrow = 0
 let OmniCpp_MayCompleteScope = 0
 " When 'completeopt' does not contain "longest", Vim automatically select the first entry of the popup menu. You can 
-"change this behaviour with the OmniCpp_SelectFirstItem option.
+" change this behaviour with the OmniCpp_SelectFirstItem option.
 let OmniCpp_SelectFirstItem = 0
 
-" accesos directos para debugger
+" debugger keyboard shortcuts
 map <F5> :Dbg over<CR>
 map <F6> :Dbg into<CR>
 map <F7> :Dbg out<CR>
@@ -119,8 +119,9 @@ map <F10> :Dbg watch<CR>
 map <F11> :Dbg down<CR>
 map <F12> :Dbg up<CR>
 
-" fuzzyfinder
+" fuzzy finder
 nmap ,e :FufCoverageFile<CR>
 nmap ,t :tabnew<CR>:FufCoverageFile<CR>
 nmap ,g :FufBufferTag<CR>
 nmap ,f :FufLine<CR>
+

@@ -1,2 +1,2 @@
-Instrucciones de instalacion, detalle de funcionalidad y mas info en:
+Installation instructiosn and useful information at:
 http://code.google.com/p/fisa-vim-config/
