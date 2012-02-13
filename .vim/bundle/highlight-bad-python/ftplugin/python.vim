@@ -6,7 +6,7 @@ syntax on
 " highlight OverLength ctermbg=red ctermfg=white guibg=#FF3333 guifg=#EEEEEE
 " let matchOverLength = matchadd("OverLength", "\\%81v.*")
 
-" meaningless spaces at line endings
+" trailing spaces
 highlight BadWhitespace ctermbg=red guibg=red
 let matchBadWhitespace = matchadd("BadWhitespace", "\\s\\+$")
 

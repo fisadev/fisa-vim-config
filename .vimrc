@@ -66,7 +66,7 @@ imap <C-J> <C-X><C-O>
 " show pending tasks list
 map <F2> :TaskList<CR>
 
-" deletes meaningless spaces at line endings of python files
+" removes trailing spaces of python files
 " (and restores cursor position)
 autocmd BufWritePre *.py mark z | %s/ *$//e | 'z
 
