@@ -7,7 +7,7 @@ It's mainly oriented to python software development, but many of its features ar
 
 Feel free to distribute it (it's GPL licensed), and I'm not responsible for any good or bad consecuences of using it (I don't know how a vim configuration can harm you, but you should never underestimate the power of vim :p).
 
-You can report any issue on the Issues section. And if you need/want to cantact me, my gmail account is "fisadev".
+You can report any issue on the Issues section. And if you need/want to contact me, my gmail account is "fisadev".
 
 (Juan Pedro Fisanotti)
 
