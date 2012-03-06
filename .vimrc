@@ -125,3 +125,9 @@ nmap ,t :tabnew<CR>:FufCoverageFile<CR>
 nmap ,g :FufBufferTag<CR>
 nmap ,f :FufLine<CR>
 
+" simple recursive grep
+command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
+command! -nargs=1 RecurGrepFast exec 'lgrep! <q-args> ./**/*.*' | lopen
+nmap ,R :RecurGrep 
+nmap ,r :RecurGrepFast 
+
