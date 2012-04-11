@@ -120,3 +120,5 @@ command! -nargs=1 RecurGrepFast exec 'lgrep! <q-args> ./**/*.*' | lopen
 nmap ,R :RecurGrep 
 nmap ,r :RecurGrepFast 
 
+" run pep8 validator
+let g:pep8_map=',8' 
