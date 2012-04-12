@@ -121,7 +121,7 @@ nmap ,R :RecurGrep
 nmap ,r :RecurGrepFast 
 
 " run pep8 validator
-let g:pep8_map=',8' 
+autocmd FileType python map <buffer> ,8 :call Pep8()<CR>
 
 " don't let pyflakes allways override the quickfix list
 let g:pyflakes_use_quickfix = 0
