@@ -107,12 +107,10 @@ map <F10> :Dbg watch<CR>
 map <F11> :Dbg down<CR>
 map <F12> :Dbg up<CR>
 
-" fuzzy finder
-nmap ,e :FufCoverageFile<CR>
-nmap ,t :tabnew<CR>:FufCoverageFile<CR>
-nmap ,g :FufBufferTag<CR>
-nmap ,f :FufLine<CR>
-nmap ,b :FufBuffer<CR>
+" CtrlP (new fuzzy finder)
+let g:ctrlp_map = ',e'
+nmap ,g :CtrlPBufTag<CR>
+nmap ,f :CtrlPLine<CR>
 
 " simple recursive grep
 command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
@@ -121,7 +119,7 @@ nmap ,R :RecurGrep
 nmap ,r :RecurGrepFast 
 
 " run pep8 validator
-autocmd FileType python map <buffer> ,8 :call Pep8()<CR>
+autocmd FileType python map <buffer> ,8 :call Pep8()<CR> 
 
 " don't let pyflakes allways override the quickfix list
 let g:pyflakes_use_quickfix = 0
