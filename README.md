@@ -60,7 +60,7 @@ Most important features include:
 
  * Show **current python class/method** on the status line.
 
- * **Grep text recursive** and navigate the results:
+ * **Grep text recursively** and navigate the results:
 
     * `,r` uses the system grep, faster, but needs to press an extra ENTER to return to vim. 
     * `,R` uses vimgrep, wich is slower but doesn't need the extra ENTER
