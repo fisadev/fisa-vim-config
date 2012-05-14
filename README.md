@@ -20,10 +20,10 @@ You can report any issue on the [Issues](https://github.com/fisadev/fisa-vim-con
 Features or it didn't happen!
 -----------------------------
 
-![magic-powered autocompletition](http://i.imgur.com/O3fxH.png "magic-powered autocompletition")
-![class browser](http://i.imgur.com/YCBxs.png "class browser")
-![detecting your nasty errors](http://i.imgur.com/4bxPj.png "detecting your nasty errors")
-![fuzzy code finder (next step: mind reader)](http://i.imgur.com/SgAjk.png "fuzzy code finder (next step: mind reader)")
+![magic-powered autocompletition](http://i.imgur.com/0WhdV.png "magic-powered autocompletition")
+![class browser](http://i.imgur.com/jRIba.png "class browser")
+![detecting your nasty errors](http://i.imgur.com/TvLq3.png "detecting your nasty errors")
+![fuzzy code finder (next step: mind reader)](http://i.imgur.com/SvZ60.png "fuzzy code finder (next step: mind reader)")
 
 Most important features include:
 
