@@ -109,8 +109,6 @@ Most important features include:
 
  * **Plugins managed using Pathogen**! If you want to disable a plugin, simply remove its folder from `.vim/bundle/`.
 
-- - -
-
 2 steps installation
 --------------------
 
@@ -134,8 +132,6 @@ Most important features include:
   (if you don't have Pip, find it here: [pip](http://pypi.python.org/pypi/pip))
 
 Done! You have your new shiny powerful vim :)
-
-- - -
 
 Sources
 -------
@@ -169,8 +165,6 @@ And thanks to all the developers of the plugins that I simply use here:
  * [HTML/XML tags navigation (Matchit)](http://www.vim.org/scripts/script.php?script_id=39)
  * [Code and files fuzzy finder (ctrlp)](https://github.com/kien/ctrlp.vim)
  * [Current class/method status (python helper)](http://www.vim.org/scripts/script.php?script_id=435)
-
-- - -
 
 Changelog
 ---------
