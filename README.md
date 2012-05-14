@@ -24,8 +24,6 @@ Features or it didn't happen!
 ![class browser](http://i.imgur.com/YCBxs.png "class browser")
 ![detecting your nasty errors](http://i.imgur.com/4bxPj.png "detecting your nasty errors")
 ![fuzzy code finder (next step: mind reader)](http://i.imgur.com/SgAjk.png "fuzzy code finder (next step: mind reader)")
-![fuzzy file finder](http://i.imgur.com/6ZbgY.png "fuzzy file finder")
-![never forget a TODO](http://i.imgur.com/6OWGl.png "never forget a TODO")
 
 Most important features include:
 
