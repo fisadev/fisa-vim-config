@@ -118,14 +118,18 @@ Most important features include:
 
   Example: my linux user is "fisa", so now I have this tree:
 
-    `/home/fisa/.vimrc`
-    `/home/fisa/.gvimrc`
-    `/home/fisa/.vim/`
+  ```bash
+  /home/fisa/.vimrc
+  /home/fisa/.gvimrc
+  /home/fisa/.vim/
+  ```
 
  * **Install dependencies**
 
-    `sudo apt-get install exuberant-ctags`
-    `sudo pip install dbgp vim-debug pep8`
+  ```bash
+  sudo apt-get install exuberant-ctags
+  sudo pip install dbgp vim-debug pep8
+  ```
 
   (if you don't have Pip, find it here: [pip](http://pypi.python.org/pypi/pip))
 
