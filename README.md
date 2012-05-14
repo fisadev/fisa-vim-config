@@ -204,3 +204,6 @@ Changelog
   * Replaced fuzzyfinder with ctrlp (faster, more options)
   * Pep8 validator (new python package dependency: pep8)
   * No more quickfix list overrides problem between pyflakes checker and pep8
+ * 2.4
+  * Migrated to GitHub!
+  * Added README.md
