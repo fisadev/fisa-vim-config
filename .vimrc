@@ -123,3 +123,13 @@ autocmd FileType python map <buffer> ,8 :call Pep8()<CR>
 
 " don't let pyflakes allways override the quickfix list
 let g:pyflakes_use_quickfix = 0
+
+" autoclose (
+inoremap        (  ()<Left>
+inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
+" autoclose [
+inoremap        [  []<Left>
+inoremap <expr> ]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
+" autoclose {
+inoremap        {  {}<Left>
+inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
