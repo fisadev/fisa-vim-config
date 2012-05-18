@@ -27,6 +27,8 @@ Features or it didn't happen!
 
 Most important features include:
 
+ * **Plugins managed using Pathogen**! If you want to disable a plugin, simply remove its folder from `.vim/bundle/`.
+
  * **Smart autocompletition as you type**, sometimes using python instrospection (completition of module names, instance methods and attributes) and sometimes text-based (used words).
 
  * **Fuzzy file and code finder** (like Textmante or Sublime Text 2):
@@ -100,12 +102,12 @@ Most important features include:
 
  * **Automatically removes trailing spaces** when saving python files.
 
+ * **Smart autoclosing of (. [ and {**
+
  * Highlights **long (80+) lines**, **trailing spaces** and **lines starting with tabs** on python files. 
    From version 1.5 the long lines highlighting is off by default. All this stuff can be toggled editing the file `.vim/bundle/highlight-bad-python/ftplugin/python.vim`.
 
  * **Similar color scheme on vim and gvim**.
-
- * **Plugins managed using Pathogen**! If you want to disable a plugin, simply remove its folder from `.vim/bundle/`.
 
 2 steps installation
 --------------------
@@ -211,3 +213,5 @@ Changelog
  * 2.4
   * Migrated to GitHub!
   * Added README.md
+ * 2.5
+  * Added autoclosing for (, [ and {
