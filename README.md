@@ -102,7 +102,7 @@ Most important features include:
 
  * **Automatically removes trailing spaces** when saving python files.
 
- * **Smart autoclosing of (. [ and {**
+ * **Smart autoclosing of (, [ and {**
 
  * Highlights **long (80+) lines**, **trailing spaces** and **lines starting with tabs** on python files. 
    From version 1.5 the long lines highlighting is off by default. All this stuff can be toggled editing the file `.vim/bundle/highlight-bad-python/ftplugin/python.vim`.
