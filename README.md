@@ -211,7 +211,7 @@ Changelog
   * Deleted some unnecesary files
  * 2.3
   * Replaced fuzzyfinder with ctrlp (faster, more options)
-  * Pep8 validator (new python package dependency: pep8)
+  * Pep8 validator (**new python package dependency: pep8**)
   * No more quickfix list overrides problem between pyflakes checker and pep8
  * 2.4
   * Migrated to GitHub!
@@ -219,4 +219,4 @@ Changelog
  * 2.5
   * Added autoclosing for (, [ and {
  * 2.6
-  * New pep8 checker, which displays pyflakes errors too (**adds flake8 pip dependency!**)
+  * New pep8 checker, which displays pyflakes errors too (**new python package dependency: flake8**)
