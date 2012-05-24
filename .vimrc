@@ -118,8 +118,10 @@ command! -nargs=1 RecurGrepFast exec 'lgrep! <q-args> ./**/*.*' | lopen
 nmap ,R :RecurGrep 
 nmap ,r :RecurGrepFast 
 
-" run pep8 validator
-autocmd FileType python map <buffer> ,8 :call Pep8()<CR> 
+" run pep8+pyflakes validator
+autocmd FileType python map <buffer> ,8 :call Flake8()<CR>
+" rules to ignore (example: "E501,W293")
+let g:flake8_ignore=""
 
 " don't let pyflakes allways override the quickfix list
 let g:pyflakes_use_quickfix = 0

@@ -169,7 +169,7 @@ And thanks to all the developers of the plugins that I simply use here:
  * [HTML/XML tags navigation (Matchit)](http://www.vim.org/scripts/script.php?script_id=39)
  * [Code and files fuzzy finder (ctrlp)](https://github.com/kien/ctrlp.vim)
  * [Current class/method status (python helper)](http://www.vim.org/scripts/script.php?script_id=435)
- * [PEP8 checker](https://github.com/nvie/vim-pep8)
+ * [PEP8 checker (with shows pyflakes errors too)](https://github.com/nvie/vim-flake8)
 
 Changelog
 ---------
@@ -216,3 +216,5 @@ Changelog
   * Added README.md
  * 2.5
   * Added autoclosing for (, [ and {
+ * 2.6
+  * New pep8 checker, wich displays pyflakes errors too
