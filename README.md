@@ -44,7 +44,7 @@ Most important features include:
 
  * **Error checking of python code** using Pyflakes (it will detect unused variables or imports, syntax errors, and such).
 
- * Run **PEP8 validator** on the current python file with `,8`.
+ * Run **PEP8 validator** on the current python file with `,8`, which also displays python errors found with Pyflakes.
 
  * A really nice **python and php debugger**. [Here](http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded) is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
     * `F5` = step over
@@ -67,7 +67,7 @@ Most important features include:
  * **Grep text recursively** and navigate the results:
 
     * `,r` uses the system grep, faster, but needs to press an extra ENTER to return to vim. 
-    * `,R` uses vimgrep, wich is slower but doesn't need the extra ENTER
+    * `,R` uses vimgrep, which is slower but doesn't need the extra ENTER
 
  * **Better python syntax coloring**.
 
@@ -219,4 +219,4 @@ Changelog
  * 2.5
   * Added autoclosing for (, [ and {
  * 2.6
-  * New pep8 checker, wich displays pyflakes errors too (**adds flake8 pip dependency!**)
+  * New pep8 checker, which displays pyflakes errors too (**adds flake8 pip dependency!**)
