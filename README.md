@@ -130,7 +130,7 @@ Most important features include:
 
   ```bash
   sudo apt-get install exuberant-ctags
-  sudo pip install dbgp vim-debug pep8
+  sudo pip install dbgp vim-debug pep8 flake8
   ```
 
   (if you don't have Pip, find it here: [pip](http://pypi.python.org/pypi/pip))
@@ -217,4 +217,4 @@ Changelog
  * 2.5
   * Added autoclosing for (, [ and {
  * 2.6
-  * New pep8 checker, wich displays pyflakes errors too
+  * New pep8 checker, wich displays pyflakes errors too (**adds flake8 pip dependency!**)
