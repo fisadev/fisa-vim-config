@@ -68,11 +68,11 @@ Most important features include:
   * ``F11`` = go down on the stack
   * ``F12`` = go up on the stack
 
-   You should watch the `video tutorial <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_, I can't explain all its usage here.
+  You should watch the `video tutorial <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_, I can't explain all its usage here.
 
-   FAQ: Why there isn't a keyboard shortcut to start the debugger?
+  FAQ: Why there isn't a keyboard shortcut to start the debugger?
 
-   Because there where no more "Fx" keys free, and starting the debugger is something you do only once on every debugging session, compared to the multiple times you will use the other functions on that session. Disagree? Change it! Edit the ``.vimrc`` file, is really simple and well documented :).  (The command **to start the debugger on the current file** is ``:Dbg .``)
+  Because there where no more "Fx" keys free, and starting the debugger is something you do only once on every debugging session, compared to the multiple times you will use the other functions on that session. Disagree? Change it! Edit the ``.vimrc`` file, is really simple and well documented :).  (The command **to start the debugger on the current file** is ``:Dbg .``)
 
 * Show **current python class/method** on the status line.
 
@@ -119,7 +119,7 @@ Most important features include:
 * **Smart autoclosing of (, [ and {**
 
 * Highlights **long (80+) lines**, **trailing spaces** and **lines starting with tabs** on python files. 
-   From version 1.5 the long lines highlighting is off by default. All this stuff can be toggled editing the file ``.vim/bundle/highlight-bad-python/ftplugin/python.vim``.
+  From version 1.5 the long lines highlighting is off by default. All this stuff can be toggled editing the file ``.vim/bundle/highlight-bad-python/ftplugin/python.vim``.
 
 * **Similar color scheme on vim and gvim**.
 
@@ -136,20 +136,20 @@ Most important features include:
 
   Example: my linux user is "fisa", so now I have this tree:
 
-    ::
+  ::
 
-      bash
-      /home/fisa/.vimrc
-      /home/fisa/.gvimrc
-      /home/fisa/.vim/
+    bash
+    /home/fisa/.vimrc
+    /home/fisa/.gvimrc
+    /home/fisa/.vim/
 
 * **Install dependencies**
 
-    ::
+  ::
 
-      bash
-      sudo apt-get install exuberant-ctags
-      sudo pip install dbgp vim-debug pep8 flake8
+    bash
+    sudo apt-get install exuberant-ctags
+    sudo pip install dbgp vim-debug pep8 flake8
 
 (if you don't have Pip, find it here: `pip <http://pypi.python.org/pypi/pip>`_)
 
