@@ -46,6 +46,7 @@ Most important features include:
 * **Smart autocompletition as you type**, sometimes using python instrospection (completition of module names, instance methods and attributes) and sometimes text-based (used words).
 
 * **Fuzzy file and code finder** (like Textmante or Sublime Text 2):
+
   * ``,e`` = open file (like the original :e) but with recursive and fuzzy file name matching. Example: if you type "mopy" it will find a file named "models.py" placed on a subdirectory. And allows you to open the selected file on a new tab with Ctrl+t!
   * ``,g`` = fuzzy symbol finder (classes, methods, variables, functions, ...) on the current file. Example: if you type "usr" it will find the User class definition on the current file.
   * ``,f`` = fuzzy text finder on the opened files. Example: if you type "ctm=6" it will find the line containing "current_time = 16".
@@ -59,6 +60,7 @@ Most important features include:
 * Run **PEP8 validator** on the current python file with ``,8``, which also displays python errors found with Pyflakes.
 
 * A really nice **python and php debugger**. `here <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_ is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
+
   * ``F5`` = step over
   * ``F6`` = step into
   * ``F7`` = step out
@@ -92,11 +94,13 @@ Most important features include:
 * **Results count** while searching text.
 
 * **Search and read python documentation** with the ``:Pydoc`` command. Example:
+
   * ``:Pydoc collections``
 
 * **Comment and uncomment code** with ``\ci``.
 
 * **Easy tab navigation** on command mode:
+
   * ``tt`` = new tab and leaves the cursor waiting to specify the file path to open (leave blank to open an empty tab).
   * ``tn`` = next tab.
   * ``tp`` = previous tab.
@@ -105,6 +109,7 @@ Most important features include:
 * Some vim goodies enabled by default: **incremental search** (moves to the first result while you are typing), **highlighted search results**, and **line numbers**.
 
 * **Python interpreter inside vim**, or any other console. They are opened as a buffer using the command ``:ConqueTerm``. Example:
+
   * ``:ConqueTerm python``
   * ``:ConqueTerm bash``
 
