@@ -190,47 +190,74 @@ And thanks to all the developers of the plugins that I simply use here:
 Changelog
 ---------
 
- * 1.1
+ * Version 1.1
+
    * Python code checking with Pyflakes.
    * Python bad things highlighting (long lines, trailing spaces, tabs at line start).
- * 1.2
+
+ * Version 1.2
+
    * Automatic remove of trailing spaces when saving python files.
- * 1.3
+
+ * Version 1.3
+
   * highlighting of search results.
- * 1.4
+
+ * Version 1.4
+
   * Search results counter.
   * Code commenter.
- * 1.5
+
+ * Version 1.5
+
   * Save current file as sudo.
   * Long lines highlighting off by default.
   * Status bar allways visible.
- * 1.6
+
+ * Version 1.6
+
   * HTML/XML tags navigation with %.
   * Debugger plugin installed on the configuration, removing one step of the installation.
- * 1.7
+
+ * Version 1.7
+
   * Fuzzy finder only for files.
- * 2.0
+
+ * Version 2.0
+
   * Plugins managed using Pathogen!
   * Updated some of the plugins.
   * NERDCommenter changed their keyboard shortcuts to "\ci".
- * 2.1
+
+ * Version 2.1
+
   * Removed ugly extra column of Taglist.
   * All translated to English! (code, wiki, commits from now on)
   * Fuzzy finder now used for files, symbols and code.
   * Fuzzy finder keyboard shortcuts changed and standarized (now all of them start with ",").
- * 2.2
+
+ * Version 2.2
+
   * Tagbar replaces Taglist (better looking class browser)
   * Show current class/method on status line (python helper)
   * Find text and navigate results on the current folder recursively with ",r" or ",R"
   * Deleted some unnecesary files
- * 2.3
+
+ * Version 2.3
+
   * Replaced fuzzyfinder with ctrlp (faster, more options)
   * Pep8 validator (**new python package dependency: pep8**)
   * No more quickfix list overrides problem between pyflakes checker and pep8
- * 2.4
+
+ * Version 2.4
+
   * Migrated to GitHub!
   * Added README.md
- * 2.5
+
+ * Version 2.5
+
   * Added autoclosing for (, [ and {
- * 2.6
+
+ * Version 2.6
+
   * New pep8 checker, which displays pyflakes errors too (**new python package dependency: flake8**)
