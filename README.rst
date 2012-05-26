@@ -6,7 +6,7 @@ my vim configuration (lot of python, autocompletition, fuzzy finder, debugger, .
 What is this?
 -------------
 
-**(updating from a previous version? check the install section for updated dependencies!)**
+*(updating from a previous version? check the install section for updated dependencies!)*
 
 My personal [Vim](http://www.vim.org/) configuration, built according to my personal preferences, without any justification to think it's the best possible vim configuration. If you like it, great! :)
 It's mainly oriented to python software development, but many of its features are useful for other languages and editing tasks.
@@ -29,24 +29,24 @@ Features or it didn't happen!
 
 Most important features include:
 
- * **Plugins managed using Pathogen**! If you want to disable a plugin, simply remove its folder from `.vim/bundle/`.
+ * *Plugins managed using Pathogen*! If you want to disable a plugin, simply remove its folder from `.vim/bundle/`.
 
- * **Smart autocompletition as you type**, sometimes using python instrospection (completition of module names, instance methods and attributes) and sometimes text-based (used words).
+ * *Smart autocompletition as you type*, sometimes using python instrospection (completition of module names, instance methods and attributes) and sometimes text-based (used words).
 
- * **Fuzzy file and code finder** (like Textmante or Sublime Text 2):
+ * *Fuzzy file and code finder* (like Textmante or Sublime Text 2):
     * `,e` = open file (like the original :e) but with recursive and fuzzy file name matching. Example: if you type "mopy" it will find a file named "models.py" placed on a subdirectory. And allows you to open the selected file on a new tab with Ctrl+t!
     * `,g` = fuzzy symbol finder (classes, methods, variables, functions, ...) on the current file. Example: if you type "usr" it will find the User class definition on the current file.
     * `,f` = fuzzy text finder on the opened files. Example: if you type "ctm=6" it will find the line containing "current_time = 16".
 
- * **Classes/module browser** that lists classes, functions, methods, and such of the current file, and navigates to them when ENTER is pressed. Toggle it with `F4`.
+ * *Classes/module browser* that lists classes, functions, methods, and such of the current file, and navigates to them when ENTER is pressed. Toggle it with `F4`.
 
- * **Pending tasks browser** pressing `F2`. This reads the current file searching for comments that start with "TODO", "FIXME", and such, and shows them on a list that allows navigation similar to the class browser.
+ * *Pending tasks browser* pressing `F2`. This reads the current file searching for comments that start with "TODO", "FIXME", and such, and shows them on a list that allows navigation similar to the class browser.
 
- * **Error checking of python code** using Pyflakes (it will detect unused variables or imports, syntax errors, and such).
+ * *Error checking of python code* using Pyflakes (it will detect unused variables or imports, syntax errors, and such).
 
- * Run **PEP8 validator** on the current python file with `,8`, which also displays python errors found with Pyflakes.
+ * Run *PEP8 validator* on the current python file with `,8`, which also displays python errors found with Pyflakes.
 
- * A really nice **python and php debugger**. [Here](http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded) is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
+ * A really nice *python and php debugger*. [Here](http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded) is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
     * `F5` = step over
     * `F6` = step into
     * `F7` = step out
@@ -60,63 +60,63 @@ Most important features include:
 
    FAQ: Why there isn't a keyboard shortcut to start the debugger?
 
-   Because there where no more "Fx" keys free, and starting the debugger is something you do only once on every debugging session, compared to the multiple times you will use the other functions on that session. Disagree? Change it! Edit the .vimrc file, is really simple and well documented :).  (The command **to start the debugger on the current file** is `:Dbg .`)
+   Because there where no more "Fx" keys free, and starting the debugger is something you do only once on every debugging session, compared to the multiple times you will use the other functions on that session. Disagree? Change it! Edit the .vimrc file, is really simple and well documented :).  (The command *to start the debugger on the current file* is `:Dbg .`)
 
- * Show **current python class/method** on the status line.
+ * Show *current python class/method* on the status line.
 
- * **Grep text recursively** and navigate the results:
+ * *Grep text recursively* and navigate the results:
 
     * `,r` uses the system grep, faster, but needs to press an extra ENTER to return to vim. 
     * `,R` uses vimgrep, which is slower but doesn't need the extra ENTER
 
- * **Better python syntax coloring**.
+ * *Better python syntax coloring*.
 
- * **Better python indentation**.
+ * *Better python indentation*.
 
- * Some settings for better **tabs and spaces handling**.
+ * Some settings for better *tabs and spaces handling*.
 
- * **Better file browser**, toggle it with `F3`.
+ * *Better file browser*, toggle it with `F3`.
 
- * **Results count** while searching text.
+ * *Results count* while searching text.
 
- * **Search and read python documentation** with the `:Pydoc` command. Example:
+ * *Search and read python documentation* with the `:Pydoc` command. Example:
    * `:Pydoc collections`
 
- * **Comment and uncomment code** with `\ci`.
+ * *Comment and uncomment code* with `\ci`.
 
- * **Easy tab navigation** on command mode:
+ * *Easy tab navigation* on command mode:
     * `tt` = new tab and leaves the cursor waiting to specify the file path to open (leave blank to open an empty tab).
     * `tn` = next tab.
     * `tp` = previous tab.
     * `tm` = move current tab to the end.
 
- * Some vim goodies enabled by default: **incremental search** (moves to the first result while you are typing), **highlighted search results**, and **line numbers**.
+ * Some vim goodies enabled by default: *incremental search* (moves to the first result while you are typing), *highlighted search results*, and *line numbers*.
 
- * **Python interpreter inside vim**, or any other console. They are opened as a buffer using the command `:ConqueTerm`. Example:
+ * *Python interpreter inside vim*, or any other console. They are opened as a buffer using the command `:ConqueTerm`. Example:
    * `:ConqueTerm python`
    * `:ConqueTerm bash`
 
- * **Save current file as sudo** using `:w!!`.
+ * *Save current file as sudo* using `:w!!`.
 
- * **Navigate html/xml tags** the same way that you navigate (), {} and []: using `%`.
+ * *Navigate html/xml tags* the same way that you navigate (), {} and []: using `%`.
 
- * **Status bar allways visible**.
+ * *Status bar allways visible*.
 
- * **Automatically removes trailing spaces** when saving python files.
+ * *Automatically removes trailing spaces* when saving python files.
 
- * **Smart autoclosing of (, [ and {**
+ * *Smart autoclosing of (, [ and {*
 
- * Highlights **long (80+) lines**, **trailing spaces** and **lines starting with tabs** on python files. 
+ * Highlights *long (80+) lines*, *trailing spaces* and *lines starting with tabs* on python files. 
    From version 1.5 the long lines highlighting is off by default. All this stuff can be toggled editing the file `.vim/bundle/highlight-bad-python/ftplugin/python.vim`.
 
- * **Similar color scheme on vim and gvim**.
+ * *Similar color scheme on vim and gvim*.
 
 2 steps installation
 --------------------
 
 (you will need a vim compiled with python support. Check it with `vim --version | grep +python`)
 
- * **Put the configuration files where they belong**
+ * *Put the configuration files where they belong*
 
   Copy the files `.vimrc` and `.gvimrc`, and the folder `.vim` (all of them contained on the [downloaded file](https://github.com/fisadev/fisa-vim-config/tags)) to your linux home folder.
 
@@ -128,7 +128,7 @@ Most important features include:
   /home/fisa/.vim/
   ```
 
- * **Install dependencies**
+ * *Install dependencies*
 
   ```bash
   sudo apt-get install exuberant-ctags
@@ -211,7 +211,7 @@ Changelog
   * Deleted some unnecesary files
  * 2.3
   * Replaced fuzzyfinder with ctrlp (faster, more options)
-  * Pep8 validator (**new python package dependency: pep8**)
+  * Pep8 validator (*new python package dependency: pep8*)
   * No more quickfix list overrides problem between pyflakes checker and pep8
  * 2.4
   * Migrated to GitHub!
@@ -219,4 +219,4 @@ Changelog
  * 2.5
   * Added autoclosing for (, [ and {
  * 2.6
-  * New pep8 checker, which displays pyflakes errors too (**new python package dependency: flake8**)
+  * New pep8 checker, which displays pyflakes errors too (*new python package dependency: flake8*)
