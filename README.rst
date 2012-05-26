@@ -93,9 +93,7 @@ Most important features include:
 
 * **Results count** while searching text.
 
-* **Search and read python documentation** with the ``:Pydoc`` command. Example:
-
-  * ``:Pydoc collections``
+* **Search and read python documentation** with the ``:Pydoc`` command. Example: ``:Pydoc collections``.
 
 * **Comment and uncomment code** with ``\ci``.
 
@@ -108,10 +106,7 @@ Most important features include:
 
 * Some vim goodies enabled by default: **incremental search** (moves to the first result while you are typing), **highlighted search results**, and **line numbers**.
 
-* **Python interpreter inside vim**, or any other console. They are opened as a buffer using the command ``:ConqueTerm``. Example:
-
-  * ``:ConqueTerm python``
-  * ``:ConqueTerm bash``
+* **Python interpreter inside vim**, or any other console. They are opened as a buffer using the command ``:ConqueTerm``. Examples: ``:ConqueTerm python``, ``:ConqueTerm bash``.
 
 * **Save current file as sudo** using ``:w!!``.
 
