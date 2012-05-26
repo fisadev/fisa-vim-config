@@ -59,7 +59,7 @@ Most important features include:
 
 * Run **PEP8 validator** on the current python file with ``,8``, which also displays python errors found with Pyflakes.
 
-* A really nice **python and php debugger**. `here <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_ is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
+* A really nice **python and php debugger**. `Here <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_ is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
 
   * ``F5`` = step over
   * ``F6`` = step into
