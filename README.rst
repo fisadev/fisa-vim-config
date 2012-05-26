@@ -123,6 +123,8 @@ Most important features include:
 
  * **Similar color scheme on vim and gvim**.
 
+ * **2 spaces indentation for html and javascript** (can disable it removing the ``tablength-exceptions`` plugin from ``.vim/bundle/``)
+
 2 steps installation
 --------------------
 
@@ -260,4 +262,5 @@ Changelog
 
  * Version 2.6
 
+  * Html and javascript files have 2 spaces indentation by default
   * New pep8 checker, which displays pyflakes errors too (**new python package dependency: flake8**)
