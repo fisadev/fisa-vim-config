@@ -138,7 +138,6 @@ Most important features include:
 
   ::
 
-    bash
     /home/fisa/.vimrc
     /home/fisa/.gvimrc
     /home/fisa/.vim/
@@ -147,7 +146,6 @@ Most important features include:
 
   ::
 
-    bash
     sudo apt-get install exuberant-ctags
     sudo pip install dbgp vim-debug pep8 flake8
 
