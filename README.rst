@@ -8,16 +8,16 @@ What is this?
 
 *(updating from a previous version? check the install section for updated dependencies!)*
 
-My personal [Vim](http://www.vim.org/) configuration, built according to my personal preferences, without any justification to think it's the best possible vim configuration. If you like it, great! :)
+My personal `Vim <http://www.vim.org/>`_ configuration, built according to my personal preferences, without any justification to think it's the best possible vim configuration. If you like it, great! :)
 It's mainly oriented to python software development, but many of its features are useful for other languages and editing tasks.
 
 Feel free to distribute it (it's GPL licensed), and I'm not responsible for any good or bad consecuences of using it (I don't know how a vim configuration can harm you, but you should never underestimate the power of vim :p).
 
-You can report any issue on the [Issues](https://github.com/fisadev/fisa-vim-config/issues) section. And if you need/want to contact me, my gmail account is "fisadev".
+You can report any issue on the `Issues <https://github.com/fisadev/fisa-vim-config/issues>`_ section. And if you need/want to contact me, my gmail account is "fisadev".
 
 (Juan Pedro Fisanotti)
 
-[Download](https://github.com/fisadev/fisa-vim-config/tags)
+`Download <https://github.com/fisadev/fisa-vim-config/tags>`_
 
 Features or it didn't happen!
 -----------------------------
@@ -46,7 +46,7 @@ Most important features include:
 
  * Run *PEP8 validator* on the current python file with `,8`, which also displays python errors found with Pyflakes.
 
- * A really nice *python and php debugger*. [Here](http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded) is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
+ * A really nice *python and php debugger*. `here <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_ is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
     * `F5` = step over
     * `F6` = step into
     * `F7` = step out
@@ -56,7 +56,7 @@ Most important features include:
     * `F11` = go down on the stack
     * `F12` = go up on the stack
 
-   You should watch the [video tutorial](http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded), I can't explain all its usage here.
+   You should watch the `video tutorial <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_, I can't explain all its usage here.
 
    FAQ: Why there isn't a keyboard shortcut to start the debugger?
 
@@ -118,7 +118,7 @@ Most important features include:
 
  * *Put the configuration files where they belong*
 
-  Copy the files `.vimrc` and `.gvimrc`, and the folder `.vim` (all of them contained on the [downloaded file](https://github.com/fisadev/fisa-vim-config/tags)) to your linux home folder.
+  Copy the files `.vimrc` and `.gvimrc`, and the folder `.vim` (all of them contained on the `downloaded file <https://github.com/fisadev/fisa-vim-config/tags>`_) to your linux home folder.
 
   Example: my linux user is "fisa", so now I have this tree:
 
@@ -135,14 +135,14 @@ Most important features include:
   sudo pip install dbgp vim-debug pep8 flake8
   ```
 
-  (if you don't have Pip, find it here: [pip](http://pypi.python.org/pypi/pip))
+  (if you don't have Pip, find it here: `pip <http://pypi.python.org/pypi/pip>`_)
 
 Done! You have your new shiny powerful vim :)
 
 Sources
 -------
 
-Thanks to some people from [Pyar](http://python.org.ar), who show me vim for the first time and shared their configurations with me on the PyCamp 2010 :). Some of my tweaks were copied from their configurations.
+Thanks to some people from `Pyar <http://python.org.ar>`_, who show me vim for the first time and shared their configurations with me on the PyCamp 2010 :). Some of my tweaks were copied from their configurations.
 
  * Hector Sanchez
  * Juanjo Conti
@@ -154,24 +154,24 @@ Thanks to some people from [Pyar](http://python.org.ar), who show me vim for the
 
 And thanks to all the developers of the plugins that I simply use here:
 
- * [Plugins manager (Pathogen)](https://github.com/tpope/vim-pathogen)
- * [Debugger (vim-debug)](http://github.com/jabapyth/vim-debug/)
- * [GVim color scheme (wombat)](http://dengmao.wordpress.com/2007/01/22/vim-color-scheme-wombat/)
- * [Consoles as buffers (!ConqueTerm)](http://www.vim.org/scripts/script.php?script_id=2771)
- * [Autocompletition (autocomplpop)](http://www.vim.org/scripts/script.php?script_id=1879)
- * [Better file browser (NERDTree)](http://www.vim.org/scripts/script.php?script_id=1658)
- * [Better python indentation](http://www.vim.org/scripts/script.php?script_id=974)
- * [Better python syntax coloring](http://www.vim.org/scripts/script.php?script_id=790)
- * [Search and read python documentation (PyDoc)](http://www.vim.org/scripts/script.php?script_id=910)
- * [Class/module browser (Tagbar)](http://www.vim.org/scripts/script.php?script_id=3465)
- * [Pending tasks list (!TaskList)](http://www.vim.org/scripts/script.php?script_id=2607)
- * [python code checker (Pyflakes-vim)](http://www.vim.org/scripts/script.php?script_id=2441)
- * [Search results counter (!IndexedSearch)](http://www.vim.org/scripts/script.php?script_id=1682)
- * [Code commenter (NERDCommenter)](http://www.vim.org/scripts/script.php?script_id=1218)
- * [HTML/XML tags navigation (Matchit)](http://www.vim.org/scripts/script.php?script_id=39)
- * [Code and files fuzzy finder (ctrlp)](https://github.com/kien/ctrlp.vim)
- * [Current class/method status (python helper)](http://www.vim.org/scripts/script.php?script_id=435)
- * [PEP8 checker (with shows pyflakes errors too)](https://github.com/nvie/vim-flake8)
+ * `Plugins manager (Pathogen) <https://github.com/tpope/vim-pathogen>`_
+ * `Debugger (vim-debug) <http://github.com/jabapyth/vim-debug/>`_
+ * `GVim color scheme (wombat) <http://dengmao.wordpress.com/2007/01/22/vim-color-scheme-wombat/>`_
+ * `Consoles as buffers (!ConqueTerm) <http://www.vim.org/scripts/script.php?script_id=2771>`_
+ * `Autocompletition (autocomplpop) <http://www.vim.org/scripts/script.php?script_id=1879>`_
+ * `Better file browser (NERDTree) <http://www.vim.org/scripts/script.php?script_id=1658>`_
+ * `Better python indentation <http://www.vim.org/scripts/script.php?script_id=974>`_
+ * `Better python syntax coloring <http://www.vim.org/scripts/script.php?script_id=790>`_
+ * `Search and read python documentation (PyDoc) <http://www.vim.org/scripts/script.php?script_id=910>`_
+ * `Class/module browser (Tagbar) <http://www.vim.org/scripts/script.php?script_id=3465>`_
+ * `Pending tasks list (!TaskList) <http://www.vim.org/scripts/script.php?script_id=2607>`_
+ * `python code checker (Pyflakes-vim) <http://www.vim.org/scripts/script.php?script_id=2441>`_
+ * `Search results counter (!IndexedSearch) <http://www.vim.org/scripts/script.php?script_id=1682>`_
+ * `Code commenter (NERDCommenter) <http://www.vim.org/scripts/script.php?script_id=1218>`_
+ * `HTML/XML tags navigation (Matchit) <http://www.vim.org/scripts/script.php?script_id=39>`_
+ * `Code and files fuzzy finder (ctrlp) <https://github.com/kien/ctrlp.vim>`_
+ * `Current class/method status (python helper) <http://www.vim.org/scripts/script.php?script_id=435>`_
+ * `PEP8 checker (with shows pyflakes errors too) <https://github.com/nvie/vim-flake8>`_
 
 Changelog
 ---------
