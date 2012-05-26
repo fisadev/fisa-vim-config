@@ -260,5 +260,6 @@ Changelog
 
 * Version 2.6
 
+  * Doc on ReST
   * Html and javascript files have 2 spaces indentation by default
   * New pep8 checker, which displays pyflakes errors too (**new python package dependency: flake8**)
