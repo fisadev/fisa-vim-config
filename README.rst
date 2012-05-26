@@ -128,7 +128,7 @@ Most important features include:
 
 * **Similar color scheme on vim and gvim**.
 
-* **2 spaces indentation for html and javascript** (can disable it removing the ``tablength-exceptions`` plugin from ``.vim/bundle/``)
+* **2 spaces indentation for html and javascript** (can disable it removing the ``tablength-exceptions`` plugin from ``.vim/bundle/``).
 
 2 steps installation
 --------------------
