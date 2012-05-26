@@ -1,3 +1,4 @@
 *.pyc
 *.swp
 .vim/bundle/*/doc/tags
+.vim/bundle/*/doc/tags-ja
