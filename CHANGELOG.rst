@@ -74,3 +74,9 @@ Changelog
   * Doc on ReST
   * Html and javascript files have 2 spaces indentation by default
   * New pep8 checker, which displays pyflakes errors too (**new python package dependency: flake8**)
+
+* Version 2.7
+
+  * Added gitignore (on the git repo, not related to vim)
+  * Added fuzzy go to definition
+  * Changelog is now on a separate file
