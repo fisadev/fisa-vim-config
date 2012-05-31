@@ -111,6 +111,7 @@ map <F12> :Dbg up<CR>
 let g:ctrlp_map = ',e'
 nmap ,g :CtrlPBufTag<CR>
 nmap ,f :CtrlPLine<CR>
+nmap ,d :execute ":nmap ,tmpd :CtrlPBufTag\<CR\>" . expand('<cword>')<CR>,tmpd
 
 " simple recursive grep
 command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
