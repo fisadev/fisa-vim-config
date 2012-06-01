@@ -218,4 +218,4 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Code and files fuzzy finder (ctrlp) <https://github.com/kien/ctrlp.vim>`_
 * `Current class/method status (python helper) <http://www.vim.org/scripts/script.php?script_id=435>`_
 * `PEP8 checker (with shows pyflakes errors too) <https://github.com/nvie/vim-flake8>`_
-
+* `Zen coding <https://github.com/mattn/zencoding-vim/>`_
