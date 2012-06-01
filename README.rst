@@ -157,6 +157,8 @@ Most important features include:
      
   Learn more on the plugin `site <https://github.com/mattn/zencoding-vim/>`_.
 
+* **Git integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Also includes key mappings and syntax highlighting for git displays.
+
 2 steps installation
 --------------------
 
@@ -219,3 +221,4 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Current class/method status (python helper) <http://www.vim.org/scripts/script.php?script_id=435>`_
 * `PEP8 checker (with shows pyflakes errors too) <https://github.com/nvie/vim-flake8>`_
 * `Zen coding <https://github.com/mattn/zencoding-vim/>`_
+* `Git integration <https://github.com/motemen/git-vim>`_

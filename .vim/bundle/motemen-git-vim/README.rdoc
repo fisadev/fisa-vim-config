@@ -1,0 +1,38 @@
+= git.vim
+
+== Introduction
+Git-vim provides:
+* Plugin files for calling git functions from inside Vim
+* Syntax files for git displays
+
+== Commands
+[:GitAdd <file>]       git-add <file> or current file if not specified.
+[:GitCommit <args>]    git-commit.
+[:GitStatus]           Show git-status of current file or repository.
+[:GitLog]              Show git-log of current file or repository.
+[:GitCheckout <args>]  git-checkout. Completes git commits.
+[:GitDiff <args>]      git-diff. Completes git commits.
+[:GitPull <args>]      git-pull.
+[:GitPullRebase]       git-pull --rebase.
+[:GitPush <args>]      git-push. Defaults to +git push origin <current-branch>+.
+[:GitCatFile <args>]   git-cat-file.
+[:GitBlame <args>]     git-blame.
+[:Git <args>]          Does any git command.
+[:GitVimDiffMerge]     Experimental. Call this command on unmerged file to enter vimdiff mode.
+[:GitVimDiffMergeDone] Call this command after merging.
+
+== Keymaps
+[<Leader>gd] :GitDiff
+[<Leader>gD] :GitDiff --cached
+[<Leader>gs] :GitStatus
+[<Leader>gl] :GitLog
+[<Leader>ga] :GitAdd
+[<Leader>gA] :GitAdd <cfile>
+[<Leader>gc] :GitCommit
+[<Leader>gb] :GitBlame
+
+=== In git-status buffer
+[<Enter>]    :GitAdd <cfile>
+
+== License
+The MIT License
