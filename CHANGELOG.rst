@@ -80,3 +80,8 @@ Changelog
   * Added gitignore (on the git repo, not related to vim)
   * Added fuzzy go to definition
   * Changelog is now on a separate file
+
+* Version 2.8
+
+  * Added zen coding for html
+  * Added git integration
