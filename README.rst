@@ -126,6 +126,37 @@ Most important features include:
 
 * **2 spaces indentation for html and javascript** (can disable it removing the ``tablength-exceptions`` plugin from ``.vim/bundle/``).
 
+* **Zen coding** for html: generate lots of html code writing simple and short expressions. 
+  Example: 
+
+  1. write ``#books>ul>li.book*5>a``
+  2. press ``Ctrl-y ,``
+  3. it will generate:
+
+     ::
+     
+      <div id="books">
+          <ul>
+              <li class="book">
+                  <a href=""></a>
+              </li>
+              <li class="book">
+                  <a href=""></a>
+              </li>
+              <li class="book">
+                  <a href=""></a>
+              </li>
+              <li class="book">
+                  <a href=""></a>
+              </li>
+              <li class="book">
+                  <a href=""></a>
+              </li>
+          </ul>
+      </div>
+     
+  Learn more on the plugin `site <https://github.com/mattn/zencoding-vim/>`_.
+
 2 steps installation
 --------------------
 
