@@ -157,6 +157,8 @@ Most important features include:
      
   Learn more on the plugin `site <https://github.com/mattn/zencoding-vim/>`_.
 
+* **Git integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Also includes key mappings and syntax highlighting for git displays.
+
 2 steps installation
 --------------------
 
