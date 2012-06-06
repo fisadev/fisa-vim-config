@@ -136,3 +136,7 @@ inoremap <expr> ]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]
 " autoclose {
 inoremap        {  {}<Left>
 inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
+
+" tabman shortcuts
+let g:tabman_toggle = 'tl'
+let g:tabman_focus  = 'tf'
