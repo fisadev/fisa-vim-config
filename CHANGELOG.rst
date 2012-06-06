@@ -85,3 +85,8 @@ Changelog
 
   * Added zen coding for html
   * Added git integration
+
+* Version 2.9
+
+  * Added tabman for tab list pane
+
