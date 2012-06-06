@@ -1,0 +1,162 @@
+*tabman.txt*      Tab management for Vim version |7.0|+
+*TabMan* *'tabman'*
+===============================================================================
+#                                                                             #
+#         88888888888       888      888b     d888                            #
+#             888           888      8888b   d8888                            #
+#             888           888      88888b.d88888                            #
+#             888   8888b.  88888b.  888Y88888P888  8888b.  88888b.           #
+#             888      "88b 888 "88b 888 Y888P 888     "88b 888 "88b          #
+#             888  .d888888 888  888 888  Y8P  888 .d888888 888  888          #
+#             888  888  888 888 d88P 888   "   888 888  888 888  888          #
+#             888  "Y888888 88888P"  888       888 "Y888888 888  888          #
+#                                                                       v1.2  #
+===============================================================================
+CONTENTS                                                      *tabman-contents*
+
+    1. Intro........................................|tabman-intro|
+    2. Options......................................|tabman-options|
+    3. Commands.....................................|tabman-commands|
+    4. Mappings.....................................|tabman-mappings|
+    5. Credits......................................|tabman-credits|
+
+===============================================================================
+INTRO                                                            *tabman-intro*
+
+This plugin provides a convenient way to navigate between tabs and the windows
+they contain. Features include (but not limited to) jumping to a specific
+window opened in another tab; closing tabs, buffers or windows anywhere without
+switching to them.
+
+===============================================================================
+OPTIONS                                                        *tabman-options*
+
+Below are the available options and their default values:~
+
+                                                            *'g:loaded_tabman'*
+Use this to disable the plugin completely: >
+  let g:loaded_tabman = 1
+<
+
+                                                            *'g:tabman_toggle'*
+Use this to change the mapping to invoke and toggle |TabMan| in |Normal|
+mode: >
+  let g:tabman_toggle = '<leader>mt'
+<
+
+                                                             *'g:tabman_focus'*
+Use this to change the mapping to open or give focus to the |TabMan| window in
+the current tab: >
+  let g:tabman_focus = '<leader>mf'
+<
+
+                                                             *'g:tabman_width'*
+Use this to change the width of the |TabMan| window: >
+  let g:tabman_width = 25
+<
+
+                                                              *'g:tabman_side'*
+And this to change its position: >
+  let g:tabman_side = 'left'
+<
+
+                                                          *'g:tabman_specials'*
+Set this to 1 to show windows created by plugins, help and quickfix: >
+  let g:tabman_specials = 0
+<
+
+                                                            *'g:tabman_number'*
+Set this to 0 to disable line numbering in the |TabMan| window: >
+  let g:tabman_number = 1
+<
+
+===============================================================================
+COMMANDS                                                      *tabman-commands*
+
+                                                                    *:TMToggle*
+:TMToggle
+   Toggle the |TabMan| window in the current tab.
+
+                                                                     *:TMFocus*
+:TMFocus
+   Give focus to the |TabMan| window in the current tab.
+   Open |TabMan| if not yet open.
+
+===============================================================================
+MAPPINGS                                                      *tabman-mappings*
+
+                                                          *'tabman-<leader>mt'*
+<leader>mt
+   Default |Normal| mode mapping to open and toggle the |TabMan| window.
+
+                                                          *'tabman-<leader>mf'*
+<leader>mf
+   Default |Normal| mode mapping to give focus to the |TabMan| window.
+   Open |TabMan| if not yet open.
+
+Once inside the TabMan window:~
+
+  <cr>,
+  e
+    Go to the tab or window under the cursor.
+
+  x
+    Close the tab or window under the cursor.
+
+  b
+    Delete the buffer under the cursor.
+    Close all of its windows in all tabs.
+
+  t
+    Create a new tab with |TabMan| opened in it.
+
+  o
+    Close all other tabs except the active one (starred *).
+
+  O
+    Go to the tab under the cursor and close all others.
+
+  <down>,
+  l
+    Move cursor to the 'next' Tab# line in the |TabMan| window.
+
+  <up>,
+  h
+    Move cursor to the 'previous' Tab# line in the |TabMan| window.
+
+  <tab>,
+  <right>
+    Go to the 'next' tab page.
+
+  <s-tab>,
+  <left>
+    Go to the 'previous' tab page.
+
+  r
+    Fix |TabMan| being the last window in a tab.
+
+  ?
+    Toggle the quickhelp.
+
+  [count]<cr>,
+  [count]e,
+  [count]x,
+  [count]b,
+  [count]o,
+  [count]O,
+    [count] is the line number an item is on. If it’s given, the item on line
+    [count] will be the target of the command.
+
+  [count]m[N]
+    Move the tab under the cursor to after tab page N. If [count] is given,
+    move the tab at line number [count] to after tab page N.
+
+===============================================================================
+CREDITS                                                        *tabman-credits*
+
+Developed by Kien Nguyen <github.com/kien>.
+
+Git repository: https://github.com/kien/tabman.vim
+
+===============================================================================
+vim:ft=help:et:ts=2:sw=2:sts=2:norl
