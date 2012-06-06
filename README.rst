@@ -223,3 +223,4 @@ And thanks to all the developers of the plugins that I simply use here:
 * `PEP8 checker (with shows pyflakes errors too) <https://github.com/nvie/vim-flake8>`_
 * `Zen coding <https://github.com/mattn/zencoding-vim/>`_
 * `Git integration <https://github.com/motemen/git-vim>`_
+* `Tab list pane (tabman) <https://github.com/kien/tabman.vim>`_
