@@ -17,7 +17,7 @@ You can report any issue on the `Issues <https://github.com/fisadev/fisa-vim-con
 
 (Juan Pedro Fisanotti)
 
-`Download <https://github.com/fisadev/fisa-vim-config/tags>`_
+`Download <https://github.com/fisadev/fisa-vim-config/downloads>`_
 
 Features or it didn't happen!
 -----------------------------
@@ -166,7 +166,7 @@ Most important features include:
 
 * **Put the configuration files where they belong**
 
-  Copy the files ``.vimrc`` and ``.gvimrc``, and the folder ``.vim`` (all of them contained on the `downloaded file <https://github.com/fisadev/fisa-vim-config/tags>`_) to your linux home folder.
+  Copy the files ``.vimrc`` and ``.gvimrc``, and the folder ``.vim`` (all of them contained on the `downloaded file <https://github.com/fisadev/fisa-vim-config/downloads>`_) to your linux home folder.
 
   Example: my linux user is "fisa", so now I have this tree:
 
