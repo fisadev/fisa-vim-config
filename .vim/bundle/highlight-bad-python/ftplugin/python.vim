@@ -13,3 +13,7 @@ let matchBadWhitespace = matchadd("BadWhitespace", "\\s\\+$")
 " lines starting with tabs
 highlight BadTabs ctermbg=red guibg=red
 let matchBadTabs = matchadd("BadTabs", "^\\t+")
+
+if exists('g:Powerline_loaded') |
+\ silent! call Pl#Load() |
+\ endif 
