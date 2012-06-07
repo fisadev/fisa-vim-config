@@ -140,3 +140,8 @@ inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}
 " tabman shortcuts
 let g:tabman_toggle = 'tl'
 let g:tabman_focus  = 'tf'
+
+" use 256 colors when possible
+if &term =~? 'mlterm\|xterm'
+	let &t_Co = 256
+endif
