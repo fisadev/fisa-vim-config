@@ -18,9 +18,6 @@ call pathogen#helptags()
 filetype plugin on
 filetype indent on
 
-" color
-colorscheme delek
-
 " incremental search
 set incsearch
 
@@ -142,7 +139,7 @@ let g:tabman_toggle = 'tl'
 let g:tabman_focus  = 'tf'
 
 " use 256 colors when possible
-if &term =~? 'mlterm\|xterm'
+if &term =~? 'mlterm\|xterm\|screen-256'
 	let &t_Co = 256
     " color
     colorscheme fisa
