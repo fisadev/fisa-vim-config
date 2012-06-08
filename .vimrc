@@ -144,6 +144,11 @@ let g:tabman_focus  = 'tf'
 " use 256 colors when possible
 if &term =~? 'mlterm\|xterm'
 	let &t_Co = 256
+    " color
+    colorscheme fisa
+else
+    " color
+    colorscheme delek
 endif
 
 " to use fancy symbols for powerline, uncomment the following line and use a
