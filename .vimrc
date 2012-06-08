@@ -1,6 +1,56 @@
 " no vi-compatible
 set nocompatible
 
+" required for vundle
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Bundles from GitHub repos:
+
+" Python and PHP Debugger
+Bundle 'jabapyth/vim-debug'
+" Better file browser
+Bundle 'scrooloose/nerdtree'
+" Code commenter
+Bundle 'scrooloose/nerdcommenter'
+" Search and read python documentation
+Bundle 'fs111/pydoc.vim'
+" Class/module browser
+Bundle 'majutsushi/tagbar'
+" Python code checker
+Bundle 'kevinw/pyflakes-vim'
+" Code and files fuzzy finder
+Bundle 'kien/ctrlp.vim'
+" PEP8 and python-flakes checker
+Bundle 'nvie/vim-flake8'
+" Zen coding
+Bundle 'mattn/zencoding-vim'
+" Git integration
+Bundle 'motemen/git-vim'
+" Tab list panel
+Bundle 'kien/tabman.vim'
+" Powerline
+Bundle 'Lokaltog/vim-powerline'
+
+" Bundles from vim-scripts repos
+
+" Consoles as buffers
+Bundle 'Conque-Shell'
+" Autocompletition
+Bundle 'AutoComplPop'
+" Pending tasks list
+Bundle 'TaskList.vim'
+" Search results counter
+Bundle 'IndexedSearch'
+" XML/HTML tags navigation
+Bundle 'matchit.zip'
+
+" allow plugins by file type
+filetype plugin on
+filetype indent on
+
 " tabs and spaces handling
 :set expandtab
 :set tabstop=4
@@ -9,14 +59,6 @@ set nocompatible
 
 " always show status bar
 set ls=2
-
-" start the plugin manager
-call pathogen#infect()
-call pathogen#helptags()
-
-" allow plugins by file type
-filetype plugin on
-filetype indent on
 
 " incremental search
 set incsearch
