@@ -46,6 +46,8 @@ Bundle 'TaskList.vim'
 Bundle 'IndexedSearch'
 " XML/HTML tags navigation
 Bundle 'matchit.zip'
+" Gvim colorscheme
+Bundle 'Wombat'
 
 " allow plugins by file type
 filetype plugin on
