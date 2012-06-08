@@ -63,6 +63,8 @@ Bundle 'IndexedSearch'
 Bundle 'matchit.zip'
 " Gvim colorscheme
 Bundle 'Wombat'
+" Terminal Vim with 256 colors colorscheme
+Bundle 'fisa-color-scheme'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
