@@ -41,7 +41,7 @@ fuzzy code finder (next step: mind reader)
 
 Most important features include:
 
-* **Plugins managed using Pathogen**! If you want to disable a plugin, simply remove its folder from ``.vim/bundle/``.
+* **Plugins managed using Vundle**! If you want to disable a plugin, simply remove its folder from ``.vim/bundle/``. And it's really easy to add new plugins. More info `here <https://github.com/gmarik/vundle>`_
 
 * **Smart autocompletition as you type**, sometimes using python instrospection (completition of module names, instance methods and attributes) and sometimes text-based (used words).
 
@@ -85,10 +85,6 @@ Most important features include:
   * ``,r`` uses the system grep, faster, but needs to press an extra ENTER to return to vim. 
   * ``,R`` uses vimgrep, which is slower but doesn't need the extra ENTER
 
-* **Better python syntax coloring**.
-
-* **Better python indentation**.
-
 * Some settings for better **tabs and spaces handling**.
 
 * **Better file browser**, toggle it with ``F3``.
@@ -121,12 +117,11 @@ Most important features include:
 
 * **Smart autoclosing of (, [ and {**
 
-* Highlights **long (80+) lines**, **trailing spaces** and **lines starting with tabs** on python files. 
-  From version 1.5 the long lines highlighting is off by default. All this stuff can be toggled editing the file ``.vim/bundle/highlight-bad-python/ftplugin/python.vim``.
+* **Beautiful color schemes for on vim with 256 colors (fisa colorscheme) and gvim (wombat colorscheme)**.
 
-* **Similar color scheme on vim and gvim**.
+* **Use of 256 colors** when possible.
 
-* **2 spaces indentation for html and javascript** (can disable it removing the ``tablength-exceptions`` plugin from ``.vim/bundle/``).
+* **2 spaces indentation for html and javascript** (can disable it removing two lines from the ``.vimrc``).
 
 * **Zen coding** for html: generate lots of html code writing simple and short expressions. 
   Example: 
@@ -161,33 +156,40 @@ Most important features include:
 
 * **Git integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Also includes key mappings and syntax highlighting for git displays.
 
-2 steps installation
---------------------
+Super easy installation
+-----------------------
 
 (you will need a vim compiled with python support. Check it with ``vim --version | grep +python``)
 
+(if you have your own .vim folder, you should move it to a backup location and start with no .vim folder)
+
+* **Dependencies**
+
+  ::
+
+    sudo apt-get install exuberant-ctags git
+    sudo pip install dbgp vim-debug pep8 flake8 pyflakes
+
+  (if you don't have Pip, find it here: `pip <http://pypi.python.org/pypi/pip>`_)
+
 * **Put the configuration files where they belong**
 
-  Copy the files ``.vimrc`` and ``.gvimrc``, and the folder ``.vim`` (all of them contained on the `downloaded file <https://github.com/fisadev/fisa-vim-config/downloads>`_) to your linux home folder.
+  Place the files ``.vimrc`` and ``.gvimrc`` (contained on the `downloaded file <https://github.com/fisadev/fisa-vim-config/downloads>`_) on your linux home folder.
 
-  Example: my linux user is "fisa", so now I have this tree:
+  Example: my linux user is "fisa", so now I have:
 
   ::
 
     /home/fisa/.vimrc
     /home/fisa/.gvimrc
-    /home/fisa/.vim/
 
-* **Install dependencies**
+* **Open vim**
 
-  ::
+  Simply run ``vim`` on your terminal, and it will try to install the plugins. They will be installed to the ``.vim/bundle`` folder.
 
-    sudo apt-get install exuberant-ctags
-    sudo pip install dbgp vim-debug pep8 flake8
-
-(if you don't have Pip, find it here: `pip <http://pypi.python.org/pypi/pip>`_)
-
-Done! You have your new shiny powerful vim :)
+  Wait for the installation to finish...
+  
+  Done! You have your new shiny powerful vim :)
 
 Sources
 -------
