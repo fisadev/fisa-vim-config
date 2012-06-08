@@ -46,6 +46,8 @@ Bundle 'motemen/git-vim'
 Bundle 'kien/tabman.vim'
 " Powerline
 Bundle 'Lokaltog/vim-powerline'
+" Terminal Vim with 256 colors colorscheme
+Bundle 'fisadev/fisa-vim-colorscheme'
 
 " Bundles from vim-scripts repos
 
@@ -63,8 +65,6 @@ Bundle 'IndexedSearch'
 Bundle 'matchit.zip'
 " Gvim colorscheme
 Bundle 'Wombat'
-" Terminal Vim with 256 colors colorscheme
-Bundle 'fisa-color-scheme'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
