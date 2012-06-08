@@ -19,8 +19,6 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'fs111/pydoc.vim'
 " Class/module browser
 Bundle 'majutsushi/tagbar'
-" Python code checker
-Bundle 'kevinw/pyflakes-vim'
 " Code and files fuzzy finder
 Bundle 'kien/ctrlp.vim'
 " PEP8 and python-flakes checker
@@ -42,6 +40,8 @@ Bundle 'Conque-Shell'
 Bundle 'AutoComplPop'
 " Pending tasks list
 Bundle 'TaskList.vim'
+" Python code checker
+Bundle 'pyflakes.vim'
 " Search results counter
 Bundle 'IndexedSearch'
 " XML/HTML tags navigation
