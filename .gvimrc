@@ -1,2 +1,2 @@
 " colores
-colorscheme wombat
+colorscheme fisa
