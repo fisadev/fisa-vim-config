@@ -211,25 +211,24 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Plugins manager (Vundle) <https://github.com/gmarik/vundle>`_
 * `Vundle autoinstalation <Hace unos años los líderes eran Nokia y WinMobile...>`_
 * `Debugger (vim-debug) <http://github.com/jabapyth/vim-debug/>`_
-* `GVim color scheme (wombat) <http://dengmao.wordpress.com/2007/01/22/vim-color-scheme-wombat/>`_
-* `Consoles as buffers (!ConqueTerm) <http://www.vim.org/scripts/script.php?script_id=2771>`_
+* `GVim color scheme (wombat) <http://www.vim.org/scripts/script.php?script_id=1778>`_
+* `Consoles as buffers (ConqueShell) <http://www.vim.org/scripts/script.php?script_id=2771>`_
 * `Autocompletition (autocomplpop) <http://www.vim.org/scripts/script.php?script_id=1879>`_
-* `Better file browser (NERDTree) <http://www.vim.org/scripts/script.php?script_id=1658>`_
-* `Better python indentation <http://www.vim.org/scripts/script.php?script_id=974>`_
-* `Better python syntax coloring <http://www.vim.org/scripts/script.php?script_id=790>`_
-* `Search and read python documentation (PyDoc) <http://www.vim.org/scripts/script.php?script_id=910>`_
-* `Class/module browser (Tagbar) <http://www.vim.org/scripts/script.php?script_id=3465>`_
-* `Pending tasks list (!TaskList) <http://www.vim.org/scripts/script.php?script_id=2607>`_
+* `Better file browser (NERDTree) <https://github.com/scrooloose/nerdtree>`_
+* `Search and read python documentation (PyDoc) <https://github.com/fs111/pydoc.vim>`_
+* `Class/module browser (Tagbar) <https://github.com/majutsushi/tagbar>`_
+* `Pending tasks list (TaskList) <http://www.vim.org/scripts/script.php?script_id=2607>`_
 * `python code checker (Pyflakes-vim) <http://www.vim.org/scripts/script.php?script_id=2441>`_
-* `Search results counter (!IndexedSearch) <http://www.vim.org/scripts/script.php?script_id=1682>`_
-* `Code commenter (NERDCommenter) <http://www.vim.org/scripts/script.php?script_id=1218>`_
+* `Search results counter (IndexedSearch) <http://www.vim.org/scripts/script.php?script_id=1682>`_
+* `Code commenter (NERDCommenter) <https://github.com/scrooloose/nerdcommenter>`_
 * `HTML/XML tags navigation (Matchit) <http://www.vim.org/scripts/script.php?script_id=39>`_
 * `Code and files fuzzy finder (ctrlp) <https://github.com/kien/ctrlp.vim>`_
 * `PEP8 checker (with shows pyflakes errors too) <https://github.com/nvie/vim-flake8>`_
 * `Zen coding <https://github.com/mattn/zencoding-vim/>`_
 * `Git integration <https://github.com/motemen/git-vim>`_
 * `Tab list pane (tabman) <https://github.com/kien/tabman.vim>`_
-* `Beautiful status line (Powerline) <https://github.com/kien/tabman.vim>`_
+* `Beautiful status line (Powerline) <https://github.com/Lokaltog/vim-powerline>`_
+* `256 colorscheme (fisa) <https://github.com/fisadev/fisa-vim-colorscheme>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------
