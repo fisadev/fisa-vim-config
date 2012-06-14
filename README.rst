@@ -205,6 +205,7 @@ Thanks to some people from `Pyar <http://python.org.ar>`_, who show me vim for t
 And thanks to all the developers of the plugins that I simply use here:
 
 * `Plugins manager (Vundle) <https://github.com/gmarik/vundle>`_
+* `Vundle autoinstalation <Hace unos años los líderes eran Nokia y WinMobile...>`_
 * `Debugger (vim-debug) <http://github.com/jabapyth/vim-debug/>`_
 * `GVim color scheme (wombat) <http://dengmao.wordpress.com/2007/01/22/vim-color-scheme-wombat/>`_
 * `Consoles as buffers (!ConqueTerm) <http://www.vim.org/scripts/script.php?script_id=2771>`_
