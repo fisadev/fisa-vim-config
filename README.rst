@@ -109,7 +109,7 @@ Most important features include:
 
 * **Navigate html/xml tags** the same way that you navigate (), {} and []: using ``%``.
 
-* **Status bar allways visible**.
+* **Beautiful status bar allways visible**, with breadcrumbs and useful information about file type, encoding and position.
 
 * **Automatically removes trailing spaces** when saving python files.
 
@@ -225,3 +225,4 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Zen coding <https://github.com/mattn/zencoding-vim/>`_
 * `Git integration <https://github.com/motemen/git-vim>`_
 * `Tab list pane (tabman) <https://github.com/kien/tabman.vim>`_
+* `Beautiful status line (Powerline) <https://github.com/kien/tabman.vim>`_
