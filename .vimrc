@@ -221,6 +221,10 @@ else
     colorscheme delek
 endif
 
+if has('gui_running')
+    colorscheme wombat
+endif
+
 " to use fancy symbols for powerline, uncomment the following line and use a
 " patched font (more info on the README.rst)
 " let g:Powerline_symbols = 'fancy'

@@ -172,14 +172,9 @@ Super easy installation
 
 * **Put the configuration files where they belong**
 
-  Place the files ``.vimrc`` and ``.gvimrc`` (contained on the `downloaded file <https://github.com/fisadev/fisa-vim-config/downloads>`_) on your linux home folder.
+  Place the file ``.vimrc`` on your linux home folder.
 
-  Example: my linux user is "fisa", so now I have:
-
-  ::
-
-    /home/fisa/.vimrc
-    /home/fisa/.gvimrc
+  Example: my linux user is "fisa", so now I have: ``/home/fisa/.vimrc``.
 
 * **Open vim**
 
