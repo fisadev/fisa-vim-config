@@ -41,7 +41,7 @@ fuzzy code finder (next step: mind reader)
 
 Most important features include:
 
-* **Plugins managed using Pathogen**! If you want to disable a plugin, simply remove its folder from ``.vim/bundle/``.
+* **Plugins managed using Vundle**! You can easily install or remove plugins, and they are installed into ``.vim/bundle/``. More info `here <https://github.com/gmarik/vundle>`_
 
 * **Smart autocompletition as you type**, sometimes using python instrospection (completition of module names, instance methods and attributes) and sometimes text-based (used words).
 
@@ -78,16 +78,10 @@ Most important features include:
 
   Because there where no more "Fx" keys free, and starting the debugger is something you do only once on every debugging session, compared to the multiple times you will use the other functions on that session. Disagree? Change it! Edit the ``.vimrc`` file, is really simple and well documented :).  (The command **to start the debugger on the current file** is ``:Dbg .``)
 
-* Show **current python class/method** on the status line.
-
 * **Grep text recursively** and navigate the results:
 
   * ``,r`` uses the system grep, faster, but needs to press an extra ENTER to return to vim. 
   * ``,R`` uses vimgrep, which is slower but doesn't need the extra ENTER
-
-* **Better python syntax coloring**.
-
-* **Better python indentation**.
 
 * Some settings for better **tabs and spaces handling**.
 
@@ -115,18 +109,17 @@ Most important features include:
 
 * **Navigate html/xml tags** the same way that you navigate (), {} and []: using ``%``.
 
-* **Status bar allways visible**.
+* **Beautiful status line allways visible**, with colors, breadcrumbs and useful information about file type, encoding and position.
 
 * **Automatically removes trailing spaces** when saving python files.
 
 * **Smart autoclosing of (, [ and {**
 
-* Highlights **long (80+) lines**, **trailing spaces** and **lines starting with tabs** on python files. 
-  From version 1.5 the long lines highlighting is off by default. All this stuff can be toggled editing the file ``.vim/bundle/highlight-bad-python/ftplugin/python.vim``.
+* **Beautiful color schemes for on vim with 256 colors (fisa colorscheme) and gvim (wombat colorscheme)**.
 
-* **Similar color scheme on vim and gvim**.
+* **Use of 256 colors** when possible.
 
-* **2 spaces indentation for html and javascript** (can disable it removing the ``tablength-exceptions`` plugin from ``.vim/bundle/``).
+* **2 spaces indentation for html and javascript** (can disable it removing two lines from the ``.vimrc``).
 
 * **Zen coding** for html: generate lots of html code writing simple and short expressions. 
   Example: 
@@ -161,33 +154,39 @@ Most important features include:
 
 * **Git integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Also includes key mappings and syntax highlighting for git displays.
 
-2 steps installation
---------------------
+Super easy installation
+-----------------------
 
 (you will need a vim compiled with python support. Check it with ``vim --version | grep +python``)
 
+(if you have your own .vim folder, you should move it to a backup location and start with no .vim folder)
+
+* **Dependencies**
+
+  ::
+
+    sudo apt-get install exuberant-ctags git
+    sudo pip install dbgp vim-debug pep8 flake8 pyflakes
+
+  (if you don't have Pip, find it here: `pip <http://pypi.python.org/pypi/pip>`_)
+
 * **Put the configuration files where they belong**
 
-  Copy the files ``.vimrc`` and ``.gvimrc``, and the folder ``.vim`` (all of them contained on the `downloaded file <https://github.com/fisadev/fisa-vim-config/downloads>`_) to your linux home folder.
+  Place the file ``.vimrc`` on your linux home folder.
 
-  Example: my linux user is "fisa", so now I have this tree:
+  Example: my linux user is "fisa", so now I have: ``/home/fisa/.vimrc``.
 
-  ::
+* **Open vim**
 
-    /home/fisa/.vimrc
-    /home/fisa/.gvimrc
-    /home/fisa/.vim/
+  Simply run ``vim`` on your terminal, and it will try to install the plugins. They will be installed into the ``.vim/bundle`` folder.
 
-* **Install dependencies**
+  Wait for the installation to finish...
+  
+  Done! You have your new shiny powerful vim :)
 
-  ::
+* **Optional: fancy symbols and breadcrumbs**
 
-    sudo apt-get install exuberant-ctags
-    sudo pip install dbgp vim-debug pep8 flake8
-
-(if you don't have Pip, find it here: `pip <http://pypi.python.org/pypi/pip>`_)
-
-Done! You have your new shiny powerful vim :)
+  If you want fancy symbols and breadcrumbs on your status line, there is a small tutorial for that at the end of this README.
 
 Sources
 -------
@@ -204,24 +203,44 @@ Thanks to some people from `Pyar <http://python.org.ar>`_, who show me vim for t
 
 And thanks to all the developers of the plugins that I simply use here:
 
-* `Plugins manager (Pathogen) <https://github.com/tpope/vim-pathogen>`_
+* `Plugins manager (Vundle) <https://github.com/gmarik/vundle>`_
+* `Vundle autoinstalation <Hace unos años los líderes eran Nokia y WinMobile...>`_
 * `Debugger (vim-debug) <http://github.com/jabapyth/vim-debug/>`_
-* `GVim color scheme (wombat) <http://dengmao.wordpress.com/2007/01/22/vim-color-scheme-wombat/>`_
-* `Consoles as buffers (!ConqueTerm) <http://www.vim.org/scripts/script.php?script_id=2771>`_
+* `GVim color scheme (wombat) <http://www.vim.org/scripts/script.php?script_id=1778>`_
+* `Consoles as buffers (ConqueShell) <http://www.vim.org/scripts/script.php?script_id=2771>`_
 * `Autocompletition (autocomplpop) <http://www.vim.org/scripts/script.php?script_id=1879>`_
-* `Better file browser (NERDTree) <http://www.vim.org/scripts/script.php?script_id=1658>`_
-* `Better python indentation <http://www.vim.org/scripts/script.php?script_id=974>`_
-* `Better python syntax coloring <http://www.vim.org/scripts/script.php?script_id=790>`_
-* `Search and read python documentation (PyDoc) <http://www.vim.org/scripts/script.php?script_id=910>`_
-* `Class/module browser (Tagbar) <http://www.vim.org/scripts/script.php?script_id=3465>`_
-* `Pending tasks list (!TaskList) <http://www.vim.org/scripts/script.php?script_id=2607>`_
+* `Better file browser (NERDTree) <https://github.com/scrooloose/nerdtree>`_
+* `Search and read python documentation (PyDoc) <https://github.com/fs111/pydoc.vim>`_
+* `Class/module browser (Tagbar) <https://github.com/majutsushi/tagbar>`_
+* `Pending tasks list (TaskList) <http://www.vim.org/scripts/script.php?script_id=2607>`_
 * `python code checker (Pyflakes-vim) <http://www.vim.org/scripts/script.php?script_id=2441>`_
-* `Search results counter (!IndexedSearch) <http://www.vim.org/scripts/script.php?script_id=1682>`_
-* `Code commenter (NERDCommenter) <http://www.vim.org/scripts/script.php?script_id=1218>`_
+* `Search results counter (IndexedSearch) <http://www.vim.org/scripts/script.php?script_id=1682>`_
+* `Code commenter (NERDCommenter) <https://github.com/scrooloose/nerdcommenter>`_
 * `HTML/XML tags navigation (Matchit) <http://www.vim.org/scripts/script.php?script_id=39>`_
 * `Code and files fuzzy finder (ctrlp) <https://github.com/kien/ctrlp.vim>`_
-* `Current class/method status (python helper) <http://www.vim.org/scripts/script.php?script_id=435>`_
 * `PEP8 checker (with shows pyflakes errors too) <https://github.com/nvie/vim-flake8>`_
 * `Zen coding <https://github.com/mattn/zencoding-vim/>`_
 * `Git integration <https://github.com/motemen/git-vim>`_
 * `Tab list pane (tabman) <https://github.com/kien/tabman.vim>`_
+* `Beautiful status line (Powerline) <https://github.com/Lokaltog/vim-powerline>`_
+* `256 colorscheme (fisa) <https://github.com/fisadev/fisa-vim-colorscheme>`_
+
+Optional: fancy symbols and breadcrumbs in the status line
+----------------------------------------------------------
+
+Powerline allows you to use fancy symbols on the status line for breadcrumbs and indicators (example: a padlock when editing read-only files). Using them requires to have a patched font in your terminal. It may sound black magic, but in fact is quite easy.
+
+**Patch**
+
+First we will need to patch a font. Pick the font you want to patch (it should be a monospace font). Copy its .ttf file (on Ubuntu you can find them under ``/usr/share/fonts/truetype/``) to the ``.vim/bundle/vim-powerline/fontpatcher`` folder. Cd into that folder and run ``./fontpatcher YOURFONTFILE.ttf``. Now you will have a file named ``YOURFONTFILE-Powerline.ttf``, that's your patched font.
+
+**Install**
+
+Now we need to install the patched font to our system. On Ubuntu, double click on the font file and choose "install". On other systems copy the font file to the ``YOURHOMEFOLDER/.fonts/`` folder and then run ``sudo fc-cache -vf``. 
+
+**Configure**
+
+After installing the font, go to the settings of your terminal app and select the patched font. Finally, open your ``.vimrc`` and uncomment the line ``let g:Powerline_symbols = 'fancy'``.
+
+That's it! Restart your vim and enjoy the beauty of Powerline.
+

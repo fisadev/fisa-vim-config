@@ -1,22 +1,94 @@
 " no vi-compatible
 set nocompatible
 
+" Setting up Vundle - the vim plugin bundler
+let iCanHazVundle=1
+let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+if !filereadable(vundle_readme)
+    echo "Installing Vundle..."
+    echo ""
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+    let iCanHazVundle=0
+endif
+
+" required for vundle
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" Bundles from GitHub repos:
+
+" Python and PHP Debugger
+Bundle 'jabapyth/vim-debug'
+" Better file browser
+Bundle 'scrooloose/nerdtree'
+" Code commenter
+Bundle 'scrooloose/nerdcommenter'
+" Search and read python documentation
+Bundle 'fs111/pydoc.vim'
+" Class/module browser
+Bundle 'majutsushi/tagbar'
+" Code and files fuzzy finder
+Bundle 'kien/ctrlp.vim'
+" PEP8 and python-flakes checker
+Bundle 'nvie/vim-flake8'
+" Zen coding
+Bundle 'mattn/zencoding-vim'
+" Git integration
+Bundle 'motemen/git-vim'
+" Tab list panel
+Bundle 'kien/tabman.vim'
+" Powerline
+Bundle 'Lokaltog/vim-powerline'
+" Terminal Vim with 256 colors colorscheme
+Bundle 'fisadev/fisa-vim-colorscheme'
+
+" Bundles from vim-scripts repos
+
+" Consoles as buffers
+Bundle 'Conque-Shell'
+" Autocompletition
+Bundle 'AutoComplPop'
+" Pending tasks list
+Bundle 'TaskList.vim'
+" Python code checker
+Bundle 'pyflakes.vim'
+" Search results counter
+Bundle 'IndexedSearch'
+" XML/HTML tags navigation
+Bundle 'matchit.zip'
+" Gvim colorscheme
+Bundle 'Wombat'
+
+" Installing plugins the first time
+if iCanHazVundle == 0
+    echo "Installing Bundles, please ignore key map error messages"
+    echo ""
+    :BundleInstall
+endif
+
+" allow plugins by file type
+filetype plugin on
+filetype indent on
+
 " tabs and spaces handling
 :set expandtab
 :set tabstop=4
 :set softtabstop=4
 :set shiftwidth=4
 
+" tablength exceptions
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+
 " always show status bar
 set ls=2
-
-" start the plugin manager
-call pathogen#infect()
-call pathogen#helptags()
-
-" allow plugins by file type
-filetype plugin on
-filetype indent on
 
 " incremental search
 set incsearch
@@ -147,6 +219,10 @@ if &term =~? 'mlterm\|xterm\|screen-256'
 else
     " color
     colorscheme delek
+endif
+
+if has('gui_running')
+    colorscheme wombat
 endif
 
 " to use fancy symbols for powerline, uncomment the following line and use a
