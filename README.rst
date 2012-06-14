@@ -109,7 +109,7 @@ Most important features include:
 
 * **Navigate html/xml tags** the same way that you navigate (), {} and []: using ``%``.
 
-* **Beautiful status bar allways visible**, with breadcrumbs and useful information about file type, encoding and position.
+* **Beautiful status line allways visible**, with breadcrumbs and useful information about file type, encoding and position.
 
 * **Automatically removes trailing spaces** when saving python files.
 
