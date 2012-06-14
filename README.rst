@@ -78,8 +78,6 @@ Most important features include:
 
   Because there where no more "Fx" keys free, and starting the debugger is something you do only once on every debugging session, compared to the multiple times you will use the other functions on that session. Disagree? Change it! Edit the ``.vimrc`` file, is really simple and well documented :).  (The command **to start the debugger on the current file** is ``:Dbg .``)
 
-* Show **current python class/method** on the status line.
-
 * **Grep text recursively** and navigate the results:
 
   * ``,r`` uses the system grep, faster, but needs to press an extra ENTER to return to vim. 
@@ -222,7 +220,6 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Code commenter (NERDCommenter) <http://www.vim.org/scripts/script.php?script_id=1218>`_
 * `HTML/XML tags navigation (Matchit) <http://www.vim.org/scripts/script.php?script_id=39>`_
 * `Code and files fuzzy finder (ctrlp) <https://github.com/kien/ctrlp.vim>`_
-* `Current class/method status (python helper) <http://www.vim.org/scripts/script.php?script_id=435>`_
 * `PEP8 checker (with shows pyflakes errors too) <https://github.com/nvie/vim-flake8>`_
 * `Zen coding <https://github.com/mattn/zencoding-vim/>`_
 * `Git integration <https://github.com/motemen/git-vim>`_
