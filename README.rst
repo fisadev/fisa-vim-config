@@ -189,6 +189,10 @@ Super easy installation
   
   Done! You have your new shiny powerful vim :)
 
+* **Optional: fancy symbols and breadcrumbs**
+
+  If you want fancy symbols and breadcrumbs on your status line, there is a small tutorial for that at the end of this README.
+
 Sources
 -------
 
@@ -227,8 +231,8 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Tab list pane (tabman) <https://github.com/kien/tabman.vim>`_
 * `Beautiful status line (Powerline) <https://github.com/kien/tabman.vim>`_
 
-Optional: use fancy symbols and breadcrumbs in the status line
---------------------------------------------------------------
+Optional: fancy symbols and breadcrumbs in the status line
+----------------------------------------------------------
 
 Powerline allows you to use fancy symbols on the status line for breadcrumbs and indicators (example: a padlock when editing read-only files). Using them requires to have a patched font in your terminal. It may sound black magic, but in fact is quite easy.
 
