@@ -41,7 +41,7 @@ fuzzy code finder (next step: mind reader)
 
 Most important features include:
 
-* **Plugins managed using Vundle**! If you want to disable a plugin, simply remove its folder from ``.vim/bundle/``. And it's really easy to add new plugins. More info `here <https://github.com/gmarik/vundle>`_
+* **Plugins managed using Vundle**! You can easily install or remove plugins, and they are installed into ``.vim/bundle/``. More info `here <https://github.com/gmarik/vundle>`_
 
 * **Smart autocompletition as you type**, sometimes using python instrospection (completition of module names, instance methods and attributes) and sometimes text-based (used words).
 
@@ -183,7 +183,7 @@ Super easy installation
 
 * **Open vim**
 
-  Simply run ``vim`` on your terminal, and it will try to install the plugins. They will be installed to the ``.vim/bundle`` folder.
+  Simply run ``vim`` on your terminal, and it will try to install the plugins. They will be installed into the ``.vim/bundle`` folder.
 
   Wait for the installation to finish...
   
@@ -204,7 +204,7 @@ Thanks to some people from `Pyar <http://python.org.ar>`_, who show me vim for t
 
 And thanks to all the developers of the plugins that I simply use here:
 
-* `Plugins manager (Pathogen) <https://github.com/tpope/vim-pathogen>`_
+* `Plugins manager (Vundle) <https://github.com/gmarik/vundle>`_
 * `Debugger (vim-debug) <http://github.com/jabapyth/vim-debug/>`_
 * `GVim color scheme (wombat) <http://dengmao.wordpress.com/2007/01/22/vim-color-scheme-wombat/>`_
 * `Consoles as buffers (!ConqueTerm) <http://www.vim.org/scripts/script.php?script_id=2771>`_
