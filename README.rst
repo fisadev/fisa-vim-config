@@ -17,7 +17,7 @@ You can report any issue on the `Issues <https://github.com/fisadev/fisa-vim-con
 
 (Juan Pedro Fisanotti)
 
-`Download <https://github.com/fisadev/fisa-vim-config/downloads>`_
+`Download <https://raw.github.com/fisadev/fisa-vim-config/master/.vimrc>`_
 
 Features or it didn't happen!
 -----------------------------
