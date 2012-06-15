@@ -24,19 +24,19 @@ Features or it didn't happen!
 
 magic-powered autocompletition
 
-.. image:: http://i.imgur.com/0WhdV.png
+.. image:: http://cloud.github.com/downloads/fisadev/fisa-vim-config/autocomplete.png
 
 class browser
 
-.. image:: http://i.imgur.com/jRIba.png
+.. image:: http://cloud.github.com/downloads/fisadev/fisa-vim-config/classbrowser.png
 
 detecting your nasty errors
 
-.. image:: http://i.imgur.com/TvLq3.png
+.. image:: http://cloud.github.com/downloads/fisadev/fisa-vim-config/errors.png
 
 fuzzy code finder (next step: mind reader)
 
-.. image:: http://i.imgur.com/SvZ60.png
+.. image:: http://cloud.github.com/downloads/fisadev/fisa-vim-config/finder.png
 
 
 Most important features include:
