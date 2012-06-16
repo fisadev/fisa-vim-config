@@ -1,2 +1,0 @@
-" colores
-colorscheme wombat
