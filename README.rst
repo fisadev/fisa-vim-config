@@ -159,7 +159,7 @@ Super easy installation
 
 (you will need a vim compiled with python support. Check it with ``vim --version | grep +python``)
 
-(if you have your own .vim folder, you should move it to a backup location and start with no .vim folder)
+(**if you have your own .vim folder or have a version of fisa-vim-config older than 3.0, you should move it to a backup location and start with no .vim folder!**)
 
 * **Dependencies**
 
