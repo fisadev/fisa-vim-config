@@ -90,3 +90,15 @@ Changelog
 
   * Added tabman for tab list pane
 
+* Version 3.0
+
+  * Plugins managed with Vundle, and Vundle autoinstallation! -> entire project is now only the .vimrc file, all plugins are autoinstalled
+  * Use of 256 colors when possible
+  * Beautiful status line (Powerline), with optional fancy symbols
+  * No more python class or function on the status line (breaks powerline, future plans to fix it)
+  * Fisa colorscheme for 256 colors console vim
+  * Cleaned unused colorschemes
+  * No more separated .gvimrc
+  * Fuzzy file finder can be started with file under cursor
+  * Removed better python indentation and syntax coloring, because of problems with vundle, but there are plans to fix it
+
