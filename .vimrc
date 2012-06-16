@@ -182,6 +182,8 @@ nmap ,g :CtrlPBufTag<CR>
 nmap ,f :CtrlPLine<CR>
 nmap ,d :execute ":nmap ,tmpd :CtrlPBufTag\<CR\>" . expand('<cword>')<CR>,tmpd
 nmap ,E :execute ":nmap ,tmpd :CtrlP\<CR\>" . expand('<cfile>')<CR>,tmpd
+" Don't change working directory
+let g:ctrlp_working_path_mode = 0
 
 " simple recursive grep
 command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
