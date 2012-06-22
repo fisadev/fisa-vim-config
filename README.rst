@@ -102,6 +102,7 @@ Most important features include:
   * ``tl`` = show a list of current tabs with their inner windows on a side pane. You can navigate them!
 
 * Some vim goodies enabled by default: 
+
   * **incremental search** (moves to the first result while you are typing).
   * **highlighted search results**.
   * **line numbers**.
