@@ -48,8 +48,6 @@ Bundle 'kien/tabman.vim'
 Bundle 'Lokaltog/vim-powerline'
 " Terminal Vim with 256 colors colorscheme
 Bundle 'fisadev/fisa-vim-colorscheme'
-" Autoclosing of characters that open and close
-Bundle 'Raimondi/delimitMate'
 
 " Bundles from vim-scripts repos
 
