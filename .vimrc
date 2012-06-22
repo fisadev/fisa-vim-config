@@ -48,6 +48,8 @@ Bundle 'kien/tabman.vim'
 Bundle 'Lokaltog/vim-powerline'
 " Terminal Vim with 256 colors colorscheme
 Bundle 'fisadev/fisa-vim-colorscheme'
+" Autoclosing of characters that open and close
+Bundle 'Raimondi/delimitMate'
 
 " Bundles from vim-scripts repos
 
@@ -199,16 +201,6 @@ let g:flake8_ignore=""
 
 " don't let pyflakes allways override the quickfix list
 let g:pyflakes_use_quickfix = 0
-
-" autoclose (
-inoremap        (  ()<Left>
-inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
-" autoclose [
-inoremap        [  []<Left>
-inoremap <expr> ]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
-" autoclose {
-inoremap        {  {}<Left>
-inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 
 " tabman shortcuts
 let g:tabman_toggle = 'tl'
