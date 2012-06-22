@@ -223,6 +223,10 @@ endif
 " when scrolling, keep cursor 3 lines away from screen border
 set scrolloff=3
 
+" autocompletition of files and commands behaves like shell
+" (complete only the common part, list the options that match)
+set wildmode=list:longest
+
 " to use fancy symbols for powerline, uncomment the following line and use a
 " patched font (more info on the README.rst)
 " let g:Powerline_symbols = 'fancy'
