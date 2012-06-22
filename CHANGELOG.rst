@@ -102,3 +102,9 @@ Changelog
   * Fuzzy file finder can be started with file under cursor
   * Removed better python indentation and syntax coloring, because of problems with vundle, but there are plans to fix it
 
+* Version 3.1
+
+  * Keep cursor 3 lines away from screen border while scrolling
+  * Shell-like autocompletition of commands and paths
+  * Django templates use 2 spaces indentation too
+
