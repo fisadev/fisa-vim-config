@@ -220,6 +220,9 @@ if has('gui_running')
     colorscheme wombat
 endif
 
+" when scrolling, keep cursor 3 lines away from screen border
+set scrolloff=3
+
 " to use fancy symbols for powerline, uncomment the following line and use a
 " patched font (more info on the README.rst)
 " let g:Powerline_symbols = 'fancy'

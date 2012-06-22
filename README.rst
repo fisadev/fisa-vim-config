@@ -101,7 +101,7 @@ Most important features include:
   * ``tm`` = move current tab to the end.
   * ``tl`` = show a list of current tabs with their inner windows on a side pane. You can navigate them!
 
-* Some vim goodies enabled by default: **incremental search** (moves to the first result while you are typing), **highlighted search results**, and **line numbers**.
+* Some vim goodies enabled by default: **incremental search** (moves to the first result while you are typing), **highlighted search results**, **line numbers**, and keep **cursor 3 lines away from screen border while scrolling**.
 
 * **Python interpreter inside vim**, or any other console. They are opened as a buffer using the command ``:ConqueTerm``. Examples: ``:ConqueTerm python``, ``:ConqueTerm bash``.
 
