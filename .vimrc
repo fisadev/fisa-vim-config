@@ -187,8 +187,11 @@ function! CtrlPWithSearchText(search_text, ctrlp_command_end)
     call feedkeys(a:search_text)
 endfunction
 " CtrlP with default text
-nmap ,d :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
-nmap ,E :call CtrlPWithSearchText(expand('<cfile>'), '')<CR>
+nmap ,wg :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
+nmap ,wf :call CtrlPWithSearchText(expand('<cword>'), 'Line')<CR>
+nmap ,d ,wg
+nmap ,we :call CtrlPWithSearchText(expand('<cword>'), '')<CR>
+nmap ,pe :call CtrlPWithSearchText(expand('<cfile>'), '')<CR>
 " Don't change working directory
 let g:ctrlp_working_path_mode = 0
 
@@ -197,8 +200,8 @@ command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
 command! -nargs=1 RecurGrepFast exec 'lgrep! <q-args> ./**/*.*' | lopen
 nmap ,R :RecurGrep 
 nmap ,r :RecurGrepFast 
-nmap ,cR :RecurGrep <cword><CR>
-nmap ,cr :RecurGrepFast <cword><CR>
+nmap ,wR :RecurGrep <cword><CR>
+nmap ,wr :RecurGrepFast <cword><CR>
 
 " run pep8+pyflakes validator
 autocmd FileType python map <buffer> ,8 :call Flake8()<CR>

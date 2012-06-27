@@ -49,9 +49,10 @@ Most important features include:
 
   * ``,e`` = open file (like the original :e) but with recursive and fuzzy file name matching. Example: if you type "mopy" it will find a file named "models.py" placed on a subdirectory. And allows you to open the selected file on a new tab with Ctrl+t!
   * ``,g`` = fuzzy symbol finder (classes, methods, variables, functions, ...) on the current file. Example: if you type "usr" it will find the User class definition on the current file.
-  * ``,f`` = fuzzy text finder on the opened files. Example: if you type "ctm=6" it will find the line containing "current_time = 16".
+  * ``,f`` = fuzzy text finder on all the opened files. Example: if you type "ctm=6" it will find the line containing "current_time = 16".
   * ``,d`` = same as ``,g`` (symbol finder) but initiates the search with the word under the cursor (sort of "fuzzy go to definition").
-  * ``,E`` = same as ``,e`` (file finder) but initiates the search with the file under the cursor (sort of "fuzzy go to file").
+  * ``,we``, ``,wg`` and ``,wf`` and = same as ``,e``, ``,g`` and ``,f`` but initiates the search with the word under the cursor.
+  * ``,pe`` = same as ``,e`` but initiates the search with the path under the cursor.
 
 * **Classes/module browser** that lists classes, functions, methods, and such of the current file, and navigates to them when ENTER is pressed. Toggle it with ``F4``.
 
@@ -82,7 +83,7 @@ Most important features include:
 
   * ``,r`` uses the system grep, faster, but needs to press an extra ENTER to return to vim. 
   * ``,R`` uses vimgrep, which is slower but doesn't need the extra ENTER.
-  * ``,cr`` and ``,cR`` do the same, but searching the word under the cursor.
+  * ``,wr`` and ``,wR`` do the same, but searching the word under the cursor.
 
 * Some settings for better **tabs and spaces handling**.
 
