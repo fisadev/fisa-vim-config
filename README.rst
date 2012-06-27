@@ -6,7 +6,7 @@ my vim configuration (lot of python, autocompletition, fuzzy finder, debugger, .
 What is this?
 -------------
 
-**(updating from a previous version? check the install section for updated dependencies, and remember to look at the CHANGELOG)**
+**(updating from a previous version? check the install section for new dependencies, and read the updating instructions. It can also be useful to look at the CHANGELOG)**
 
 My personal `Vim <http://www.vim.org/>`_ configuration, built according to my personal preferences, without any justification to think it's the best possible vim configuration. If you like it, great! :)
 It's mainly oriented to python software development, but many of its features are useful for other languages and editing tasks.
