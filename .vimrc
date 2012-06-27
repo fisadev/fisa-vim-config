@@ -200,8 +200,8 @@ command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
 command! -nargs=1 RecurGrepFast exec 'lgrep! <q-args> ./**/*.*' | lopen
 nmap ,R :RecurGrep 
 nmap ,r :RecurGrepFast 
-nmap ,cR :RecurGrep <cword><CR>
-nmap ,cr :RecurGrepFast <cword><CR>
+nmap ,wR :RecurGrep <cword><CR>
+nmap ,wr :RecurGrepFast <cword><CR>
 
 " run pep8+pyflakes validator
 autocmd FileType python map <buffer> ,8 :call Flake8()<CR>
