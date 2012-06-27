@@ -198,7 +198,7 @@ Super easy installation
 
 * **Keeping your vim up-to-date**
 
-  After updating the .vimrc, remember to run ``:BundleClean`` (this will remove plugins no longer used) and ``:BundleInstall`` (this will install any new plugins). And you can run ``:BundleInstall!`` at any time to update the installed plugins.
+  After updating the .vimrc, remember to run ``:BundleClean`` (this will remove plugins no longer used) and ``:BundleInstall`` (this will install any new plugins). You can also run ``:BundleInstall!`` at any time to update the installed plugins.
 
 Sources
 -------
