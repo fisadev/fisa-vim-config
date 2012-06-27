@@ -196,6 +196,10 @@ Super easy installation
 
   If you want fancy symbols and breadcrumbs on your status line, there is a small tutorial for that at the end of this README.
 
+* **Keeping your vim up-to-date**
+
+  After updating the .vimrc, remember to run ``:BundleClean`` (this will remove plugins no longer used) and ``:BundleInstall`` (this will install any new plugins). And you can run ``:BundleInstall!`` at any time to update the installed plugins.
+
 Sources
 -------
 
