@@ -187,8 +187,11 @@ function! CtrlPWithSearchText(search_text, ctrlp_command_end)
     call feedkeys(a:search_text)
 endfunction
 " CtrlP with default text
-nmap ,d :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
-nmap ,E :call CtrlPWithSearchText(expand('<cfile>'), '')<CR>
+nmap ,wg :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
+nmap ,wf :call CtrlPWithSearchText(expand('<cword>'), 'Line')<CR>
+nmap ,d ,wg
+nmap ,we :call CtrlPWithSearchText(expand('<cword>'), '')<CR>
+nmap ,pe :call CtrlPWithSearchText(expand('<cfile>'), '')<CR>
 " Don't change working directory
 let g:ctrlp_working_path_mode = 0
 
