@@ -181,8 +181,14 @@ map <F12> :Dbg up<CR>
 let g:ctrlp_map = ',e'
 nmap ,g :CtrlPBufTag<CR>
 nmap ,f :CtrlPLine<CR>
-nmap ,d :execute ":nmap ,tmpd :CtrlPBufTag\<CR\>" . expand('<cword>')<CR>,tmpd
-nmap ,E :execute ":nmap ,tmpd :CtrlP\<CR\>" . expand('<cfile>')<CR>,tmpd
+" to be able to call CtrlP with default search text
+function! CtrlPWithSearchText(search_text, ctrlp_command_end)
+    execute ':CtrlP' . a:ctrlp_command_end
+    call feedkeys(a:search_text)
+endfunction
+" CtrlP with default text
+nmap ,d :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
+nmap ,E :call CtrlPWithSearchText(expand('<cfile>'), '')<CR>
 " Don't change working directory
 let g:ctrlp_working_path_mode = 0
 
