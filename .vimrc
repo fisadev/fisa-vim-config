@@ -235,6 +235,7 @@ else
     colorscheme delek
 endif
 
+" colors for gvim
 if has('gui_running')
     colorscheme wombat
 endif
