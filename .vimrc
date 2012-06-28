@@ -78,10 +78,10 @@ filetype plugin on
 filetype indent on
 
 " tabs and spaces handling
-:set expandtab
-:set tabstop=4
-:set softtabstop=4
-:set shiftwidth=4
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 
 " tablength exceptions
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
