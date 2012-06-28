@@ -24,19 +24,19 @@ Features or it didn't happen!
 
 magic-powered autocompletition
 
-.. image:: http://i.imgur.com/Afjiu.png
+.. image:: http://i.imgur.com/7xf4A.png
 
 class browser
 
-.. image:: http://i.imgur.com/zpOHa.png
+.. image:: http://i.imgur.com/KBzeO.png
 
 detecting your nasty errors
 
-.. image:: http://i.imgur.com/EMV9i.png
+.. image:: http://i.imgur.com/9U1KP.png
 
 fuzzy code finder (next step: mind reader)
 
-.. image:: http://i.imgur.com/lrXY1.png
+.. image:: http://i.imgur.com/stkUL.png
 
 
 Most important features include:
