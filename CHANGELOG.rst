@@ -108,3 +108,10 @@ Changelog
   * Shell-like autocompletition of commands and paths
   * Django templates use 2 spaces indentation too
 
+* Version 3.2
+
+  * Mapping to recursively grep current word
+  * Redesigned greps and fuzzy finder mappings for better consistency
+  * Updating instructions
+  * Minor internal code changes
+
