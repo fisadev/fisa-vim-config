@@ -197,7 +197,7 @@ let g:ctrlp_working_path_mode = 0
 
 " simple recursive grep
 command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
-command! -nargs=1 RecurGrepFast exec 'lgrep! <q-args> ./**/*.*' | lopen
+command! -nargs=1 RecurGrepFast silent exec 'lgrep! <q-args> ./**/*.*' | lopen
 nmap ,R :RecurGrep 
 nmap ,r :RecurGrepFast 
 nmap ,wR :RecurGrep <cword><CR>
