@@ -81,8 +81,8 @@ Most important features include:
 
 * **Grep text recursively** and navigate the results:
 
-  * ``,r`` uses the system grep, faster, but needs to press an extra ENTER to return to vim. 
-  * ``,R`` uses vimgrep, which is slower but doesn't need the extra ENTER.
+  * ``,r`` uses the system grep (faster).
+  * ``,R`` uses vimgrep (slower).
   * ``,wr`` and ``,wR`` do the same, but searching the word under the cursor.
 
 * Some settings for better **tabs and spaces handling**.
