@@ -119,10 +119,14 @@ map <C-S-Left> :tabp<CR>
 imap <C-S-Left> <ESC>:tabp<CR>
 
 " navigate windows with meta+arrows
-nmap <M-Right> <c-w>l
-nmap <M-Left> <c-w>h
-nmap <M-Up> <c-w>k
-nmap <M-Down> <c-w>j
+map <M-Right> <c-w>l
+map <M-Left> <c-w>h
+map <M-Up> <c-w>k
+map <M-Down> <c-w>j
+imap <M-Right> <ESC><c-w>l
+imap <M-Left> <ESC><c-w>h
+imap <M-Up> <ESC><c-w>k
+imap <M-Down> <ESC><c-w>j
 
 " automatically close autocompletition window
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
