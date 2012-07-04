@@ -95,13 +95,15 @@ Most important features include:
 
 * **Comment and uncomment code** with ``\ci``.
 
-* **Easy tab navigation** on command mode:
+* **Easy tab navigation**:
 
   * ``tt`` = new tab and leaves the cursor waiting to specify the file path to open (leave blank to open an empty tab).
   * ``tn`` or ``Ctrl-Shift-Right`` = next tab.
   * ``tp`` or ``Ctrl-Shift-Left`` = previous tab.
   * ``tm`` = move current tab to the end.
   * ``tl`` = show a list of current tabs with their inner windows on a side pane. You can navigate them!
+
+  The mappings starting with the ``t`` letter work only on command mode, but the mappings with ``Ctrl-Shift`` work on both, command and insert mode.
 
 * **Easy window navigation** on command mode, using ``Alt-arrows`` keys.
 
