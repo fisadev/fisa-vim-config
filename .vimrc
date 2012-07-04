@@ -114,6 +114,12 @@ map tp :tabp<CR>
 map tm :tabm<CR>
 map tt :tabnew 
 
+" navigate windows with meta+arrows
+nmap <M-Right> <c-w>l
+nmap <M-Left> <c-w>h
+nmap <M-Up> <c-w>k
+nmap <M-Down> <c-w>j
+
 " automatically close autocompletition window
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
