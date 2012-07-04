@@ -98,8 +98,8 @@ Most important features include:
 * **Easy tab navigation** on command mode:
 
   * ``tt`` = new tab and leaves the cursor waiting to specify the file path to open (leave blank to open an empty tab).
-  * ``tn`` = next tab.
-  * ``tp`` = previous tab.
+  * ``tn`` or ``Ctrl-Shift-Right`` = next tab.
+  * ``tp`` or ``Ctrl-Shift-Left`` = previous tab.
   * ``tm`` = move current tab to the end.
   * ``tl`` = show a list of current tabs with their inner windows on a side pane. You can navigate them!
 
