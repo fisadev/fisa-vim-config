@@ -114,7 +114,9 @@ map tp :tabp<CR>
 map tm :tabm<CR>
 map tt :tabnew 
 map <C-S-Right> :tabn<CR>
+imap <C-S-Right> <ESC>:tabn<CR>
 map <C-S-Left> :tabp<CR>
+imap <C-S-Left> <ESC>:tabp<CR>
 
 " navigate windows with meta+arrows
 nmap <M-Right> <c-w>l
