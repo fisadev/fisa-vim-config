@@ -105,7 +105,7 @@ Most important features include:
 
   The mappings starting with the ``t`` letter work only on command mode, but the mappings with ``Ctrl-Shift`` work on both, command and insert mode.
 
-* **Easy window navigation** on command mode, using ``Alt-arrows`` keys.
+* **Easy window navigation** using ``Alt-arrows`` keys.
 
 * Some vim goodies enabled by default: 
 
