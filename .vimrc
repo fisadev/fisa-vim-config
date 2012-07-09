@@ -48,11 +48,11 @@ Bundle 'kien/tabman.vim'
 Bundle 'Lokaltog/vim-powerline'
 " Terminal Vim with 256 colors colorscheme
 Bundle 'fisadev/fisa-vim-colorscheme'
+" Consoles as buffers
+Bundle 'rosenfeld/conque-term'
 
 " Bundles from vim-scripts repos
 
-" Consoles as buffers
-Bundle 'Conque-Shell'
 " Autocompletition
 Bundle 'AutoComplPop'
 " Pending tasks list
