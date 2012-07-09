@@ -47,7 +47,7 @@ Most important features include:
 
 * **Fuzzy file and code finder** (like Textmante or Sublime Text 2):
 
-  * ``,e`` = open file (like the original :e) but with recursive and fuzzy file name matching. Example: if you type "mopy" it will find a file named "models.py" placed on a subdirectory. And allows you to open the selected file on a new tab with Ctrl+t!
+  * ``,e`` = open file (like the original :e) but with recursive and fuzzy file name matching. Example: if you type "mopy" it will find a file named "models.py" placed on a subdirectory. And allows you to open the selected file on a new tab with ``Ctrl-t``!
   * ``,g`` = fuzzy symbol finder (classes, methods, variables, functions, ...) on the current file. Example: if you type "usr" it will find the User class definition on the current file.
   * ``,f`` = fuzzy text finder on all the opened files. Example: if you type "ctm=6" it will find the line containing "current_time = 16".
   * ``,d`` = same as ``,g`` (symbol finder) but initiates the search with the word under the cursor (sort of "fuzzy go to definition").
@@ -81,8 +81,8 @@ Most important features include:
 
 * **Grep text recursively** and navigate the results:
 
-  * ``,r`` uses the system grep, faster, but needs to press an extra ENTER to return to vim. 
-  * ``,R`` uses vimgrep, which is slower but doesn't need the extra ENTER.
+  * ``,r`` uses the system grep (faster).
+  * ``,R`` uses vimgrep (slower).
   * ``,wr`` and ``,wR`` do the same, but searching the word under the cursor.
 
 * Some settings for better **tabs and spaces handling**.
@@ -95,13 +95,17 @@ Most important features include:
 
 * **Comment and uncomment code** with ``\ci``.
 
-* **Easy tab navigation** on command mode:
+* **Easy tab navigation**:
 
   * ``tt`` = new tab and leaves the cursor waiting to specify the file path to open (leave blank to open an empty tab).
-  * ``tn`` = next tab.
-  * ``tp`` = previous tab.
+  * ``tn`` or ``Ctrl-Shift-Right`` = next tab.
+  * ``tp`` or ``Ctrl-Shift-Left`` = previous tab.
   * ``tm`` = move current tab to the end.
   * ``tl`` = show a list of current tabs with their inner windows on a side pane. You can navigate them!
+
+  The mappings starting with the ``t`` letter work only on command mode, but the mappings with ``Ctrl-Shift`` work on both, command and insert mode.
+
+* **Easy window navigation** using ``Alt-arrows`` keys.
 
 * Some vim goodies enabled by default: 
 

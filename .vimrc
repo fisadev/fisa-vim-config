@@ -48,11 +48,11 @@ Bundle 'kien/tabman.vim'
 Bundle 'Lokaltog/vim-powerline'
 " Terminal Vim with 256 colors colorscheme
 Bundle 'fisadev/fisa-vim-colorscheme'
+" Consoles as buffers
+Bundle 'rosenfeld/conque-term'
 
 " Bundles from vim-scripts repos
 
-" Consoles as buffers
-Bundle 'Conque-Shell'
 " Autocompletition
 Bundle 'AutoComplPop'
 " Pending tasks list
@@ -113,6 +113,20 @@ map tn :tabn<CR>
 map tp :tabp<CR>
 map tm :tabm<CR>
 map tt :tabnew 
+map <C-S-Right> :tabn<CR>
+imap <C-S-Right> <ESC>:tabn<CR>
+map <C-S-Left> :tabp<CR>
+imap <C-S-Left> <ESC>:tabp<CR>
+
+" navigate windows with meta+arrows
+map <M-Right> <c-w>l
+map <M-Left> <c-w>h
+map <M-Up> <c-w>k
+map <M-Down> <c-w>j
+imap <M-Right> <ESC><c-w>l
+imap <M-Left> <ESC><c-w>h
+imap <M-Up> <ESC><c-w>k
+imap <M-Down> <ESC><c-w>j
 
 " automatically close autocompletition window
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
@@ -197,7 +211,7 @@ let g:ctrlp_working_path_mode = 0
 
 " simple recursive grep
 command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
-command! -nargs=1 RecurGrepFast exec 'lgrep! <q-args> ./**/*.*' | lopen
+command! -nargs=1 RecurGrepFast silent exec 'lgrep! <q-args> ./**/*.*' | lopen
 nmap ,R :RecurGrep 
 nmap ,r :RecurGrepFast 
 nmap ,wR :RecurGrep <cword><CR>
