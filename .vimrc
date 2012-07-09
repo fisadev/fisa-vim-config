@@ -212,7 +212,8 @@ let g:flake8_ignore=""
 let g:pyflakes_use_quickfix = 0
 
 " customize pyref shortcut
-nmap ,k :PyRef <cword><CR>
+let g:pyref_mapping = 'F'
+
 " autoclose (
 inoremap        (  ()<Left>
 inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
