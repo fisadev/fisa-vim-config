@@ -115,3 +115,9 @@ Changelog
   * Updating instructions
   * Minor internal code changes
 
+* Version 3.3
+
+  * RecurGrepFast runs silently (doesn't need the extra ENTER)
+  * Window navigation with Alt-arrows
+  * Tabs navigation with Ctrl-Shift-arrows
+  * New ConqueTerm, now working
