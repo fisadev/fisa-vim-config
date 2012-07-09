@@ -30,8 +30,6 @@ Bundle 'jabapyth/vim-debug'
 Bundle 'scrooloose/nerdtree'
 " Code commenter
 Bundle 'scrooloose/nerdcommenter'
-" Search and read python documentation
-Bundle 'fs111/pydoc.vim'
 " Class/module browser
 Bundle 'majutsushi/tagbar'
 " Code and files fuzzy finder
@@ -59,6 +57,8 @@ Bundle 'AutoComplPop'
 Bundle 'TaskList.vim'
 " Python code checker
 Bundle 'pyflakes.vim'
+" Python documentation
+Bundle 'pyref.vim'
 " Search results counter
 Bundle 'IndexedSearch'
 " XML/HTML tags navigation
@@ -211,6 +211,8 @@ let g:flake8_ignore=""
 " don't let pyflakes allways override the quickfix list
 let g:pyflakes_use_quickfix = 0
 
+" customize pyref shortcut
+nmap ,k :PyRef <cword><CR>
 " autoclose (
 inoremap        (  ()<Left>
 inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
