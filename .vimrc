@@ -181,6 +181,7 @@ map <F12> :Dbg up<CR>
 let g:ctrlp_map = ',e'
 nmap ,g :CtrlPBufTag<CR>
 nmap ,f :CtrlPLine<CR>
+nmap ,m :CtrlPMRUFiles<CR>
 " to be able to call CtrlP with default search text
 function! CtrlPWithSearchText(search_text, ctrlp_command_end)
     execute ':CtrlP' . a:ctrlp_command_end
