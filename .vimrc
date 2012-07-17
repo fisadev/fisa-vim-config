@@ -25,7 +25,7 @@ Bundle 'gmarik/vundle'
 " Bundles from GitHub repos:
 
 " Python and PHP Debugger
-Bundle 'jabapyth/vim-debug'
+Bundle 'fisadev/vim-debug.vim'
 " Better file browser
 Bundle 'scrooloose/nerdtree'
 " Code commenter
