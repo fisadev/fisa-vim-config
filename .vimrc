@@ -50,13 +50,13 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'fisadev/fisa-vim-colorscheme'
 " Consoles as buffers
 Bundle 'rosenfeld/conque-term'
+" Pending tasks list
+Bundle 'fisadev/TaskList.vim'
 
 " Bundles from vim-scripts repos
 
 " Autocompletition
 Bundle 'AutoComplPop'
-" Pending tasks list
-Bundle 'TaskList.vim'
 " Python code checker
 Bundle 'pyflakes.vim'
 " Search results counter
