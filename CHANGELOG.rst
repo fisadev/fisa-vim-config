@@ -121,3 +121,10 @@ Changelog
   * Window navigation with Alt-arrows
   * Tabs navigation with Ctrl-Shift-arrows
   * New ConqueTerm, now working
+
+* Version 3.4
+
+  * Shortcut for most recently used fuzzy finder
+  * Fixed vim-debug problems with vundle
+  * Fixed mapping incompatibilities
+  * Minor documentation changes
