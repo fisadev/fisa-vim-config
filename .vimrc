@@ -25,7 +25,7 @@ Bundle 'gmarik/vundle'
 " Bundles from GitHub repos:
 
 " Python and PHP Debugger
-Bundle 'jabapyth/vim-debug'
+Bundle 'fisadev/vim-debug.vim'
 " Better file browser
 Bundle 'scrooloose/nerdtree'
 " Code commenter
@@ -50,13 +50,13 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'fisadev/fisa-vim-colorscheme'
 " Consoles as buffers
 Bundle 'rosenfeld/conque-term'
+" Pending tasks list
+Bundle 'fisadev/FixedTaskList.vim'
 
 " Bundles from vim-scripts repos
 
 " Autocompletition
 Bundle 'AutoComplPop'
-" Pending tasks list
-Bundle 'TaskList.vim'
 " Python code checker
 Bundle 'pyflakes.vim'
 " Search results counter
@@ -195,6 +195,7 @@ map <F12> :Dbg up<CR>
 let g:ctrlp_map = ',e'
 nmap ,g :CtrlPBufTag<CR>
 nmap ,f :CtrlPLine<CR>
+nmap ,m :CtrlPMRUFiles<CR>
 " to be able to call CtrlP with default search text
 function! CtrlPWithSearchText(search_text, ctrlp_command_end)
     execute ':CtrlP' . a:ctrlp_command_end
