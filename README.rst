@@ -6,7 +6,7 @@ my vim configuration (lot of python, autocompletition, fuzzy finder, debugger, .
 What is this?
 -------------
 
-**(updating from a previous version? check the install section for new dependencies, and read the updating instructions. It can also be useful to look at the CHANGELOG)**
+**(IMPORTANT! updating from a previous version? check the install section for new dependencies, and read the updating instructions. It can also be useful to look at the CHANGELOG)**
 
 My personal `Vim <http://www.vim.org/>`_ configuration, built according to my personal preferences, without any justification to think it's the best possible vim configuration. If you like it, great! :)
 It's mainly oriented to python software development, but many of its features are useful for other languages and editing tasks.
@@ -201,9 +201,10 @@ Super easy installation
 
   If you want fancy symbols and breadcrumbs on your status line, there is a small tutorial for that at the end of this README.
 
-* **Keeping your vim up-to-date**
+Keeping your vim up-to-date
+---------------------------
 
-  After updating the .vimrc, remember to run ``:BundleClean`` (this will remove plugins no longer used) and ``:BundleInstall!`` (this will install any new plugins, and update the existing ones to the last versions). You can also run ``:BundleInstall!`` at any time to update the installed plugins.
+After updating the .vimrc, you should run ``:BundleClean`` (this will remove plugins no longer used) and ``:BundleInstall!`` (this will install any new plugins, and update the existing ones to the last versions). You can also run ``:BundleInstall!`` at any time to update the installed plugins.
 
 Sources
 -------
