@@ -2,6 +2,8 @@ fisa-vim-config
 ===============
 
 my vim configuration (lot of python, autocompletition, fuzzy finder, debugger, ...)
+Modified by `grupythonUFLA <https://github.com/grupythonUFLA>`_
+
 
 What is this?
 -------------
@@ -30,10 +32,6 @@ class browser
 
 .. image:: http://i.imgur.com/KBzeO.png
 
-detecting your nasty errors
-
-.. image:: http://i.imgur.com/9U1KP.png
-
 fuzzy code finder (next step: mind reader)
 
 .. image:: http://i.imgur.com/stkUL.png
@@ -59,9 +57,9 @@ Most important features include:
 
 * **Pending tasks browser** pressing ``F2``. This reads the current file searching for comments that start with "TODO", "FIXME", and such, and shows them on a list that allows navigation similar to the class browser.
 
-* **Error checking of python code** using Pyflakes (it will detect unused variables or imports, syntax errors, and such).
+* **Error checking of python code** using Pyflakes (it will detect unused variables or imports, syntax errors, and such).Press ``,c`` to run pyflakes(Python 2.X) or ``,d`` to run pyflakes3k(Python 3.x).
 
-* Run **PEP8 validator** on the current python file with ``,8``, which also displays python errors found with Pyflakes.
+* Run **PEP8 validator** on the current python file with ``,8`` (`PEP8<http://www.python.org/dev/peps/pep-0008/>`_).
 
 * A really nice **python and php debugger**. `Here <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_ is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
 
@@ -182,12 +180,14 @@ Super easy installation
     sudo pip install dbgp vim-debug pep8 flake8 pyflakes
 
   (if you don't have Pip, find it here: `pip <http://pypi.python.org/pypi/pip>`_)
+  To Python 3 pyflakes analysis you should download and install pyflakes3k(`pyflakes3k<http://pypi.python.org/pypi/pyflakes3k/0.4.2>`_)
+ 
 
 * **Put the configuration files where they belong**
 
   Place the file ``.vimrc`` on your linux home folder.
 
-  Example: my linux user is "fisa", so now I have: ``/home/fisa/.vimrc``.
+  Example: my linux user is "grupython", so now I have: ``/home/grupython/.vimrc``.
 
 * **Open vim**
 
@@ -231,12 +231,10 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Search and read python documentation (PyDoc) <https://github.com/fs111/pydoc.vim>`_
 * `Class/module browser (Tagbar) <https://github.com/majutsushi/tagbar>`_
 * `Pending tasks list (TaskList) <http://www.vim.org/scripts/script.php?script_id=2607>`_
-* `Python code checker (Pyflakes-vim) <http://www.vim.org/scripts/script.php?script_id=2441>`_
 * `Search results counter (IndexedSearch) <http://www.vim.org/scripts/script.php?script_id=1682>`_
 * `Code commenter (NERDCommenter) <https://github.com/scrooloose/nerdcommenter>`_
 * `HTML/XML tags navigation (Matchit) <http://www.vim.org/scripts/script.php?script_id=39>`_
 * `Code and files fuzzy finder (ctrlp) <https://github.com/kien/ctrlp.vim>`_
-* `PEP8 checker (with shows pyflakes errors too) <https://github.com/nvie/vim-flake8>`_
 * `Zen coding <https://github.com/mattn/zencoding-vim/>`_
 * `Git integration <https://github.com/motemen/git-vim>`_
 * `Tab list pane (tabman) <https://github.com/kien/tabman.vim>`_
@@ -262,3 +260,15 @@ After installing the font, go to the settings of your terminal app and select th
 
 That's it! Restart your vim and enjoy the beauty of Powerline.
 
+How to configuring Pyflakes3k
+-----------------------------
+
+When you install pyflakes and pyflakes3k in your computer they are replaced.
+To fix this in ubuntu(or other distros) search the pyflakes file.In ubuntu they are placed in 
+``/usr/local/bin/``.
+Copy this file (``pyflakes``) with the name ``pyflakes3k``.
+Now open the file ``pyflakes`` and replaced the fist line with ``#!/usr/bin/python``.
+Do the same with the ``pyflakes3k`` but replaced with ``#!/usr/bin/python3``.
+
+Done!
+Now pyflakes run with Python 2 and python 3.
