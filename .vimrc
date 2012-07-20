@@ -63,6 +63,7 @@ Bundle 'matchit.zip'
 Bundle 'Wombat'
 
 " My Bundles
+"pep 8 plugin
 Bundle 'pep8'
 
 
@@ -260,9 +261,11 @@ set wildmode=list:longest
 " patched font (more info on the README.rst)
 " let g:Powerline_symbols = 'fancy'
 
-"pep8 
+"pep8
+"run pep8 validator 
 let g:pep8_map = ',8'
 
 "pyflakes 
+"if ,c then run pyflakes(python 2.x) else run pyflakes3k(python 3.x)
 map ,c :let @a = system("pyflakes " . shellescape(expand('%')))<CR>:tabnew<CR>"aP
 map ,d :let @a = system("pyflakes3k " . shellescape(expand('%')))<CR>:tabnew<CR>"aP
