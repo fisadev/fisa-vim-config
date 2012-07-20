@@ -263,6 +263,15 @@ That's it! Restart your vim and enjoy the beauty of Powerline.
 How to configuring Pyflakes3k
 -----------------------------
 
+**install**
+    `Download<http://pypi.python.org/pypi/pyflakes3k/0.4.2>`_ and install the pyflakes3k.
+    ::
+        cd pyflakes3k-X.X.X(replace x with the version)
+        python3 setup.py Install   
+    
+
+**Configure**
+
 When you install pyflakes and pyflakes3k in your computer they are replaced.
 To fix this in ubuntu(or other distros) search the pyflakes file.In ubuntu they are placed in 
 ``/usr/local/bin/``.
