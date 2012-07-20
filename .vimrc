@@ -36,8 +36,6 @@ Bundle 'fs111/pydoc.vim'
 Bundle 'majutsushi/tagbar'
 " Code and files fuzzy finder
 Bundle 'kien/ctrlp.vim'
-" PEP8 and python-flakes checker
-Bundle 'nvie/vim-flake8'
 " Zen coding
 Bundle 'mattn/zencoding-vim'
 " Git integration
@@ -57,8 +55,6 @@ Bundle 'fisadev/FixedTaskList.vim'
 
 " Autocompletition
 Bundle 'AutoComplPop'
-" Python code checker
-Bundle 'pyflakes.vim'
 " Search results counter
 Bundle 'IndexedSearch'
 " XML/HTML tags navigation
@@ -66,7 +62,14 @@ Bundle 'matchit.zip'
 " Gvim colorscheme
 Bundle 'Wombat'
 
+" My Bundles
+"pep 8 plugin
+Bundle 'pep8'
+
+
 " Installing plugins the first time
+
+
 if iCanHazVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
     echo ""
@@ -132,7 +135,7 @@ imap <M-Down> <ESC><c-w>j
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-" old autocomplete keyboard shortcut
+"old autocomplete keyboard shortcut
 imap <C-J> <C-X><C-O>
 
 " show pending tasks list
@@ -218,14 +221,6 @@ nmap ,r :RecurGrepFast
 nmap ,wR :RecurGrep <cword><CR>
 nmap ,wr :RecurGrepFast <cword><CR>
 
-" run pep8+pyflakes validator
-autocmd FileType python map <buffer> ,8 :call Flake8()<CR>
-" rules to ignore (example: "E501,W293")
-let g:flake8_ignore=""
-
-" don't let pyflakes allways override the quickfix list
-let g:pyflakes_use_quickfix = 0
-
 " autoclose (
 inoremap        (  ()<Left>
 inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
@@ -265,3 +260,12 @@ set wildmode=list:longest
 " to use fancy symbols for powerline, uncomment the following line and use a
 " patched font (more info on the README.rst)
 " let g:Powerline_symbols = 'fancy'
+
+"pep8
+"run pep8 validator 
+let g:pep8_map = ',8'
+
+"pyflakes 
+"if ,c then run pyflakes(python 2.x) else run pyflakes3k(python 3.x)
+map ,c :let @a = system("pyflakes " . shellescape(expand('%')))<CR>:tabnew<CR>"aP
+map ,d :let @a = system("pyflakes3k " . shellescape(expand('%')))<CR>:tabnew<CR>"aP

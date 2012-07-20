@@ -128,3 +128,11 @@ Changelog
   * Fixed vim-debug problems with vundle
   * Fixed mapping incompatibilities
   * Minor documentation changes
+
+* Version 3.4.1
+ 
+  * Disable pyflakes and flake8
+  * Changed mapping for support PEP8 independent
+  * Add python3 support to pyflakes
+  * Removed obsolete Bundles
+  * New Bundle for pep8
