@@ -52,6 +52,8 @@ Bundle 'fisadev/fisa-vim-colorscheme'
 Bundle 'rosenfeld/conque-term'
 " Pending tasks list
 Bundle 'fisadev/FixedTaskList.vim'
+" Surround
+Bundle 'tpope/vim-surround'
 
 " Bundles from vim-scripts repos
 
@@ -63,8 +65,6 @@ Bundle 'pyflakes.vim'
 Bundle 'IndexedSearch'
 " XML/HTML tags navigation
 Bundle 'matchit.zip'
-" Surround
-Bundle 'surround.vim'
 " Gvim colorscheme
 Bundle 'Wombat'
 
