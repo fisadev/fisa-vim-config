@@ -169,6 +169,8 @@ Most important features include:
 
 * Really neat **surround actions** using the surround.vim plugin. Learn how to use it `here <https://github.com/tpope/vim-surround>`_.
 
+* **Configurable commands prefix**. All the mappings that start with ``,`` are in fact using ``<leader>``, so you can change the mapleader variable value to use a different command prefix (find the line that defines the variable on the ``.vimrc``).
+
 Super easy installation
 -----------------------
 
