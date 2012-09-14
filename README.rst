@@ -167,6 +167,8 @@ Most important features include:
 
 * **Git integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Also includes key mappings and syntax highlighting for git displays.
 
+* Really neat **surround actions** using the surround.vim plugin. Learn how to use it `here <https://github.com/tpope/vim-surround>`_.
+
 Super easy installation
 -----------------------
 
@@ -242,6 +244,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Tab list pane (tabman) <https://github.com/kien/tabman.vim>`_
 * `Beautiful status line (Powerline) <https://github.com/Lokaltog/vim-powerline>`_
 * `256 colorscheme (fisa) <https://github.com/fisadev/fisa-vim-colorscheme>`_
+* `Surround actions <https://github.com/tpope/vim-surround>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------
