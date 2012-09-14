@@ -52,7 +52,7 @@ Most important features include:
   * ``,f`` = fuzzy text finder on all the opened files. Example: if you type "ctm=6" it will find the line containing "current_time = 16".
   * ``,m`` = fuzzy finder of most recently used files.
   * ``,d`` = same as ``,g`` (symbol finder) but initiates the search with the word under the cursor (sort of "fuzzy go to definition").
-  * ``,we``, ``,wg`` and ``,wf`` = same as ``,e``, ``,g`` and ``,f`` but initiate the search with the word under the cursor.
+  * ``,we``, ``,wg``, ``,wf`` and ``,wm`` = same as ``,e``, ``,g``, ``,f`` and ``,wm`` but initiate the search with the word under the cursor.
   * ``,pe`` = same as ``,e`` but initiates the search with the path under the cursor.
 
 * **Classes/module browser** that lists classes, functions, methods, and such of the current file, and navigates to them when ENTER is pressed. Toggle it with ``F4``.
