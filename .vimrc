@@ -52,6 +52,8 @@ Bundle 'fisadev/fisa-vim-colorscheme'
 Bundle 'rosenfeld/conque-term'
 " Pending tasks list
 Bundle 'fisadev/FixedTaskList.vim'
+" Surround
+Bundle 'tpope/vim-surround'
 
 " Bundles from vim-scripts repos
 
