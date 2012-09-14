@@ -128,3 +128,10 @@ Changelog
   * Fixed vim-debug problems with vundle
   * Fixed mapping incompatibilities
   * Minor documentation changes
+
+* Version 3.5
+
+  * Added surround.vim plugin
+  * File ignores for fuzzy file finder
+  * Mapping for MRU fuzzy finder with current word
+  * Usage of leader instead of harcoded mapping prefixes
