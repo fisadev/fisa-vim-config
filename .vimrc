@@ -63,6 +63,8 @@ Bundle 'pyflakes.vim'
 Bundle 'IndexedSearch'
 " XML/HTML tags navigation
 Bundle 'matchit.zip'
+" Surround
+Bundle 'surround.vim'
 " Gvim colorscheme
 Bundle 'Wombat'
 
