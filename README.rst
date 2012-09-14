@@ -52,7 +52,7 @@ Most important features include:
   * ``,f`` = fuzzy text finder on all the opened files. Example: if you type "ctm=6" it will find the line containing "current_time = 16".
   * ``,m`` = fuzzy finder of most recently used files.
   * ``,d`` = same as ``,g`` (symbol finder) but initiates the search with the word under the cursor (sort of "fuzzy go to definition").
-  * ``,we``, ``,wg`` and ``,wf`` = same as ``,e``, ``,g`` and ``,f`` but initiate the search with the word under the cursor.
+  * ``,we``, ``,wg``, ``,wf`` and ``,wm`` = same as ``,e``, ``,g``, ``,f`` and ``,wm`` but initiate the search with the word under the cursor.
   * ``,pe`` = same as ``,e`` but initiates the search with the path under the cursor.
 
 * **Classes/module browser** that lists classes, functions, methods, and such of the current file, and navigates to them when ENTER is pressed. Toggle it with ``F4``.
@@ -167,6 +167,10 @@ Most important features include:
 
 * **Git integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Also includes key mappings and syntax highlighting for git displays.
 
+* Really neat **surround actions** using the surround.vim plugin. Learn how to use it `here <https://github.com/tpope/vim-surround>`_.
+
+* **Configurable mappings prefix**. All the mappings that start with ``,`` are in fact using ``<leader>``, so you can change the mapleader variable value to use a different mappings prefix (find the line that defines the variable on the ``.vimrc``).
+
 Super easy installation
 -----------------------
 
@@ -242,6 +246,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Tab list pane (tabman) <https://github.com/kien/tabman.vim>`_
 * `Beautiful status line (Powerline) <https://github.com/Lokaltog/vim-powerline>`_
 * `256 colorscheme (fisa) <https://github.com/fisadev/fisa-vim-colorscheme>`_
+* `Surround actions <https://github.com/tpope/vim-surround>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------

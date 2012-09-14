@@ -52,6 +52,8 @@ Bundle 'fisadev/fisa-vim-colorscheme'
 Bundle 'rosenfeld/conque-term'
 " Pending tasks list
 Bundle 'fisadev/FixedTaskList.vim'
+" Surround
+Bundle 'tpope/vim-surround'
 
 " Bundles from vim-scripts repos
 
@@ -99,6 +101,10 @@ set hlsearch
 
 " line numbers
 set nu
+
+" This is the prefix for many mappings we will define, change it at will
+" if you want a different prefix
+:let mapleader = ","
 
 " toggle Tagbar display
 map <F4> :TagbarToggle<CR>
@@ -192,34 +198,41 @@ map <F11> :Dbg down<CR>
 map <F12> :Dbg up<CR>
 
 " CtrlP (new fuzzy finder)
-let g:ctrlp_map = ',e'
-nmap ,g :CtrlPBufTag<CR>
-nmap ,f :CtrlPLine<CR>
-nmap ,m :CtrlPMRUFiles<CR>
+let g:ctrlp_map = '<leader>e'
+nmap <leader>g :CtrlPBufTag<CR>
+nmap <leader>f :CtrlPLine<CR>
+nmap <leader>m :CtrlPMRUFiles<CR>
 " to be able to call CtrlP with default search text
 function! CtrlPWithSearchText(search_text, ctrlp_command_end)
     execute ':CtrlP' . a:ctrlp_command_end
     call feedkeys(a:search_text)
 endfunction
 " CtrlP with default text
-nmap ,wg :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
-nmap ,wf :call CtrlPWithSearchText(expand('<cword>'), 'Line')<CR>
-nmap ,d ,wg
-nmap ,we :call CtrlPWithSearchText(expand('<cword>'), '')<CR>
-nmap ,pe :call CtrlPWithSearchText(expand('<cfile>'), '')<CR>
+nmap <leader>wg :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
+nmap <leader>wf :call CtrlPWithSearchText(expand('<cword>'), 'Line')<CR>
+nmap <leader>d :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
+nmap <leader>we :call CtrlPWithSearchText(expand('<cword>'), '')<CR>
+nmap <leader>pe :call CtrlPWithSearchText(expand('<cfile>'), '')<CR>
+nmap <leader>wm :call CtrlPWithSearchText(expand('<cword>'), 'MRUFiles')<CR>
 " Don't change working directory
 let g:ctrlp_working_path_mode = 0
+" Ignore files on fuzzy finder
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.git|\.hg|\.svn)$',
+  \ 'file': '\.pyc$\|\.pyo$',
+  \ }
+
 
 " simple recursive grep
 command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
 command! -nargs=1 RecurGrepFast silent exec 'lgrep! <q-args> ./**/*.*' | lopen
-nmap ,R :RecurGrep 
-nmap ,r :RecurGrepFast 
-nmap ,wR :RecurGrep <cword><CR>
-nmap ,wr :RecurGrepFast <cword><CR>
+nmap <leader>R :RecurGrep 
+nmap <leader>r :RecurGrepFast 
+nmap <leader>wR :RecurGrep <cword><CR>
+nmap <leader>wr :RecurGrepFast <cword><CR>
 
 " run pep8+pyflakes validator
-autocmd FileType python map <buffer> ,8 :call Flake8()<CR>
+autocmd FileType python map <buffer> <leader>8 :call Flake8()<CR>
 " rules to ignore (example: "E501,W293")
 let g:flake8_ignore=""
 
