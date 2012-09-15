@@ -200,6 +200,7 @@ map <F12> :Dbg up<CR>
 " CtrlP (new fuzzy finder)
 let g:ctrlp_map = '<leader>e'
 nmap <leader>g :CtrlPBufTag<CR>
+nmap <leader>G :CtrlPBufTagAll<CR>
 nmap <leader>f :CtrlPLine<CR>
 nmap <leader>m :CtrlPMRUFiles<CR>
 " to be able to call CtrlP with default search text
@@ -209,8 +210,10 @@ function! CtrlPWithSearchText(search_text, ctrlp_command_end)
 endfunction
 " CtrlP with default text
 nmap <leader>wg :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
+nmap <leader>wG :call CtrlPWithSearchText(expand('<cword>'), 'BufTagAll')<CR>
 nmap <leader>wf :call CtrlPWithSearchText(expand('<cword>'), 'Line')<CR>
 nmap <leader>d :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
+nmap <leader>D :call CtrlPWithSearchText(expand('<cword>'), 'BufTagAll')<CR>
 nmap <leader>we :call CtrlPWithSearchText(expand('<cword>'), '')<CR>
 nmap <leader>pe :call CtrlPWithSearchText(expand('<cfile>'), '')<CR>
 nmap <leader>wm :call CtrlPWithSearchText(expand('<cword>'), 'MRUFiles')<CR>
