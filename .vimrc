@@ -212,8 +212,8 @@ endfunction
 nmap <leader>wg :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
 nmap <leader>wG :call CtrlPWithSearchText(expand('<cword>'), 'BufTagAll')<CR>
 nmap <leader>wf :call CtrlPWithSearchText(expand('<cword>'), 'Line')<CR>
-nmap <leader>d :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
-nmap <leader>D :call CtrlPWithSearchText(expand('<cword>'), 'BufTagAll')<CR>
+nmap <leader>d <leader>wg
+nmap <leader>D <leader>wG
 nmap <leader>we :call CtrlPWithSearchText(expand('<cword>'), '')<CR>
 nmap <leader>pe :call CtrlPWithSearchText(expand('<cfile>'), '')<CR>
 nmap <leader>wm :call CtrlPWithSearchText(expand('<cword>'), 'MRUFiles')<CR>
