@@ -135,3 +135,7 @@ Changelog
   * File ignores for fuzzy file finder
   * Mapping for MRU fuzzy finder with current word
   * Usage of leader instead of harcoded mapping prefixes
+
+* Version 3.6
+
+  * Reverted leader usage, to mantain compatibility with many plugins
