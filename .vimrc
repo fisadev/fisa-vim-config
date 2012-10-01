@@ -67,6 +67,8 @@ Bundle 'IndexedSearch'
 Bundle 'matchit.zip'
 " Gvim colorscheme
 Bundle 'Wombat'
+" Autoclose
+Bundle 'AutoClose'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
@@ -237,16 +239,6 @@ let g:flake8_ignore=""
 
 " don't let pyflakes allways override the quickfix list
 let g:pyflakes_use_quickfix = 0
-
-" autoclose (
-inoremap        (  ()<Left>
-inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
-" autoclose [
-inoremap        [  []<Left>
-inoremap <expr> ]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
-" autoclose {
-inoremap        {  {}<Left>
-inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 
 " tabman shortcuts
 let g:tabman_toggle = 'tl'
