@@ -54,6 +54,8 @@ Bundle 'rosenfeld/conque-term'
 Bundle 'fisadev/FixedTaskList.vim'
 " Surround
 Bundle 'tpope/vim-surround'
+" Autoclose
+Bundle 'Townk/vim-autoclose'
 
 " Bundles from vim-scripts repos
 
@@ -67,8 +69,6 @@ Bundle 'IndexedSearch'
 Bundle 'matchit.zip'
 " Gvim colorscheme
 Bundle 'Wombat'
-" Autoclose
-Bundle 'AutoClose'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
