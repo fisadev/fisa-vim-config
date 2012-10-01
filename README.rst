@@ -126,7 +126,7 @@ Most important features include:
 
 * **Automatically removes trailing spaces** when saving python files.
 
-* **Smart autoclosing of (, [, {, " and '**
+* **Smart autoclosing of (, [, and {**
 
 * **Beautiful color schemes for on vim with 256 colors (fisa colorscheme) and gvim (wombat colorscheme)**.
 
@@ -245,7 +245,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Beautiful status line (Powerline) <https://github.com/Lokaltog/vim-powerline>`_
 * `256 colorscheme (fisa) <https://github.com/fisadev/fisa-vim-colorscheme>`_
 * `Surround actions <https://github.com/tpope/vim-surround>`_
-* `AutoClose <http://www.vim.org/scripts/script.php?script_id=1849>`_
+* `AutoClose <https://github.com/Townk/vim-autoclose>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------
