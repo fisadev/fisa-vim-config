@@ -56,6 +56,8 @@ Bundle 'fisadev/FixedTaskList.vim'
 Bundle 'tpope/vim-surround'
 " Autoclose
 Bundle 'Townk/vim-autoclose'
+" Better python indentation
+Bundle 'vim-scripts/indentpython.vim--nianyang'
 
 " Bundles from vim-scripts repos
 
