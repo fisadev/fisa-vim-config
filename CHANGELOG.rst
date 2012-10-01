@@ -144,3 +144,7 @@ Changelog
 
   * New autoclosing plugin, that doesn't breaks undo history
   * Better python indentation
+
+* Version 3.7.1
+
+  * Fix ESC behaviour on popups when autoclose is enabled

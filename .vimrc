@@ -268,6 +268,9 @@ set scrolloff=3
 " (complete only the common part, list the options that match)
 set wildmode=list:longest
 
+" Fix to let ESC work as espected with Autoclose plugin
+let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
+
 " to use fancy symbols for powerline, uncomment the following line and use a
 " patched font (more info on the README.rst)
 " let g:Powerline_symbols = 'fancy'
