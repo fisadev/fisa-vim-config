@@ -58,6 +58,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'Townk/vim-autoclose'
 " Better python indentation
 Bundle 'vim-scripts/indentpython.vim--nianyang'
+" Indent text object
+Bundle 'michaeljsmith/vim-indent-object'
 
 " Bundles from vim-scripts repos
 

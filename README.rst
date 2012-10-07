@@ -171,6 +171,8 @@ Most important features include:
 
 * Really neat **surround actions** using the surround.vim plugin. Learn how to use it `here <https://github.com/tpope/vim-surround>`_.
 
+* **indentation defined text objects** for the editing language, named ``i``. For example, you can change an entire indented code block with ``cii``, or the indented block and its header line with ``cai`` (also yank, delete, ...).
+
 Super easy installation
 -----------------------
 
