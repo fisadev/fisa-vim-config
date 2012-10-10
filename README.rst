@@ -92,6 +92,8 @@ Most important features include:
 
 * **Results count** while searching text.
 
+* **Search autocompletition** of words using ``Tab``!.
+
 * **Search and read python documentation** with the ``:Pydoc`` command. Example: ``:Pydoc collections``.
 
 * **Comment and uncomment code** with ``\ci``.
@@ -251,6 +253,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Surround actions <https://github.com/tpope/vim-surround>`_
 * `AutoClose <https://github.com/Townk/vim-autoclose>`_
 * `Better python indentation <https://github.com/vim-scripts/indentpython.vim--nianyang>`_
+* `Search autocompletition <http://www.vim.org/scripts/script.php?script_id=474>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------
