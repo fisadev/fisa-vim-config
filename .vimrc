@@ -73,6 +73,8 @@ Bundle 'IndexedSearch'
 Bundle 'matchit.zip'
 " Gvim colorscheme
 Bundle 'Wombat'
+" Autocompletition inside search
+Bundle 'SearchComplete'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
