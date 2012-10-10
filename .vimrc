@@ -75,6 +75,8 @@ Bundle 'matchit.zip'
 Bundle 'Wombat'
 " Autocompletition inside search
 Bundle 'SearchComplete'
+" Yank history navigation
+Bundle 'YankRing.vim'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
