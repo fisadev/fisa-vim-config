@@ -92,6 +92,8 @@ Most important features include:
 
 * **Results count** while searching text.
 
+* **Search autocompletition** of words using ``Tab``!.
+
 * **Search and read python documentation** with the ``:Pydoc`` command. Example: ``:Pydoc collections``.
 
 * **Comment and uncomment code** with ``\ci``.
@@ -171,6 +173,10 @@ Most important features include:
 
 * Really neat **surround actions** using the surround.vim plugin. Learn how to use it `here <https://github.com/tpope/vim-surround>`_.
 
+* **indentation defined text objects** for the editing language, named ``i``. For example, you can change an entire indented code block with ``cii``, or the indented block and its header line with ``cai`` (also yank, delete, ...).
+
+* **Copy history navigation** using the YankRing plugin, which allows you to cicle the vim clipboard with ``Ctrl-p`` and ``Ctrl-n``, and many other features (described `here <http://www.vim.org/scripts/script.php?script_id=1234>`_).
+
 Super easy installation
 -----------------------
 
@@ -249,6 +255,8 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Surround actions <https://github.com/tpope/vim-surround>`_
 * `AutoClose <https://github.com/Townk/vim-autoclose>`_
 * `Better python indentation <https://github.com/vim-scripts/indentpython.vim--nianyang>`_
+* `Search autocompletition <http://www.vim.org/scripts/script.php?script_id=474>`_
+* `YankRing <http://www.vim.org/scripts/script.php?script_id=1234>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------

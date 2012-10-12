@@ -58,6 +58,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'Townk/vim-autoclose'
 " Better python indentation
 Bundle 'vim-scripts/indentpython.vim--nianyang'
+" Indent text object
+Bundle 'michaeljsmith/vim-indent-object'
 
 " Bundles from vim-scripts repos
 
@@ -71,6 +73,10 @@ Bundle 'IndexedSearch'
 Bundle 'matchit.zip'
 " Gvim colorscheme
 Bundle 'Wombat'
+" Autocompletition inside search
+Bundle 'SearchComplete'
+" Yank history navigation
+Bundle 'YankRing.vim'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
