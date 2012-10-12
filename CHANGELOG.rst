@@ -148,3 +148,9 @@ Changelog
 * Version 3.7.1
 
   * Fix ESC behaviour on popups when autoclose is enabled
+
+* Version 3.8
+
+  * Added indentation defined text object plugin
+  * Added search autocompletition plugin
+  * Added yank history plugin
