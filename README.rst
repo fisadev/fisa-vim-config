@@ -232,7 +232,7 @@ Thanks to some people from `Pyar <http://python.org.ar>`_, who show me vim for t
 And thanks to all the developers of the plugins that I simply use here:
 
 * `Plugins manager (Vundle) <https://github.com/gmarik/vundle>`_
-* `Vundle autoinstalation <Hace unos años los líderes eran Nokia y WinMobile...>`_
+* `Vundle autoinstalation <http://www.erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/>`_
 * `Debugger (vim-debug) <http://github.com/jabapyth/vim-debug/>`_
 * `GVim color scheme (wombat) <http://www.vim.org/scripts/script.php?script_id=1778>`_
 * `Consoles as buffers (ConqueShell) <http://www.vim.org/scripts/script.php?script_id=2771>`_
