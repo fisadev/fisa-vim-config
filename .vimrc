@@ -231,6 +231,8 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\.pyc$\|\.pyo$',
   \ }
 
+" Ignore files on NERDTree
+let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 
 " simple recursive grep
 command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
