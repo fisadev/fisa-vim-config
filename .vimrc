@@ -123,7 +123,7 @@ map <F3> :NERDTreeToggle<CR>
 " tab navigation
 map tn :tabn<CR>
 map tp :tabp<CR>
-map tm :tabm<CR>
+map tm :tabm 
 map tt :tabnew 
 map <C-S-Right> :tabn<CR>
 imap <C-S-Right> <ESC>:tabn<CR>
