@@ -55,6 +55,7 @@ Most important features include:
   * ``,we``, ``,wg``, ``,wf`` and ``,wm`` = same as ``,e``, ``,g``, ``,f`` and ``,wm`` but initiate the search with the word under the cursor (also the upper case version of ``,G``, ``,wG``). Is useful to think about the ``,wg`` as a "fuzzy go to definition" (if the definition is in the same file, or ``,wG`` if the definition is on any of the opened files).
   * ``,pe`` = same as ``,e`` but initiates the search with the path under the cursor.
 
+
 * **Ropevim for really neat python goodies!**:
 
   * **Go to definition** with ``,d``.
