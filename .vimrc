@@ -250,6 +250,9 @@ let g:pymode_folding = 0
 " don't create rope project if doesn't exists
 let g:pymode_rope_auto_project = 0
 
+" don't let pyflakes allways override the quickfix list
+let g:pyflakes_use_quickfix = 0
+
 " tabman shortcuts
 let g:tabman_toggle = 'tl'
 let g:tabman_focus  = 'tf'
