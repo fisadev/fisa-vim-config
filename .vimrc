@@ -30,14 +30,10 @@ Bundle 'fisadev/vim-debug.vim'
 Bundle 'scrooloose/nerdtree'
 " Code commenter
 Bundle 'scrooloose/nerdcommenter'
-" Search and read python documentation
-Bundle 'fs111/pydoc.vim'
 " Class/module browser
 Bundle 'majutsushi/tagbar'
 " Code and files fuzzy finder
 Bundle 'kien/ctrlp.vim'
-" PEP8 and python-flakes checker
-Bundle 'nvie/vim-flake8'
 " Zen coding
 Bundle 'mattn/zencoding-vim'
 " Git integration
@@ -56,10 +52,11 @@ Bundle 'fisadev/FixedTaskList.vim'
 Bundle 'tpope/vim-surround'
 " Autoclose
 Bundle 'Townk/vim-autoclose'
-" Better python indentation
-Bundle 'vim-scripts/indentpython.vim--nianyang'
 " Indent text object
 Bundle 'michaeljsmith/vim-indent-object'
+" Python mode (indentation, doc, refactor, lints, code checking, motion and
+" operators, highlighting, run and ipdb breakpoints)
+Bundle 'klen/python-mode'
 
 " Bundles from vim-scripts repos
 
@@ -123,7 +120,7 @@ map <F3> :NERDTreeToggle<CR>
 " tab navigation
 map tn :tabn<CR>
 map tp :tabp<CR>
-map tm :tabm<CR>
+map tm :tabm 
 map tt :tabnew 
 map <C-S-Right> :tabn<CR>
 imap <C-S-Right> <ESC>:tabn<CR>
@@ -149,10 +146,6 @@ imap <C-J> <C-X><C-O>
 
 " show pending tasks list
 map <F2> :TaskList<CR>
-
-" removes trailing spaces of python files
-" (and restores cursor position)
-autocmd BufWritePre *.py mark z | %s/ *$//e | 'z
 
 " save as sudo
 ca w!! w !sudo tee "%"
@@ -218,8 +211,6 @@ endfunction
 nmap ,wg :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
 nmap ,wG :call CtrlPWithSearchText(expand('<cword>'), 'BufTagAll')<CR>
 nmap ,wf :call CtrlPWithSearchText(expand('<cword>'), 'Line')<CR>
-nmap ,d ,wg
-nmap ,D ,wG
 nmap ,we :call CtrlPWithSearchText(expand('<cword>'), '')<CR>
 nmap ,pe :call CtrlPWithSearchText(expand('<cfile>'), '')<CR>
 nmap ,wm :call CtrlPWithSearchText(expand('<cword>'), 'MRUFiles')<CR>
@@ -231,6 +222,8 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\.pyc$\|\.pyo$',
   \ }
 
+" Ignore files on NERDTree
+let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 
 " simple recursive grep
 command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
@@ -240,10 +233,24 @@ nmap ,r :RecurGrepFast
 nmap ,wR :RecurGrep <cword><CR>
 nmap ,wr :RecurGrepFast <cword><CR>
 
-" run pep8+pyflakes validator
-autocmd FileType python map <buffer> ,8 :call Flake8()<CR>
+" python-mode settings
+" don't show lint result every time we save a file
+let g:pymode_lint_write = 0
+" run pep8+pyflakes+pylint validator with \8
+autocmd FileType python map <buffer> <leader>8 :PyLint<CR>
 " rules to ignore (example: "E501,W293")
-let g:flake8_ignore=""
+let g:pymode_lint_ignore = ""
+" don't add extra column for error icons (on console vim creates a 2-char-wide
+" extra column)
+let g:pymode_lint_signs = 0
+" don't fold python code on open
+let g:pymode_folding = 0
+" don't create rope project if doesn't exists
+let g:pymode_rope_auto_project = 0
+
+" rope (from python-mode) settings
+nmap ,d :RopeGotoDefinition<CR>
+nmap ,o :RopeFindOccurrences<CR>
 
 " don't let pyflakes allways override the quickfix list
 let g:pyflakes_use_quickfix = 0

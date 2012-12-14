@@ -154,3 +154,22 @@ Changelog
   * Added indentation defined text object plugin
   * Added search autocompletition plugin
   * Added yank history plugin
+
+* Version 4.0
+
+  * added python-mode! this:
+    * replaces the old better python indentation
+    * adds smarter autocompletition
+    * adds smarter go to definition and find occurrences
+    * adds python motion and operators for the editing language
+    * replaces the old better python highlighting
+    * adds ipdb breakpoints utility
+    * adds refactor utilities
+    * replaces the old python documentation finder
+    * replaces the old offline pep8 and lint checkers
+  * The ``tabm`` mapping allows specifying the tab number
+  * Ignore .pyc and .pyo files on NERDTree
+  * Pep8 checker now runs with ``\8`` instead of ``,8`` (the ``,`` mappings will be only for navigation and searching)
+  * Fixed autoinstalation source link
+  * Added font name below the screenshots
+  * Added vim itself as dependency on the instalation tutorial
