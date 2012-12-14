@@ -236,8 +236,8 @@ nmap ,wr :RecurGrepFast <cword><CR>
 " python-mode settings
 " don't show lint result every time we save a file
 let g:pymode_lint_write = 0
-" run pep8+pyflakes+pylint validator with ,8
-autocmd FileType python map <buffer> ,8 :PyLint<CR>
+" run pep8+pyflakes+pylint validator with \8
+autocmd FileType python map <buffer> <leader>8 :PyLint<CR>
 " rules to ignore (example: "E501,W293")
 let g:pymode_lint_ignore = ""
 " don't add extra column for error icons (on console vim creates a 2-char-wide
