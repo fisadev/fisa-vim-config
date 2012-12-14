@@ -247,8 +247,6 @@ let g:pymode_lint_ignore = ""
 let g:pymode_lint_signs = 0
 " don't fold python code on open
 let g:pymode_folding = 0
-" toggle ipdb breakpoints
-let g:pymode_breakpoint_key = ',b'
 
 " tabman shortcuts
 let g:tabman_toggle = 'tl'
