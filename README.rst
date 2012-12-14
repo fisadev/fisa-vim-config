@@ -246,12 +246,12 @@ And thanks to all the developers of the plugins that I simply use here:
 
 * `Plugins manager (Vundle) <https://github.com/gmarik/vundle>`_
 * `Vundle autoinstalation <http://www.erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/>`_
+* `Python mode (indentation, doc, refactor, lints, code checking, motion and operators, highlighting, run and ipdb breakpoints) <https://github.com/klen/python-mode>`_
 * `Debugger (vim-debug) <http://github.com/jabapyth/vim-debug/>`_
 * `GVim color scheme (wombat) <http://www.vim.org/scripts/script.php?script_id=1778>`_
 * `Consoles as buffers (ConqueShell) <http://www.vim.org/scripts/script.php?script_id=2771>`_
 * `Autocompletition (autocomplpop) <http://www.vim.org/scripts/script.php?script_id=1879>`_
 * `Better file browser (NERDTree) <https://github.com/scrooloose/nerdtree>`_
-* `Search and read python documentation (PyDoc) <https://github.com/fs111/pydoc.vim>`_
 * `Class/module browser (Tagbar) <https://github.com/majutsushi/tagbar>`_
 * `Pending tasks list (TaskList) <http://www.vim.org/scripts/script.php?script_id=2607>`_
 * `Python code checker (Pyflakes-vim) <http://www.vim.org/scripts/script.php?script_id=2441>`_
@@ -259,7 +259,6 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Code commenter (NERDCommenter) <https://github.com/scrooloose/nerdcommenter>`_
 * `HTML/XML tags navigation (Matchit) <http://www.vim.org/scripts/script.php?script_id=39>`_
 * `Code and files fuzzy finder (ctrlp) <https://github.com/kien/ctrlp.vim>`_
-* `PEP8 checker (with shows pyflakes errors too) <https://github.com/nvie/vim-flake8>`_
 * `Zen coding <https://github.com/mattn/zencoding-vim/>`_
 * `Git integration <https://github.com/motemen/git-vim>`_
 * `Tab list pane (tabman) <https://github.com/kien/tabman.vim>`_
@@ -267,7 +266,6 @@ And thanks to all the developers of the plugins that I simply use here:
 * `256 colorscheme (fisa) <https://github.com/fisadev/fisa-vim-colorscheme>`_
 * `Surround actions <https://github.com/tpope/vim-surround>`_
 * `AutoClose <https://github.com/Townk/vim-autoclose>`_
-* `Better python indentation <https://github.com/vim-scripts/indentpython.vim--nianyang>`_
 * `Search autocompletition <http://www.vim.org/scripts/script.php?script_id=474>`_
 * `YankRing <http://www.vim.org/scripts/script.php?script_id=1234>`_
 
