@@ -235,13 +235,20 @@ nmap ,r :RecurGrepFast
 nmap ,wR :RecurGrep <cword><CR>
 nmap ,wr :RecurGrepFast <cword><CR>
 
-" run pep8+pyflakes validator
-autocmd FileType python map <buffer> ,8 :call Flake8()<CR>
+" python-mode settings
+" don't show lint result every time we save a file
+let g:pymode_lint_write = 0
+" run pep8+pyflakes+pylint validator with ,8
+autocmd FileType python map <buffer> ,8 :PyLint<CR>
 " rules to ignore (example: "E501,W293")
-let g:flake8_ignore=""
-
-" don't let pyflakes allways override the quickfix list
-let g:pyflakes_use_quickfix = 0
+let g:pymode_lint_ignore = ""
+" don't add extra column for error icons (on console vim creates a 2-char-wide
+" extra column)
+let g:pymode_lint_signs = 0
+" don't fold python code on open
+let g:pymode_folding = 0
+" toggle ipdb breakpoints
+let g:pymode_breakpoint_key = ',b'
 
 " tabman shortcuts
 let g:tabman_toggle = 'tl'
