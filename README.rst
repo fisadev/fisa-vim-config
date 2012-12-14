@@ -68,7 +68,7 @@ Most important features include:
 
 * **Error checking of python code** using Pyflakes (it will detect unused variables or imports, syntax errors, and such) and PyLint.
 
-* Run **PEP8 validator** on the current python file with ``,8``, which also displays python errors found with Pyflakes and PyLint.
+* Run **PEP8 validator** on the current python file with ``\8``, which also displays python errors found with Pyflakes and PyLint.
 
 * A really nice **python and php debugger**. `Here <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_ is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
 
