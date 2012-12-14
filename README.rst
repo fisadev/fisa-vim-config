@@ -44,7 +44,7 @@ Most important features include:
 
 * **Plugins managed using Vundle**! You can easily install or remove plugins, and they are installed into ``.vim/bundle/``. More info `here <https://github.com/gmarik/vundle>`_
 
-* **Smart autocompletition as you type**, sometimes using python instrospection (completition of module names, instance methods and attributes) and sometimes text-based (used words).
+* **Smart autocompletition as you type**, sometimes using python instrospection (completition of module names, instance methods and attributes) and sometimes text-based (used words) (from version 4.0, it's even more intelligent!).
 
 * **Fuzzy file and code finder** (like Textmante or Sublime Text 2):
 
@@ -52,17 +52,23 @@ Most important features include:
   * ``,g`` = fuzzy symbol finder (classes, methods, variables, functions, ...) on the current file. Example: if you type "usr" it will find the User class definition on the current file. ``,G`` does the same but on all opened files.
   * ``,f`` = fuzzy text finder on all the opened files. Example: if you type "ctm=6" it will find the line containing "current_time = 16".
   * ``,m`` = fuzzy finder of most recently used files.
-  * ``,d`` = same as ``,g`` (symbol finder) but initiates the search with the word under the cursor (sort of "fuzzy go to definition"). ``,D`` does the same but on all opened files.
-  * ``,we``, ``,wg``, ``,wf`` and ``,wm`` = same as ``,e``, ``,g``, ``,f`` and ``,wm`` but initiate the search with the word under the cursor (also the upper case version of ``,G``, ``,wG``).
+  * ``,we``, ``,wg``, ``,wf`` and ``,wm`` = same as ``,e``, ``,g``, ``,f`` and ``,wm`` but initiate the search with the word under the cursor (also the upper case version of ``,G``, ``,wG``). Is useful to think about the ``,wg`` as a "fuzzy go to definition" (if the definition is in the same file, or ``,wG`` if the definition is on any of the opened files).
   * ``,pe`` = same as ``,e`` but initiates the search with the path under the cursor.
+
+* **Ropevim for really neat python goodies!**:
+
+  * **Go to definition** with ``,d``.
+  * **Find occurrences** with ``,o``.
+  * and many other things, learn more about them with ``:help ropevim.txt`` (or visiting `this site <https://bitbucket.org/agr/ropevim>`_).
+  * **Note:** to use ropevim you must create a rope project (only the first time, the next times it will find it and use it). Run ``:RopeOpenProject``.
 
 * **Classes/module browser** that lists classes, functions, methods, and such of the current file, and navigates to them when ENTER is pressed. Toggle it with ``F4``.
 
 * **Pending tasks browser** pressing ``F2``. This reads the current file searching for comments that start with "TODO", "FIXME", and such, and shows them on a list that allows navigation similar to the class browser.
 
-* **Error checking of python code** using Pyflakes (it will detect unused variables or imports, syntax errors, and such).
+* **Error checking of python code** using Pyflakes (it will detect unused variables or imports, syntax errors, and such) and PyLint.
 
-* Run **PEP8 validator** on the current python file with ``,8``, which also displays python errors found with Pyflakes.
+* Run **PEP8 validator** on the current python file with ``,8``, which also displays python errors found with Pyflakes and PyLint.
 
 * A really nice **python and php debugger**. `Here <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_ is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
 
@@ -95,7 +101,7 @@ Most important features include:
 
 * **Search autocompletition** of words using ``Tab``!.
 
-* **Search and read python documentation** with the ``:Pydoc`` command. Example: ``:Pydoc collections``.
+* **Search and read python documentation** with the ``:Pydoc`` command. Example: ``:Pydoc collections`` (also works over the current word with vim's default help keybinding: ``Shift-K``).
 
 * **Comment and uncomment code** with ``\ci``.
 
@@ -125,7 +131,7 @@ Most important features include:
 
 * **Navigate html/xml tags** the same way that you navigate (), {} and []: using ``%``.
 
-* **Beautiful status line allways visible**, with colors, breadcrumbs and useful information about file type, encoding and position.
+* **Beautiful status line allways visible**, with colors, breadcrumbs and useful information about file type, encoding and position. When working with python files, it also displays the current python function or class where the cursor is.
 
 * **Automatically removes trailing spaces** when saving python files.
 
@@ -175,6 +181,12 @@ Most important features include:
 * Really neat **surround actions** using the surround.vim plugin. Learn how to use it `here <https://github.com/tpope/vim-surround>`_.
 
 * **indentation defined text objects** for the editing language, named ``i``. For example, you can change an entire indented code block with ``cii``, or the indented block and its header line with ``cai`` (also yank, delete, ...).
+
+* **python class and method/function text objects** for the editing language, named ``C`` and ``M``. For example, you can change an entire function content with ``ciM``, or delete a class including its header with ``daC``.
+
+* **run the curren python file** and display the output on a split with ``\r``.
+
+* **insert and remove ipdb breakpoints** with ``\b``.
 
 * **Copy history navigation** using the YankRing plugin, which allows you to cicle the vim clipboard with ``Ctrl-p`` and ``Ctrl-n``, and many other features (described `here <http://www.vim.org/scripts/script.php?script_id=1234>`_).
 
