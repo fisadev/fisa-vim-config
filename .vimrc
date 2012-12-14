@@ -211,8 +211,6 @@ endfunction
 nmap ,wg :call CtrlPWithSearchText(expand('<cword>'), 'BufTag')<CR>
 nmap ,wG :call CtrlPWithSearchText(expand('<cword>'), 'BufTagAll')<CR>
 nmap ,wf :call CtrlPWithSearchText(expand('<cword>'), 'Line')<CR>
-nmap ,d ,wg
-nmap ,D ,wG
 nmap ,we :call CtrlPWithSearchText(expand('<cword>'), '')<CR>
 nmap ,pe :call CtrlPWithSearchText(expand('<cfile>'), '')<CR>
 nmap ,wm :call CtrlPWithSearchText(expand('<cword>'), 'MRUFiles')<CR>
@@ -249,6 +247,10 @@ let g:pymode_lint_signs = 0
 let g:pymode_folding = 0
 " don't create rope project if doesn't exists
 let g:pymode_rope_auto_project = 0
+
+" rope (from python-mode) settings
+nmap ,d :RopeGotoDefinition<CR>
+nmap ,o :RopeFindOccurrences<CR>
 
 " don't let pyflakes allways override the quickfix list
 let g:pyflakes_use_quickfix = 0
