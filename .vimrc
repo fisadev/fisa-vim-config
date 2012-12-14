@@ -147,10 +147,6 @@ imap <C-J> <C-X><C-O>
 " show pending tasks list
 map <F2> :TaskList<CR>
 
-" removes trailing spaces of python files
-" (and restores cursor position)
-autocmd BufWritePre *.py mark z | %s/ *$//e | 'z
-
 " save as sudo
 ca w!! w !sudo tee "%"
 
