@@ -30,14 +30,10 @@ Bundle 'fisadev/vim-debug.vim'
 Bundle 'scrooloose/nerdtree'
 " Code commenter
 Bundle 'scrooloose/nerdcommenter'
-" Search and read python documentation
-Bundle 'fs111/pydoc.vim'
 " Class/module browser
 Bundle 'majutsushi/tagbar'
 " Code and files fuzzy finder
 Bundle 'kien/ctrlp.vim'
-" PEP8 and python-flakes checker
-Bundle 'nvie/vim-flake8'
 " Zen coding
 Bundle 'mattn/zencoding-vim'
 " Git integration
@@ -56,10 +52,11 @@ Bundle 'fisadev/FixedTaskList.vim'
 Bundle 'tpope/vim-surround'
 " Autoclose
 Bundle 'Townk/vim-autoclose'
-" Better python indentation
-Bundle 'vim-scripts/indentpython.vim--nianyang'
 " Indent text object
 Bundle 'michaeljsmith/vim-indent-object'
+" Python mode (indentation, doc, refactor, lints, code checking, motion and
+" operators, highlighting, run and ipdb breakpoints)
+Bundle 'klen/python-mode'
 
 " Bundles from vim-scripts repos
 
