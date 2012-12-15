@@ -60,7 +60,7 @@ Bundle 'klen/python-mode'
 
 " Bundles from vim-scripts repos
 
-" Autocompletition
+" Autocompletion
 Bundle 'AutoComplPop'
 " Python code checker
 Bundle 'pyflakes.vim'
@@ -70,7 +70,7 @@ Bundle 'IndexedSearch'
 Bundle 'matchit.zip'
 " Gvim colorscheme
 Bundle 'Wombat'
-" Autocompletition inside search
+" Autocompletion inside search
 Bundle 'SearchComplete'
 " Yank history navigation
 Bundle 'YankRing.vim'
@@ -120,8 +120,8 @@ map <F3> :NERDTreeToggle<CR>
 " tab navigation
 map tn :tabn<CR>
 map tp :tabp<CR>
-map tm :tabm 
-map tt :tabnew 
+map tm :tabm
+map tt :tabnew
 map <C-S-Right> :tabn<CR>
 imap <C-S-Right> <ESC>:tabn<CR>
 map <C-S-Left> :tabp<CR>
@@ -137,7 +137,7 @@ imap <M-Left> <ESC><c-w>h
 imap <M-Up> <ESC><c-w>k
 imap <M-Down> <ESC><c-w>j
 
-" automatically close autocompletition window
+" automatically close autocompletion window
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
@@ -150,7 +150,7 @@ map <F2> :TaskList<CR>
 " save as sudo
 ca w!! w !sudo tee "%"
 
-" colors and settings of autocompletition
+" colors and settings of autocompletion
 highlight Pmenu ctermbg=4 guibg=LightGray
 " highlight PmenuSel ctermbg=8 guibg=DarkBlue guifg=Red
 " highlight PmenuSbar ctermbg=7 guibg=DarkGray
@@ -175,14 +175,14 @@ let OmniCpp_ShowPrototypeInAbbr = 1
 " 0 = hide access
 " 1 = show access
 let OmniCpp_ShowAccess = 1
-" This option can be use if you don't want to parse using namespace declarations in included files and want to add 
+" This option can be use if you don't want to parse using namespace declarations in included files and want to add
 " namespaces that are always used in your project.
 let OmniCpp_DefaultNamespaces = ["std"]
 " Complete Behaviour
 let OmniCpp_MayCompleteDot = 0
 let OmniCpp_MayCompleteArrow = 0
 let OmniCpp_MayCompleteScope = 0
-" When 'completeopt' does not contain "longest", Vim automatically select the first entry of the popup menu. You can 
+" When 'completeopt' does not contain "longest", Vim automatically select the first entry of the popup menu. You can
 " change this behaviour with the OmniCpp_SelectFirstItem option.
 let OmniCpp_SelectFirstItem = 0
 
@@ -228,8 +228,8 @@ let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 " simple recursive grep
 command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
 command! -nargs=1 RecurGrepFast silent exec 'lgrep! <q-args> ./**/*.*' | lopen
-nmap ,R :RecurGrep 
-nmap ,r :RecurGrepFast 
+nmap ,R :RecurGrep
+nmap ,r :RecurGrepFast
 nmap ,wR :RecurGrep <cword><CR>
 nmap ,wr :RecurGrepFast <cword><CR>
 
@@ -277,7 +277,7 @@ endif
 " when scrolling, keep cursor 3 lines away from screen border
 set scrolloff=3
 
-" autocompletition of files and commands behaves like shell
+" autocompletion of files and commands behaves like shell
 " (complete only the common part, list the options that match)
 set wildmode=list:longest
 
