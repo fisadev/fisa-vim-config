@@ -1,7 +1,7 @@
 fisa-vim-config
 ===============
 
-my vim configuration (lot of python, autocompletition, fuzzy finder, debugger, ...)
+my vim configuration (lot of python, autocompletion, fuzzy finder, debugger, ...)
 
 What is this?
 -------------
@@ -22,7 +22,7 @@ You can report any issue on the `Issues <https://github.com/fisadev/fisa-vim-con
 Features or it didn't happen!
 -----------------------------
 
-magic-powered autocompletition
+magic-powered autocompletion
 
 .. image:: http://i.imgur.com/7xf4A.png
 
@@ -44,7 +44,7 @@ Most important features include:
 
 * **Plugins managed using Vundle**! You can easily install or remove plugins, and they are installed into ``.vim/bundle/``. More info `here <https://github.com/gmarik/vundle>`_
 
-* **Smart autocompletition as you type**, sometimes using python instrospection (completition of module names, instance methods and attributes) and sometimes text-based (used words) (from version 4.0, it's even more intelligent!).
+* **Smart autocompletion as you type**, sometimes using python instrospection (completion of module names, instance methods and attributes) and sometimes text-based (used words) (from version 4.0, it's even more intelligent!).
 
 * **Fuzzy file and code finder** (like Textmante or Sublime Text 2):
 
@@ -100,7 +100,7 @@ Most important features include:
 
 * **Results count** while searching text.
 
-* **Search autocompletition** of words using ``Tab``!.
+* **Search autocompletion** of words using ``Tab``!.
 
 * **Search and read python documentation** with the ``:Pydoc`` command. Example: ``:Pydoc collections`` (also works over the current word with vim's default help keybinding: ``Shift-K``).
 
@@ -118,13 +118,13 @@ Most important features include:
 
 * **Easy window navigation** using ``Alt-arrows`` keys.
 
-* Some vim goodies enabled by default: 
+* Some vim goodies enabled by default:
 
   * **incremental search** (moves to the first result while you are typing).
   * **highlighted search results**.
   * **line numbers**.
   * keep **cursor 3 lines away from screen border while scrolling**.
-  * **shell-like autocompletition of commands and paths** (autocomplete the common part and show matching options).
+  * **shell-like autocompletion of commands and paths** (autocomplete the common part and show matching options).
 
 * **Python interpreter inside vim**, or any other console. They are opened as a buffer using the command ``:ConqueTerm``. Examples: ``:ConqueTerm python``, ``:ConqueTerm bash``.
 
@@ -144,15 +144,15 @@ Most important features include:
 
 * **2 spaces indentation for html and javascript** (can disable it removing two lines from the ``.vimrc``).
 
-* **Zen coding** for html: generate lots of html code writing simple and short expressions. 
-  Example: 
+* **Zen coding** for html: generate lots of html code writing simple and short expressions.
+  Example:
 
   1. write ``#books>ul>li.book*5>a``
   2. press ``Ctrl-y ,``
   3. it will generate:
 
      ::
-     
+
       <div id="books">
           <ul>
               <li class="book">
@@ -172,7 +172,7 @@ Most important features include:
               </li>
           </ul>
       </div>
-     
+
   Learn more on the plugin `site <https://github.com/mattn/zencoding-vim/>`_.
 
 * **Git integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Also includes key mappings and syntax highlighting for git displays.
@@ -218,7 +218,7 @@ Super easy installation
   Simply run ``vim`` on your terminal, and it will try to install the plugins. They will be installed into the ``.vim/bundle`` folder.
 
   Wait for the installation to finish...
-  
+
   Done! You have your new shiny powerful vim :)
 
 * **Optional: fancy symbols and breadcrumbs**
@@ -247,11 +247,11 @@ And thanks to all the developers of the plugins that I simply use here:
 
 * `Plugins manager (Vundle) <https://github.com/gmarik/vundle>`_
 * `Vundle autoinstalation <http://www.erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/>`_
-* `Python mode (smarter autocompletition, smarter go to definition and find occurrences, better python indentation, doc, refactor utilities, lints and pep8 checkers, python motion and operators, better python highlighting, run python and ipdb breakpoints) <https://github.com/klen/python-mode>`_
+* `Python mode (smarter autocompletion, smarter go to definition and find occurrences, better python indentation, doc, refactor utilities, lints and pep8 checkers, python motion and operators, better python highlighting, run python and ipdb breakpoints) <https://github.com/klen/python-mode>`_
 * `Debugger (vim-debug) <http://github.com/jabapyth/vim-debug/>`_
 * `GVim color scheme (wombat) <http://www.vim.org/scripts/script.php?script_id=1778>`_
 * `Consoles as buffers (ConqueShell) <http://www.vim.org/scripts/script.php?script_id=2771>`_
-* `Autocompletition (autocomplpop) <http://www.vim.org/scripts/script.php?script_id=1879>`_
+* `Autocompletion (autocomplpop) <http://www.vim.org/scripts/script.php?script_id=1879>`_
 * `Better file browser (NERDTree) <https://github.com/scrooloose/nerdtree>`_
 * `Class/module browser (Tagbar) <https://github.com/majutsushi/tagbar>`_
 * `Pending tasks list (TaskList) <http://www.vim.org/scripts/script.php?script_id=2607>`_
@@ -267,7 +267,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `256 colorscheme (fisa) <https://github.com/fisadev/fisa-vim-colorscheme>`_
 * `Surround actions <https://github.com/tpope/vim-surround>`_
 * `AutoClose <https://github.com/Townk/vim-autoclose>`_
-* `Search autocompletition <http://www.vim.org/scripts/script.php?script_id=474>`_
+* `Search autocompletion <http://www.vim.org/scripts/script.php?script_id=474>`_
 * `YankRing <http://www.vim.org/scripts/script.php?script_id=1234>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
@@ -281,7 +281,7 @@ First we will need to patch a font. Pick the font you want to patch (it should b
 
 **Install**
 
-Now we need to install the patched font to our system. On Ubuntu, double click on the font file and choose "install". On other systems copy the font file to the ``YOURHOMEFOLDER/.fonts/`` folder and then run ``sudo fc-cache -vf``. 
+Now we need to install the patched font to our system. On Ubuntu, double click on the font file and choose "install". On other systems copy the font file to the ``YOURHOMEFOLDER/.fonts/`` folder and then run ``sudo fc-cache -vf``.
 
 **Configure**
 
