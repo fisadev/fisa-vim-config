@@ -173,3 +173,8 @@ Changelog
   * Fixed autoinstalation source link
   * Added font name below the screenshots
   * Added vim itself as dependency on the instalation tutorial
+
+* Version 4.1
+
+  * "Completition" is wrong, the correct word is "completion" :)
+
