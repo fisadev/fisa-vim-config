@@ -120,8 +120,8 @@ map <F3> :NERDTreeToggle<CR>
 " tab navigation
 map tn :tabn<CR>
 map tp :tabp<CR>
-map tm :tabm
-map tt :tabnew
+map tm :tabm 
+map tt :tabnew 
 map <C-S-Right> :tabn<CR>
 imap <C-S-Right> <ESC>:tabn<CR>
 map <C-S-Left> :tabp<CR>
@@ -228,8 +228,8 @@ let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 " simple recursive grep
 command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
 command! -nargs=1 RecurGrepFast silent exec 'lgrep! <q-args> ./**/*.*' | lopen
-nmap ,R :RecurGrep
-nmap ,r :RecurGrepFast
+nmap ,R :RecurGrep 
+nmap ,r :RecurGrepFast 
 nmap ,wR :RecurGrep <cword><CR>
 nmap ,wr :RecurGrepFast <cword><CR>
 
