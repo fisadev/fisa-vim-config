@@ -178,3 +178,6 @@ Changelog
 
   * "Completition" is wrong, the correct word is "completion" :)
 
+* Version 4.2
+
+  * Rope disabled by default
