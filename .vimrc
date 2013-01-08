@@ -245,8 +245,8 @@ let g:pymode_lint_ignore = ""
 let g:pymode_lint_signs = 0
 " don't fold python code on open
 let g:pymode_folding = 0
-" don't create rope project if doesn't exists
-let g:pymode_rope_auto_project = 0
+" don't load rope by default. Change to 1 to use rope
+let g:pymode_rope = 0
 
 " rope (from python-mode) settings
 nmap ,d :RopeGotoDefinition<CR>
