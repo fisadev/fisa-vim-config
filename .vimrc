@@ -70,8 +70,6 @@ Bundle 'IndexedSearch'
 Bundle 'matchit.zip'
 " Gvim colorscheme
 Bundle 'Wombat'
-" Autocompletion inside search
-Bundle 'SearchComplete'
 " Yank history navigation
 Bundle 'YankRing.vim'
 
