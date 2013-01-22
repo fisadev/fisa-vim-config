@@ -181,3 +181,7 @@ Changelog
 * Version 4.2
 
   * Rope disabled by default
+
+* Version 4.3
+
+  * Removed SearchComplete plugin, because it breaks search history navigation
