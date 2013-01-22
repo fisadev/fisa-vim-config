@@ -100,8 +100,6 @@ Most important features include:
 
 * **Results count** while searching text.
 
-* **Search autocompletion** of words using ``Tab``!.
-
 * **Search and read python documentation** with the ``:Pydoc`` command. Example: ``:Pydoc collections`` (also works over the current word with vim's default help keybinding: ``Shift-K``).
 
 * **Comment and uncomment code** with ``\ci``.
@@ -267,7 +265,6 @@ And thanks to all the developers of the plugins that I simply use here:
 * `256 colorscheme (fisa) <https://github.com/fisadev/fisa-vim-colorscheme>`_
 * `Surround actions <https://github.com/tpope/vim-surround>`_
 * `AutoClose <https://github.com/Townk/vim-autoclose>`_
-* `Search autocompletion <http://www.vim.org/scripts/script.php?script_id=474>`_
 * `YankRing <http://www.vim.org/scripts/script.php?script_id=1234>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
