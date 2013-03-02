@@ -57,6 +57,12 @@ Bundle 'michaeljsmith/vim-indent-object'
 " Python mode (indentation, doc, refactor, lints, code checking, motion and
 " operators, highlighting, run and ipdb breakpoints)
 Bundle 'klen/python-mode'
+" Relative numbering of lines (0 is the current line)
+" (disabled by default because is very intrusive and can't be easily toggled
+" on/off. When the plugin is present, will always activate the relative 
+" numbering every time you go to normal mode. Author refuses to add a setting 
+" to avoid that)
+" Bundle 'myusuf3/numbers.vim'
 
 " Bundles from vim-scripts repos
 
