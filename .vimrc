@@ -120,6 +120,7 @@ map tn :tabn<CR>
 map tp :tabp<CR>
 map tm :tabm 
 map tt :tabnew 
+map ts :tab split<CR>
 map <C-S-Right> :tabn<CR>
 imap <C-S-Right> <ESC>:tabn<CR>
 map <C-S-Left> :tabp<CR>
@@ -248,6 +249,7 @@ let g:pymode_rope = 0
 
 " rope (from python-mode) settings
 nmap ,d :RopeGotoDefinition<CR>
+nmap ,D :tab split<CR>:RopeGotoDefinition<CR>
 nmap ,o :RopeFindOccurrences<CR>
 
 " don't let pyflakes allways override the quickfix list

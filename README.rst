@@ -58,7 +58,7 @@ Most important features include:
 
 * **Ropevim for really neat python goodies!**:
 
-  * **Go to definition** with ``,d``.
+  * **Go to definition** with ``,d``, or open the definition on a new tab with ``,D``.
   * **Find occurrences** with ``,o``.
   * and many other things, learn more about them with ``:help ropevim.txt`` (or visiting `this site <https://bitbucket.org/agr/ropevim>`_).
   * **Note:** to use ropevim you must enable rope on the ``.vimrc`` (search the line containing ``let g:pymode_rope = 0``). When enabled, I recommend you to launch vim from your project root for the first time, so the ``.ropeproject`` will be created there. Then you can also add new python paths on the created ``.ropeproject/config.py`` for better autocompletion and go-to-definition.
@@ -111,6 +111,7 @@ Most important features include:
   * ``tp`` or ``Ctrl-Shift-Left`` = previous tab.
   * ``tm`` = move current tab to a specific position (or to the end if no position number is specified).
   * ``tl`` = show a list of current tabs with their inner windows on a side pane. You can navigate them!
+  * ``ts`` = duplicate current tab.
 
   The mappings starting with the ``t`` letter work only on command mode, but the mappings with ``Ctrl-Shift`` work on both, command and insert mode.
 
