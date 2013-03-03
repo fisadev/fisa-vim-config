@@ -227,7 +227,7 @@ Super easy installation
 Keeping your vim up-to-date
 ---------------------------
 
-After updating the .vimrc, you should run ``:BundleClean`` (this will remove plugins no longer used) and ``:BundleInstall!`` (this will install any new plugins, and update the existing ones to the last versions). You can also run ``:BundleInstall!`` at any time to update the installed plugins.
+After downloading the new version of the ``.vimrc`` file, you should close vim, and run (on the terminal) ``vim +BundleClean +BundleInstall! +qa`` (this will remove plugins no longer used, install any new plugins, and update the existing ones to the last versions). You can also run ``:BundleInstall!`` from inside vim at any time to update the installed plugins (and restart vim after it finishes).
 
 Sources
 -------
