@@ -185,3 +185,13 @@ Changelog
 * Version 4.3
 
   * Removed SearchComplete plugin, because it breaks search history navigation
+
+* Version 4.4
+
+  * New mappings for duplicating tabs, and go to definition in new tab
+  * Added relative numbering plugin, but disabled by default
+  * Better update instructions
+  * Added snipmate and snippets repos
+  * Added support for screen-256 on 256 colors theme selection
+  * Added plugin to display git diff icons of current file on the side of each line
+
