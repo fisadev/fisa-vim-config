@@ -143,7 +143,7 @@ Most important features include:
 
 * **2 spaces indentation for html and javascript** (can disable it removing two lines from the ``.vimrc``).
 
-* **Thousands of code snippets for many languages** with SnipMate. Example, in python you can write ``class`` and press ``tab``, and it will insert the boilerplate code of a common python class.
+* **Thousands of code snippets for many languages** with SnipMate. Example, in python you can write ``cl`` and press ``tab``, and it will insert the boilerplate code of a common python class.
 
 * **Zen coding** for html: generate lots of html code writing simple and short expressions.
   Example:
@@ -229,7 +229,15 @@ Super easy installation
 Keeping your vim up-to-date
 ---------------------------
 
-After downloading the new version of the ``.vimrc`` file, you should close vim, and run (on the terminal) ``vim +BundleClean +BundleInstall! +qa`` (this will remove plugins no longer used, install any new plugins, and update the existing ones to the last versions). You can also run ``:BundleInstall!`` from inside vim at any time to update the installed plugins (and restart vim after it finishes).
+After downloading the new version of the ``.vimrc`` file, you should close vim, and run (on the terminal):
+
+  ::
+
+    vim +BundleClean +BundleInstall! +qa 
+
+(this will remove plugins no longer used, install any new plugins, and update the existing ones to the last versions). 
+
+You can also run ``:BundleInstall!`` from inside vim at any time to update the installed plugins (and restart vim after it finishes).
 
 Sources
 -------
