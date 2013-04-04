@@ -195,3 +195,6 @@ Changelog
   * Added support for screen-256 on 256 colors theme selection
   * Added plugin to display git diff icons of current file on the side of each line
 
+* Version 4.4.1
+
+  * Small doc fixes
