@@ -58,7 +58,7 @@ Most important features include:
 
 * **Ropevim for really neat python goodies!**:
 
-  * **Go to definition** with ``,d``.
+  * **Go to definition** with ``,d``, or open the definition on a new tab with ``,D``.
   * **Find occurrences** with ``,o``.
   * and many other things, learn more about them with ``:help ropevim.txt`` (or visiting `this site <https://bitbucket.org/agr/ropevim>`_).
   * **Note:** to use ropevim you must enable rope on the ``.vimrc`` (search the line containing ``let g:pymode_rope = 0``). When enabled, I recommend you to launch vim from your project root for the first time, so the ``.ropeproject`` will be created there. Then you can also add new python paths on the created ``.ropeproject/config.py`` for better autocompletion and go-to-definition.
@@ -111,6 +111,7 @@ Most important features include:
   * ``tp`` or ``Ctrl-Shift-Left`` = previous tab.
   * ``tm`` = move current tab to a specific position (or to the end if no position number is specified).
   * ``tl`` = show a list of current tabs with their inner windows on a side pane. You can navigate them!
+  * ``ts`` = duplicate current tab.
 
   The mappings starting with the ``t`` letter work only on command mode, but the mappings with ``Ctrl-Shift`` work on both, command and insert mode.
 
@@ -141,6 +142,8 @@ Most important features include:
 * **Use of 256 colors** when possible.
 
 * **2 spaces indentation for html and javascript** (can disable it removing two lines from the ``.vimrc``).
+
+* **Thousands of code snippets for many languages** with SnipMate. Example, in python you can write ``class`` and press ``tab``, and it will insert the boilerplate code of a common python class.
 
 * **Zen coding** for html: generate lots of html code writing simple and short expressions.
   Example:
@@ -173,7 +176,7 @@ Most important features include:
 
   Learn more on the plugin `site <https://github.com/mattn/zencoding-vim/>`_.
 
-* **Git integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Also includes key mappings and syntax highlighting for git displays.
+* **Git integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Also includes key mappings and syntax highlighting for git displays. And displays icons on the side of each line based on the result of a git diff of the current file (example: if you added a line and still didn't commit the file, that line will have a green ``+`` on its side).
 
 * **Better python indentation**.
 
@@ -226,7 +229,7 @@ Super easy installation
 Keeping your vim up-to-date
 ---------------------------
 
-After updating the .vimrc, you should run ``:BundleClean`` (this will remove plugins no longer used) and ``:BundleInstall!`` (this will install any new plugins, and update the existing ones to the last versions). You can also run ``:BundleInstall!`` at any time to update the installed plugins.
+After downloading the new version of the ``.vimrc`` file, you should close vim, and run (on the terminal) ``vim +BundleClean +BundleInstall! +qa`` (this will remove plugins no longer used, install any new plugins, and update the existing ones to the last versions). You can also run ``:BundleInstall!`` from inside vim at any time to update the installed plugins (and restart vim after it finishes).
 
 Sources
 -------
