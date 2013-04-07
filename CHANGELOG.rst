@@ -203,3 +203,8 @@ Changelog
 
   * Updating references to plugin sources
   * Small comment and quotes changes
+
+* Version 4.4.3
+
+  * SnipMate snippets repo was moved, updated it
+
