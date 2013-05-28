@@ -38,7 +38,7 @@ fuzzy code finder (next step: mind reader)
 
 .. image:: http://i.imgur.com/stkUL.png
 
-(the font I'm using is CPMono regular, you can find it `here <http://www.fontspace.com/liquitype/cp-mono>`_)
+(the font I'm using is CPMono regular, you can find it `here <http://cooltext.com/Download-Font-CPMono>`_)
 
 Most important features include:
 
