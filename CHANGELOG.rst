@@ -208,3 +208,6 @@ Changelog
 
   * SnipMate snippets repo was moved, updated it
 
+* Version 4.4.4
+
+  * Just updated the link to the CPMono font on the README
