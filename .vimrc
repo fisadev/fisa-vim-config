@@ -34,6 +34,8 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'majutsushi/tagbar'
 " Code and files fuzzy finder
 Bundle 'kien/ctrlp.vim'
+" Extension to ctrlp, for fuzzy command finder
+Bundle 'fisadev/vim-ctrlp-cmdpalette'
 " Zen coding
 Bundle 'mattn/zencoding-vim'
 " Git integration
@@ -214,6 +216,7 @@ nmap ,g :CtrlPBufTag<CR>
 nmap ,G :CtrlPBufTagAll<CR>
 nmap ,f :CtrlPLine<CR>
 nmap ,m :CtrlPMRUFiles<CR>
+nmap ,c :CtrlPCmdPalette<CR>
 " to be able to call CtrlP with default search text
 function! CtrlPWithSearchText(search_text, ctrlp_command_end)
     execute ':CtrlP' . a:ctrlp_command_end
