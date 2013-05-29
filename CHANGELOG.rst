@@ -211,3 +211,7 @@ Changelog
 * Version 4.4.4
 
   * Just updated the link to the CPMono font on the README
+
+* Version 4.5
+
+  * Added fuzzy command finder
