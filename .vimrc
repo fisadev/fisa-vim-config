@@ -229,6 +229,7 @@ nmap ,wf :call CtrlPWithSearchText(expand('<cword>'), 'Line')<CR>
 nmap ,we :call CtrlPWithSearchText(expand('<cword>'), '')<CR>
 nmap ,pe :call CtrlPWithSearchText(expand('<cfile>'), '')<CR>
 nmap ,wm :call CtrlPWithSearchText(expand('<cword>'), 'MRUFiles')<CR>
+nmap ,wc :call CtrlPWithSearchText(expand('<cword>'), 'CmdPalette')<CR>
 " Don't change working directory
 let g:ctrlp_working_path_mode = 0
 " Ignore files on fuzzy finder
