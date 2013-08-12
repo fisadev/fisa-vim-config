@@ -215,3 +215,7 @@ Changelog
 * Version 4.5
 
   * Added fuzzy command finder
+
+* Version 4.5.1
+
+  * Fixed 2 space tabs on html and javascript
