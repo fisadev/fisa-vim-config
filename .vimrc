@@ -24,8 +24,7 @@ Bundle 'gmarik/vundle'
 
 " Bundles from GitHub repos:
 
-" Python and PHP Debugger
-Bundle 'fisadev/vim-debug.vim'
+
 " Better file browser
 Bundle 'scrooloose/nerdtree'
 " Code commenter
@@ -37,7 +36,7 @@ Bundle 'kien/ctrlp.vim'
 " Extension to ctrlp, for fuzzy command finder
 Bundle 'fisadev/vim-ctrlp-cmdpalette'
 " Zen coding
-Bundle 'mattn/zencoding-vim'
+Bundle 'vim-scripts/Emmet.vim'
 " Git integration
 Bundle 'motemen/git-vim'
 " Tab list panel
@@ -298,8 +297,6 @@ set scrolloff=3
 " (complete only the common part, list the options that match)
 set wildmode=list:longest
 
-" Fix to let ESC work as espected with Autoclose plugin
-let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 
 " to use fancy symbols for powerline, uncomment the following line and use a
 " patched font (more info on the README.rst)
