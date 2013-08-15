@@ -34,7 +34,7 @@ Bundle 'majutsushi/tagbar'
 " Code and files fuzzy finder
 Bundle 'kien/ctrlp.vim'
 " Zen coding
-Bundle 'mattn/zencoding-vim'
+Bundle 'vim-scripts/Emmet.vim'
 " Git integration
 Bundle 'motemen/git-vim'
 " Tab list panel
@@ -278,8 +278,6 @@ set scrolloff=3
 " (complete only the common part, list the options that match)
 set wildmode=list:longest
 
-" Fix to let ESC work as espected with Autoclose plugin
-let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 
 " to use fancy symbols for powerline, uncomment the following line and use a
 " patched font (more info on the README.rst)
