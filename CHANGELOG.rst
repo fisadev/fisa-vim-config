@@ -219,3 +219,7 @@ Changelog
 * Version 4.5.1
 
   * Fixed 2 space tabs on html and javascript
+
+* Version 4.5.2
+
+  * ZenMode repo was moved, updated it
