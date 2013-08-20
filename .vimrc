@@ -37,7 +37,7 @@ Bundle 'kien/ctrlp.vim'
 " Extension to ctrlp, for fuzzy command finder
 Bundle 'fisadev/vim-ctrlp-cmdpalette'
 " Zen coding
-Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 " Git integration
 Bundle 'motemen/git-vim'
 " Tab list panel
