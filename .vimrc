@@ -279,6 +279,6 @@ set scrolloff=3
 set wildmode=list:longest
 
 
-" to use fancy symbols for powerline, uncomment the following line and use a
+let g:AutoClosePumvisible = {"ESC": "\<ESC>"}
 " patched font (more info on the README.rst)
 " let g:Powerline_symbols = 'fancy'
