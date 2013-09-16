@@ -44,7 +44,7 @@ Most important features include:
 
 * **Plugins managed using Vundle**! You can easily install or remove plugins, and they are installed into ``.vim/bundle/``. More info `here <https://github.com/gmarik/vundle>`_
 
-* **Smart autocompletion as you type**, sometimes using python instrospection (completion of module names, instance methods and attributes) and sometimes text-based (used words) (from version 4.0, it's even more intelligent!).
+* **Smart autocompletion as you type**, sometimes using python instrospection (completion of module names, instance methods and attributes) and sometimes text-based (used words) (from version 4.0, it's even more intelligent!). Most of the time is automatically displayed, but you can force it to appear using ``Ctrl-space``.
 
 * **Fuzzy file, code and command finder** (like Textmante or Sublime Text 2):
 
