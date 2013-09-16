@@ -142,7 +142,7 @@ Most important features include:
 
 * **2 spaces indentation for html and javascript** (can disable it removing two lines from the ``.vimrc``).
 
-* **Thousands of code snippets for many languages** with SnipMate. Example, in python you can write ``cl`` and press ``tab``, and it will insert the boilerplate code of a common python class.
+* **Thousands of code snippets for many languages** with SnipMate. Example, in python you can write ``cl`` and press ``Ctrl-m``, and it will insert the boilerplate code of a common python class.
 
 * **Zen coding** for html: generate lots of html code writing simple and short expressions.
   Example:
