@@ -56,9 +56,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'Townk/vim-autoclose'
 " Indent text object
 Bundle 'michaeljsmith/vim-indent-object'
-" Python mode (indentation, doc, refactor, lints, code checking, motion and
-" operators, highlighting, run and ipdb breakpoints)
-Bundle 'klen/python-mode'
+" Python autocompletion and documentation
+Bundle 'davidhalter/jedi-vim'
 " Snippets manager (SnipMate), dependencies, and snippets repo
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -66,6 +65,12 @@ Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
 " Git diff icons on the side of the file lines
 Bundle 'airblade/vim-gitgutter'
+" Better python indentation
+Bundle 'vim-scripts/indentpython.vim--nianyang'
+" PEP8 and python-flakes checker
+Bundle 'nvie/vim-flake8'
+" Search and read python documentation
+Bundle 'fs111/pydoc.vim'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
@@ -151,6 +156,10 @@ imap <M-Left> <ESC><c-w>h
 imap <M-Up> <ESC><c-w>k
 imap <M-Down> <ESC><c-w>j
 
+" fix some problems with gitgutter and jedi-vim
+let g:gitgutter_eager = 0
+let g:gitgutter_realtime = 0
+
 " automatically close autocompletion window
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
@@ -161,6 +170,13 @@ imap <C-J> <C-X><C-O>
 " show pending tasks list
 map <F2> :TaskList<CR>
 
+" removes trailing spaces of python files
+" (and restores cursor position)
+autocmd BufWritePre *.py mark z | %s/ *$//e | 'z
+
+" store yankring history file hidden
+let g:yankring_history_file = '.yankring_history'
+
 " save as sudo
 ca w!! w !sudo tee "%"
 
@@ -169,36 +185,6 @@ highlight Pmenu ctermbg=4 guibg=LightGray
 " highlight PmenuSel ctermbg=8 guibg=DarkBlue guifg=Red
 " highlight PmenuSbar ctermbg=7 guibg=DarkGray
 " highlight PmenuThumb guibg=Black
-" use global scope search
-let OmniCpp_GlobalScopeSearch = 1
-" 0 = namespaces disabled
-" 1 = search namespaces in the current buffer
-" 2 = search namespaces in the current buffer and in included files
-let OmniCpp_NamespaceSearch = 2
-" 0 = auto
-" 1 = always show all members
-let OmniCpp_DisplayMode = 1
-" 0 = don't show scope in abbreviation
-" 1 = show scope in abbreviation and remove the last column
-let OmniCpp_ShowScopeInAbbr = 0
-" This option allows to display the prototype of a function in the abbreviation part of the popup menu.
-" 0 = don't display prototype in abbreviation
-" 1 = display prototype in abbreviation
-let OmniCpp_ShowPrototypeInAbbr = 1
-" This option allows to show/hide the access information ('+', '#', '-') in the popup menu.
-" 0 = hide access
-" 1 = show access
-let OmniCpp_ShowAccess = 1
-" This option can be use if you don't want to parse using namespace declarations in included files and want to add
-" namespaces that are always used in your project.
-let OmniCpp_DefaultNamespaces = ["std"]
-" Complete Behaviour
-let OmniCpp_MayCompleteDot = 0
-let OmniCpp_MayCompleteArrow = 0
-let OmniCpp_MayCompleteScope = 0
-" When 'completeopt' does not contain "longest", Vim automatically select the first entry of the popup menu. You can
-" change this behaviour with the OmniCpp_SelectFirstItem option.
-let OmniCpp_SelectFirstItem = 0
 
 " debugger keyboard shortcuts
 map <F5> :Dbg over<CR>
@@ -249,25 +235,24 @@ nmap ,r :RecurGrepFast
 nmap ,wR :RecurGrep <cword><CR>
 nmap ,wr :RecurGrepFast <cword><CR>
 
-" python-mode settings
-" don't show lint result every time we save a file
-let g:pymode_lint_write = 0
-" run pep8+pyflakes+pylint validator with \8
-autocmd FileType python map <buffer> <leader>8 :PyLint<CR>
+" run pep8+pyflakes validator
+autocmd FileType python map <buffer> <leader>8 :call Flake8()<CR>
 " rules to ignore (example: "E501,W293")
-let g:pymode_lint_ignore = ""
-" don't add extra column for error icons (on console vim creates a 2-char-wide
-" extra column)
-let g:pymode_lint_signs = 0
-" don't fold python code on open
-let g:pymode_folding = 0
-" don't load rope by default. Change to 1 to use rope
-let g:pymode_rope = 0
+let g:flake8_ignore=""
 
-" rope (from python-mode) settings
-nmap ,d :RopeGotoDefinition<CR>
-nmap ,D :tab split<CR>:RopeGotoDefinition<CR>
-nmap ,o :RopeFindOccurrences<CR>
+" jedi-vim customizations
+let g:jedi#popup_on_dot = 0
+let g:jedi#goto_assignments_command = ",g"
+let g:jedi#goto_definitions_command = ",d"
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = ",o"
+let g:jedi#completions_command = "<C-Space>"
+let g:jedi#rename_command = "<leader>r"
+let g:jedi#show_call_signatures = "1"
+nmap ,D :tab split<CR>,d
+
+" Change snipmate binding, to avoid problems with jedi-vim
+imap <C-k> <Plug>snipMateNextOrTrigger
 
 " don't let pyflakes allways override the quickfix list
 let g:pyflakes_use_quickfix = 0
