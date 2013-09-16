@@ -156,6 +156,10 @@ imap <M-Left> <ESC><c-w>h
 imap <M-Up> <ESC><c-w>k
 imap <M-Down> <ESC><c-w>j
 
+" fix some problems with gitgutter and jedi-vim
+let g:gitgutter_eager = 0
+let g:gitgutter_realtime = 0
+
 " automatically close autocompletion window
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
