@@ -223,3 +223,12 @@ Changelog
 * Version 4.5.2
 
   * ZenMode repo was moved, updated it
+
+* Version 5.0
+
+  * Replaced python-mode with jedi-vim plus some old removed plugins (pydoc, flake8, indentpython)
+  * Hidden YankRing history file
+  * Removed old legacy completion configs
+  * Fixed problems between jedi-vim and GitGutter
+  * Fixed problems between jedi-vim and SnipMate (to do this, had to change the SnipMate mapping)
+  * Fixed problems between jedi-vim and AutocomplPop
