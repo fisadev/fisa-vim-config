@@ -56,9 +56,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'Townk/vim-autoclose'
 " Indent text object
 Bundle 'michaeljsmith/vim-indent-object'
-" Python mode (indentation, doc, refactor, lints, code checking, motion and
-" operators, highlighting, run and ipdb breakpoints)
-Bundle 'klen/python-mode'
+" Python autocompletion and documentation
+Bundle 'davidhalter/jedi-vim'
 " Snippets manager (SnipMate), dependencies, and snippets repo
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -66,6 +65,12 @@ Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
 " Git diff icons on the side of the file lines
 Bundle 'airblade/vim-gitgutter'
+" Better python indentation
+Bundle 'vim-scripts/indentpython.vim--nianyang'
+" PEP8 and python-flakes checker
+Bundle 'nvie/vim-flake8'
+" Search and read python documentation
+Bundle 'fs111/pydoc.vim'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
@@ -161,6 +166,10 @@ imap <C-J> <C-X><C-O>
 " show pending tasks list
 map <F2> :TaskList<CR>
 
+" removes trailing spaces of python files
+" (and restores cursor position)
+autocmd BufWritePre *.py mark z | %s/ *$//e | 'z
+
 " save as sudo
 ca w!! w !sudo tee "%"
 
@@ -249,25 +258,19 @@ nmap ,r :RecurGrepFast
 nmap ,wR :RecurGrep <cword><CR>
 nmap ,wr :RecurGrepFast <cword><CR>
 
-" python-mode settings
-" don't show lint result every time we save a file
-let g:pymode_lint_write = 0
-" run pep8+pyflakes+pylint validator with \8
-autocmd FileType python map <buffer> <leader>8 :PyLint<CR>
+" run pep8+pyflakes validator
+autocmd FileType python map <buffer> <leader>8 :call Flake8()<CR>
 " rules to ignore (example: "E501,W293")
-let g:pymode_lint_ignore = ""
-" don't add extra column for error icons (on console vim creates a 2-char-wide
-" extra column)
-let g:pymode_lint_signs = 0
-" don't fold python code on open
-let g:pymode_folding = 0
-" don't load rope by default. Change to 1 to use rope
-let g:pymode_rope = 0
+let g:flake8_ignore=""
 
-" rope (from python-mode) settings
-nmap ,d :RopeGotoDefinition<CR>
-nmap ,D :tab split<CR>:RopeGotoDefinition<CR>
-nmap ,o :RopeFindOccurrences<CR>
+let g:jedi#goto_assignments_command = ",g"
+let g:jedi#goto_definitions_command = ",d"
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = ",o"
+let g:jedi#completions_command = "<C-Space>"
+let g:jedi#rename_command = "<leader>r"
+let g:jedi#show_call_signatures = "1"
+nmap ,D :tab split<CR>,d
 
 " don't let pyflakes allways override the quickfix list
 let g:pyflakes_use_quickfix = 0
