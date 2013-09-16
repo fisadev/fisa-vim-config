@@ -174,6 +174,9 @@ map <F2> :TaskList<CR>
 " (and restores cursor position)
 autocmd BufWritePre *.py mark z | %s/ *$//e | 'z
 
+" store yankring history file in tmp
+let g:yankring_history_dir = '~/.vim/tmp/'
+
 " save as sudo
 ca w!! w !sudo tee "%"
 
