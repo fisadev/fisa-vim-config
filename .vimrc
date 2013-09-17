@@ -124,6 +124,9 @@ set incsearch
 " highlighted search results
 set hlsearch
 
+" syntax highlight on
+syntax on
+
 " line numbers
 set nu
 
