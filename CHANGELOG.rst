@@ -236,3 +236,7 @@ Changelog
 * Version 5.0.1
 
   * Fix tabs behaviour of go to definition
+
+* Version 5.0.2
+
+  * Fix trailing whitespaces cleaner regex
