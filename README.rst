@@ -125,6 +125,7 @@ Most important features include:
   * **line numbers**.
   * keep **cursor 3 lines away from screen border while scrolling**.
   * **shell-like autocompletion of commands and paths** (autocomplete the common part and show matching options).
+  * **syntax highlighting on** by default.
 
 * **Python interpreter inside vim**, or any other console. They are opened as a buffer using the command ``:ConqueTerm``. Examples: ``:ConqueTerm python``, ``:ConqueTerm bash``.
 
