@@ -172,7 +172,7 @@ map <F2> :TaskList<CR>
 
 " removes trailing spaces of python files
 " (and restores cursor position)
-autocmd BufWritePre *.py mark z | %s/ *$//e | 'z
+autocmd BufWritePre *.py mark z | %s/\s\+$//e | 'z
 
 " store yankring history file hidden
 let g:yankring_history_file = '.yankring_history'
