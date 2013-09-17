@@ -266,7 +266,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Zen coding <https://github.com/mattn/zencoding-vim/>`_
 * `Git integration <https://github.com/motemen/git-vim>`_
 * `Tab list pane (tabman) <https://github.com/kien/tabman.vim>`_
-* `Beautiful status line (Airline) <https://github.com/Lokaltog/vim-powerline>`_
+* `Beautiful status line (Airline) <https://github.com/bling/vim-airline>`_
 * `256 colorscheme (fisa) <https://github.com/fisadev/fisa-vim-colorscheme>`_
 * `Surround actions <https://github.com/tpope/vim-surround>`_
 * `AutoClose <https://github.com/Townk/vim-autoclose>`_
