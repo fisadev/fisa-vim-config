@@ -124,6 +124,9 @@ set incsearch
 " highlighted search results
 set hlsearch
 
+" syntax highlight on
+syntax on
+
 " line numbers
 set nu
 
@@ -172,7 +175,7 @@ map <F2> :TaskList<CR>
 
 " removes trailing spaces of python files
 " (and restores cursor position)
-autocmd BufWritePre *.py mark z | %s/ *$//e | 'z
+autocmd BufWritePre *.py mark z | %s/\s\+$//e | 'z
 
 " store yankring history file hidden
 let g:yankring_history_file = '.yankring_history'
@@ -243,7 +246,7 @@ let g:flake8_ignore=""
 " jedi-vim customizations
 let g:jedi#popup_on_dot = 0
 let g:jedi#use_tabs_not_buffers = 0
-let g:jedi#goto_assignments_command = ",g"
+let g:jedi#goto_assignments_command = ",a"
 let g:jedi#goto_definitions_command = ",d"
 let g:jedi#documentation_command = "K"
 let g:jedi#usages_command = ",o"

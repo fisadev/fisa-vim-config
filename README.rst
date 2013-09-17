@@ -60,7 +60,9 @@ Most important features include:
 * **Jedi-vim for really neat python goodies!**:
 
   * **Go to definition** with ``,d``, or open the definition on a new tab with ``,D``.
+  * **Go to assignment** with ``,a``.
   * **Find occurrences** with ``,o``.
+  * And it is the power behind the magic python autocompletion.
 
 * **Classes/module browser** that lists classes, functions, methods, and such of the current file, and navigates to them when ENTER is pressed. Toggle it with ``F4``.
 
@@ -123,6 +125,7 @@ Most important features include:
   * **line numbers**.
   * keep **cursor 3 lines away from screen border while scrolling**.
   * **shell-like autocompletion of commands and paths** (autocomplete the common part and show matching options).
+  * **syntax highlighting on** by default.
 
 * **Python interpreter inside vim**, or any other console. They are opened as a buffer using the command ``:ConqueTerm``. Examples: ``:ConqueTerm python``, ``:ConqueTerm bash``.
 
