@@ -242,6 +242,7 @@ let g:flake8_ignore=""
 
 " jedi-vim customizations
 let g:jedi#popup_on_dot = 0
+let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#goto_assignments_command = ",g"
 let g:jedi#goto_definitions_command = ",d"
 let g:jedi#documentation_command = "K"

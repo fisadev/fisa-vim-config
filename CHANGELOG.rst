@@ -232,3 +232,7 @@ Changelog
   * Fixed problems between jedi-vim and GitGutter
   * Fixed problems between jedi-vim and SnipMate (to do this, had to change the SnipMate mapping)
   * Fixed problems between jedi-vim and AutocomplPop
+
+* Version 5.0.1
+
+  * Fix tabs behaviour of go to definition
