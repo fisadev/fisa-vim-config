@@ -240,3 +240,8 @@ Changelog
 * Version 5.0.2
 
   * Fix trailing whitespaces cleaner regex
+
+* Version 5.0.3
+
+  * Fix fuzzy symbol finder map, changed jedi-vim go to assignment map
+  * Syntax highlighting on by default
