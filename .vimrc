@@ -42,8 +42,8 @@ Bundle 'mattn/emmet-vim'
 Bundle 'motemen/git-vim'
 " Tab list panel
 Bundle 'kien/tabman.vim'
-" Powerline
-Bundle 'Lokaltog/vim-powerline'
+" Airline
+Bundle 'bling/vim-airline'
 " Terminal Vim with 256 colors colorscheme
 Bundle 'fisadev/fisa-vim-colorscheme'
 " Consoles as buffers
@@ -289,4 +289,7 @@ let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 
 " to use fancy symbols for powerline, uncomment the following line and use a
 " patched font (more info on the README.rst)
+" Airline uses the same config. Uncomment to get fancy symbols.
 " let g:Powerline_symbols = 'fancy'
+" This works too (not so fancy but better than nothing)
+" let g:Powerline_symbols = 'unicode'
