@@ -245,3 +245,9 @@ Changelog
 
   * Fix fuzzy symbol finder map, changed jedi-vim go to assignment map
   * Syntax highlighting on by default
+
+* Version 5.0.4
+
+  * Add mapping for ipdb breakpoints insert
+  * Removed default mappings of vim-debug
+  * Removed python-mode from the references (no longer used)

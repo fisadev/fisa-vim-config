@@ -188,6 +188,8 @@ Most important features include:
 
 * **Copy history navigation** using the YankRing plugin, which allows you to cicle the vim clipboard with ``Ctrl-p`` and ``Ctrl-n``, and many other features (described `here <http://www.vim.org/scripts/script.php?script_id=1234>`_).
 
+* **Insert ipdb breakpoints** with ``\b``.
+
 Super easy installation
 -----------------------
 
@@ -252,7 +254,6 @@ And thanks to all the developers of the plugins that I simply use here:
 
 * `Plugins manager (Vundle) <https://github.com/gmarik/vundle>`_
 * `Vundle autoinstalation <http://www.erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/>`_
-* `Python mode (smarter autocompletion, smarter go to definition and find occurrences, better python indentation, doc, refactor utilities, lints and pep8 checkers, python motion and operators, better python highlighting, run python and ipdb breakpoints) <https://github.com/klen/python-mode>`_
 * `Debugger (vim-debug) <http://github.com/jabapyth/vim-debug/>`_
 * `GVim color scheme (wombat) <http://www.vim.org/scripts/script.php?script_id=1778>`_
 * `Consoles as buffers (ConqueShell) <http://www.vim.org/scripts/script.php?script_id=2771>`_

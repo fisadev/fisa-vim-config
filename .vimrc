@@ -190,6 +190,7 @@ highlight Pmenu ctermbg=4 guibg=LightGray
 " highlight PmenuThumb guibg=Black
 
 " debugger keyboard shortcuts
+let g:vim_debug_disable_mappings = 1
 map <F5> :Dbg over<CR>
 map <F6> :Dbg into<CR>
 map <F7> :Dbg out<CR>
@@ -198,6 +199,9 @@ map <F9> :Dbg break<CR>
 map <F10> :Dbg watch<CR>
 map <F11> :Dbg down<CR>
 map <F12> :Dbg up<CR>
+
+" insert ipdb breakpoint with \b
+nmap <leader>b Oimport ipdb;ipdb.set_trace()<ESC>
 
 " CtrlP (new fuzzy finder)
 let g:ctrlp_map = ',e'
