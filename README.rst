@@ -188,6 +188,8 @@ Most important features include:
 
 * **Copy history navigation** using the YankRing plugin, which allows you to cicle the vim clipboard with ``Ctrl-p`` and ``Ctrl-n``, and many other features (described `here <http://www.vim.org/scripts/script.php?script_id=1234>`_).
 
+* **Insert ipdb breakpoints** with ``\b``.
+
 Super easy installation
 -----------------------
 
