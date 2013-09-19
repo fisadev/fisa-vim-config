@@ -190,6 +190,7 @@ highlight Pmenu ctermbg=4 guibg=LightGray
 " highlight PmenuThumb guibg=Black
 
 " debugger keyboard shortcuts
+let g:vim_debug_disable_mappings = 1
 map <F5> :Dbg over<CR>
 map <F6> :Dbg into<CR>
 map <F7> :Dbg out<CR>
