@@ -270,7 +270,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Zen coding <https://github.com/mattn/zencoding-vim/>`_
 * `Git integration <https://github.com/motemen/git-vim>`_
 * `Tab list pane (tabman) <https://github.com/kien/tabman.vim>`_
-* `Beautiful status line (Powerline) <https://github.com/Lokaltog/vim-powerline>`_
+* `Beautiful status line (Airline) <https://github.com/bling/vim-airline>`_
 * `256 colorscheme (fisa) <https://github.com/fisadev/fisa-vim-colorscheme>`_
 * `Surround actions <https://github.com/tpope/vim-surround>`_
 * `AutoClose <https://github.com/Townk/vim-autoclose>`_
@@ -288,11 +288,14 @@ And thanks to all the developers of the plugins that I simply use here:
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------
 
-Powerline allows you to use fancy symbols on the status line for breadcrumbs and indicators (example: a padlock when editing read-only files). Using them requires to have a patched font in your terminal. It may sound black magic, but in fact is quite easy.
+Airline allows you to use fancy symbols on the status line for breadcrumbs and indicators (example: a padlock when editing read-only files). Using them requires to have a patched font in your terminal. It may sound black magic, but in fact is quite easy.
+
+Airline doesn't come with the font patcher than Powerline came with but you
+can grab the fonts from [this repository](https://github.com/Lokaltog/powerline-fonts). If you want to patch instead, you will need to grab the font patcher and proceed as said below:
 
 **Patch**
 
-First we will need to patch a font. Pick the font you want to patch (it should be a monospace font). Copy its .ttf file (on Ubuntu you can find them under ``/usr/share/fonts/truetype/``) to the ``.vim/bundle/vim-powerline/fontpatcher`` folder. Cd into that folder and run ``./fontpatcher YOURFONTFILE.ttf``. Now you will have a file named ``YOURFONTFILE-Powerline.ttf``, that's your patched font.
+First we will need to patch a font. Pick the font you want to patch (it should be a monospace font). Copy its .ttf file (on Ubuntu you can find them under ``/usr/share/fonts/truetype/``) to the ``.vim/bundle/vim-Powerline/fontpatcher`` folder. Cd into that folder and run ``./fontpatcher YOURFONTFILE.ttf``. Now you will have a file named ``YOURFONTFILE-Powerline.ttf``, that's your patched font.
 
 **Install**
 
@@ -302,5 +305,5 @@ Now we need to install the patched font to our system. On Ubuntu, double click o
 
 After installing the font, go to the settings of your terminal app and select the patched font. Finally, open your ``.vimrc`` and uncomment the line ``let g:Powerline_symbols = 'fancy'``.
 
-That's it! Restart your vim and enjoy the beauty of Powerline.
+That's it! Restart your vim and enjoy the beauty of Airline.
 
