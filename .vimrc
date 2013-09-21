@@ -294,9 +294,21 @@ set wildmode=list:longest
 " Fix to let ESC work as espected with Autoclose plugin
 let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 
-" to use fancy symbols for powerline, uncomment the following line and use a
+" vim-airline settings
+let g:airline_powerline_fonts = 0
+let g:airline_theme = 'powerlineish'
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#tabline#enabled = 1
+
+" to use fancy symbols for airline, uncomment the following lines and use a
 " patched font (more info on the README.rst)
-" Airline uses the same config. Uncomment to get fancy symbols.
-" let g:Powerline_symbols = 'fancy'
-" This works too (not so fancy but better than nothing)
-" let g:Powerline_symbols = 'unicode'
+"if !exists('g:airline_symbols')
+"   let g:airline_symbols = {}
+"endif
+"let g:airline_left_sep = '⮀'
+"let g:airline_left_alt_sep = '⮁'
+"let g:airline_right_sep = '⮂'
+"let g:airline_right_alt_sep = '⮃'
+"let g:airline_symbols.branch = '⭠'
+"let g:airline_symbols.readonly = '⭤'
+"let g:airline_symbols.linenr = '⭡'
