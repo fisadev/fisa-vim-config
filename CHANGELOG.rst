@@ -251,3 +251,10 @@ Changelog
   * Add mapping for ipdb breakpoints insert
   * Removed default mappings of vim-debug
   * Removed python-mode from the references (no longer used)
+
+* Version 5.1
+
+  * Replaced vim-powerline with vim-airline
+  * New font patching method
+  * Added screenshots to the repo
+  * Updated docs and screenshots

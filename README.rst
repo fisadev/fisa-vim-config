@@ -24,19 +24,19 @@ Features or it didn't happen!
 
 magic-powered autocompletion
 
-.. image:: http://i.imgur.com/7xf4A.png
+.. image:: ./screenshots/autocomplete.png
 
 class browser
 
-.. image:: http://i.imgur.com/KBzeO.png
+.. image:: ./screenshots/class_browser.png
 
 detecting your nasty errors
 
-.. image:: http://i.imgur.com/9U1KP.png
+.. image:: ./screenshots/errors.png
 
 fuzzy code finder (next step: mind reader)
 
-.. image:: http://i.imgur.com/stkUL.png
+.. image:: ./screenshots/fuzzy_finder.png
 
 (the font I'm using is CPMono regular, you can find it `here <http://cooltext.com/Download-Font-CPMono>`_)
 
@@ -270,7 +270,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Zen coding <https://github.com/mattn/zencoding-vim/>`_
 * `Git integration <https://github.com/motemen/git-vim>`_
 * `Tab list pane (tabman) <https://github.com/kien/tabman.vim>`_
-* `Beautiful status line (Powerline) <https://github.com/Lokaltog/vim-powerline>`_
+* `Beautiful status line (Airline) <https://github.com/bling/vim-airline>`_
 * `256 colorscheme (fisa) <https://github.com/fisadev/fisa-vim-colorscheme>`_
 * `Surround actions <https://github.com/tpope/vim-surround>`_
 * `AutoClose <https://github.com/Townk/vim-autoclose>`_
@@ -284,15 +284,20 @@ And thanks to all the developers of the plugins that I simply use here:
 * `PEP8 checker (with shows pyflakes errors too) <https://github.com/nvie/vim-flake8>`_
 * `Better python indentation <https://github.com/vim-scripts/indentpython.vim--nianyang>`_
 * `Jedi-vim (python autocompletion, go to definition, find ocurrences and documentation display) <https://github.com/davidhalter/jedi-vim>`_
+* `Font patcher, grabbed from the original vim-powerline repo <https://github.com/Lokaltog/vim-powerline>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------
 
-Powerline allows you to use fancy symbols on the status line for breadcrumbs and indicators (example: a padlock when editing read-only files). Using them requires to have a patched font in your terminal. It may sound black magic, but in fact is quite easy.
+Airline allows you to use fancy symbols on the status line for breadcrumbs and indicators (example: a padlock when editing read-only files). Using them requires to have a patched font in your terminal. It may sound black magic, but in fact is quite easy.
+
+**Get the font patcher and dependencies**
+
+Grab the ``fontpatcher`` directory from this repo to some location on your computer (the patcher was written by Kim Silkebækken, the author of the original vim-powerline plugin). Then install the fontforge dependency: in Ubuntu you only need to run ``sudo apt-get install python-fontforge``. In other distros there should be a package with a similar name.
 
 **Patch**
 
-First we will need to patch a font. Pick the font you want to patch (it should be a monospace font). Copy its .ttf file (on Ubuntu you can find them under ``/usr/share/fonts/truetype/``) to the ``.vim/bundle/vim-powerline/fontpatcher`` folder. Cd into that folder and run ``./fontpatcher YOURFONTFILE.ttf``. Now you will have a file named ``YOURFONTFILE-Powerline.ttf``, that's your patched font.
+We will need to patch a font. Pick the font you want to patch (it should be a monospace font). Copy its .ttf file (on Ubuntu you can find them under ``/usr/share/fonts/truetype/``) to the ``fontpatcher`` folder. Cd into that folder and run ``./fontpatcher YOURFONTFILE.ttf``. Now you will have a file named ``YOURFONTFILE-Powerline.ttf``, that's your patched font.
 
 **Install**
 
@@ -300,7 +305,7 @@ Now we need to install the patched font to our system. On Ubuntu, double click o
 
 **Configure**
 
-After installing the font, go to the settings of your terminal app and select the patched font. Finally, open your ``.vimrc`` and uncomment the line ``let g:Powerline_symbols = 'fancy'``.
+After installing the font, go to the settings of your terminal app and select the patched font. Finally, open your ``.vimrc`` and uncomment the lines at the end of the file, after the comment that explains that those are the lines for the fancy symbols.
 
-That's it! Restart your vim and enjoy the beauty of Powerline.
+That's it! Restart your vim and enjoy the beauty of Airline.
 

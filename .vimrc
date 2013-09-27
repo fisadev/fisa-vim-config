@@ -42,8 +42,8 @@ Bundle 'mattn/emmet-vim'
 Bundle 'motemen/git-vim'
 " Tab list panel
 Bundle 'kien/tabman.vim'
-" Powerline
-Bundle 'Lokaltog/vim-powerline'
+" Airline
+Bundle 'bling/vim-airline'
 " Terminal Vim with 256 colors colorscheme
 Bundle 'fisadev/fisa-vim-colorscheme'
 " Consoles as buffers
@@ -294,6 +294,20 @@ set wildmode=list:longest
 " Fix to let ESC work as espected with Autoclose plugin
 let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 
-" to use fancy symbols for powerline, uncomment the following line and use a
+" vim-airline settings
+let g:airline_powerline_fonts = 0
+let g:airline_theme = 'bubblegum'
+let g:airline#extensions#whitespace#enabled = 0
+
+" to use fancy symbols for airline, uncomment the following lines and use a
 " patched font (more info on the README.rst)
-" let g:Powerline_symbols = 'fancy'
+"if !exists('g:airline_symbols')
+"   let g:airline_symbols = {}
+"endif
+"let g:airline_left_sep = '⮀'
+"let g:airline_left_alt_sep = '⮁'
+"let g:airline_right_sep = '⮂'
+"let g:airline_right_alt_sep = '⮃'
+"let g:airline_symbols.branch = '⭠'
+"let g:airline_symbols.readonly = '⭤'
+"let g:airline_symbols.linenr = '⭡'
