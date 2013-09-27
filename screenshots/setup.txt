@@ -1,1 +1,0 @@
-screen size: 85x30 
