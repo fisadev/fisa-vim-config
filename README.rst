@@ -24,19 +24,19 @@ Features or it didn't happen!
 
 magic-powered autocompletion
 
-.. image:: http://i.imgur.com/7xf4A.png
+.. image:: ./screenshots/autocomplete.png
 
 class browser
 
-.. image:: http://i.imgur.com/KBzeO.png
+.. image:: ./screenshots/class_browser.png
 
 detecting your nasty errors
 
-.. image:: http://i.imgur.com/9U1KP.png
+.. image:: ./screenshots/errors.png
 
 fuzzy code finder (next step: mind reader)
 
-.. image:: http://i.imgur.com/stkUL.png
+.. image:: ./screenshots/fuzzy_finder.png
 
 (the font I'm using is CPMono regular, you can find it `here <http://cooltext.com/Download-Font-CPMono>`_)
 
