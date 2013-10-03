@@ -190,6 +190,8 @@ Most important features include:
 
 * **Insert ipdb breakpoints** with ``\b``.
 
+* **Automatically sort python imports** using ``:Isort``.
+
 Super easy installation
 -----------------------
 
@@ -202,7 +204,7 @@ Super easy installation
   ::
 
     sudo apt-get install vim exuberant-ctags git
-    sudo pip install dbgp vim-debug pep8 flake8 pyflakes
+    sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort
 
   (if you don't have Pip, find it here: `pip <http://pypi.python.org/pypi/pip>`_)
 
@@ -285,6 +287,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Better python indentation <https://github.com/vim-scripts/indentpython.vim--nianyang>`_
 * `Jedi-vim (python autocompletion, go to definition, find ocurrences and documentation display) <https://github.com/davidhalter/jedi-vim>`_
 * `Font patcher, grabbed from the original vim-powerline repo <https://github.com/Lokaltog/vim-powerline>`_
+* `Python imports sorter <https://github.com/fisadev/vim-isort>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------

@@ -258,3 +258,7 @@ Changelog
   * New font patching method
   * Added screenshots to the repo
   * Updated docs and screenshots
+
+* Version 5.2
+
+  * Added python imports sorter (**new python package dependency: isort**)

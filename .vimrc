@@ -71,6 +71,8 @@ Bundle 'vim-scripts/indentpython.vim--nianyang'
 Bundle 'nvie/vim-flake8'
 " Search and read python documentation
 Bundle 'fs111/pydoc.vim'
+" Automatically sort python imports
+Bundle 'fisadev/vim-isort'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
