@@ -262,3 +262,7 @@ Changelog
 * Version 5.2
 
   * Added python imports sorter (**new python package dependency: isort**)
+
+* Version 5.3
+
+  * Fixed problem with SnipMate and AutocomplPop, changing the mapping for SnipMate
