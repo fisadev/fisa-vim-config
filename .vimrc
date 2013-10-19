@@ -262,7 +262,7 @@ let g:jedi#show_call_signatures = "1"
 nmap ,D :tab split<CR>,d
 
 " Change snipmate binding, to avoid problems with jedi-vim
-imap <C-k> <Plug>snipMateNextOrTrigger
+imap <C-i> <Plug>snipMateNextOrTrigger
 
 " don't let pyflakes allways override the quickfix list
 let g:pyflakes_use_quickfix = 0
