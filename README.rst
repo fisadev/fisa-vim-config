@@ -296,7 +296,7 @@ Airline allows you to use fancy symbols on the status line for breadcrumbs and i
 
 **Get the font patcher and dependencies**
 
-Grab the ``fontpatcher`` directory from this repo to some location on your computer (the patcher was written by Kim Silkebækken, the author of the original vim-powerline plugin). Then install the fontforge dependency: in Ubuntu you only need to run ``sudo apt-get install python-fontforge``. In other distros there should be a package with a similar name.
+Grab the ``fontpatcher`` directory from this repo to some location on your computer (the patcher was written by Kim Silkebækken, the author of the original vim-powerline plugin). Then install the argparse and fontforge dependencies: in Ubuntu you only needs install fontforge module running ``sudo apt-get install python-fontforge``. In other distros there should be a package with a similar name.
 
 **Patch**
 
