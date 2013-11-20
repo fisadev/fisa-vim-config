@@ -194,9 +194,6 @@ map <F10> :Dbg watch<CR>
 map <F11> :Dbg down<CR>
 map <F12> :Dbg up<CR>
 
-" insert ipdb breakpoint with \b
-nmap <leader>b Oimport ipdb;ipdb.set_trace()<ESC>
-
 " CtrlP (new fuzzy finder)
 let g:ctrlp_map = ',e'
 nmap ,g :CtrlPBufTag<CR>
