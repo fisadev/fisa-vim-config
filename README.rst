@@ -60,7 +60,6 @@ Most important features include:
 * **Ropevim for really neat python goodies!**:
 
   * **Go to definition** with ``,d``, or open the definition on a new tab with ``,D``.
-  * **Go to assignment** with ``,a``.
   * **Find occurrences** with ``,o``.
   * and many other things, learn more about them with ``:help ropevim.txt`` (or visiting `this site <https://bitbucket.org/agr/ropevim>`_).
   * **Note:** to use ropevim you must enable rope on the ``.vimrc`` (search the line containing ``let g:pymode_rope = 0``). When enabled, I recommend you to launch vim from your project root for the first time, so the ``.ropeproject`` will be created there. Then you can also add new python paths on the created ``.ropeproject/config.py`` for better autocompletion and go-to-definition.
