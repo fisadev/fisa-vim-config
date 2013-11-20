@@ -59,6 +59,9 @@ Bundle 'michaeljsmith/vim-indent-object'
 " Python mode (indentation, doc, refactor, lints, code checking, motion and
 " operators, highlighting, run and ipdb breakpoints)
 Bundle 'klen/python-mode'
+" Better autocompletion
+Bundle 'Shougo/neocomplcache.vim'
+
 " Snippets manager (SnipMate), dependencies, and snippets repo
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -77,8 +80,6 @@ Bundle 'fisadev/vim-isort'
 
 " Bundles from vim-scripts repos
 
-" Autocompletion
-Bundle 'AutoComplPop'
 " Python code checker
 Bundle 'pyflakes.vim'
 " Search results counter
