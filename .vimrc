@@ -162,10 +162,6 @@ imap <M-Down> <ESC><c-w>j
 let g:gitgutter_eager = 0
 let g:gitgutter_realtime = 0
 
-" automatically close autocompletion window
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
 " old autocomplete keyboard shortcut
 imap <C-J> <C-X><C-O>
 
@@ -177,12 +173,6 @@ let g:yankring_history_file = '.yankring_history'
 
 " save as sudo
 ca w!! w !sudo tee "%"
-
-" colors and settings of autocompletion
-highlight Pmenu ctermbg=4 guibg=LightGray
-" highlight PmenuSel ctermbg=8 guibg=DarkBlue guifg=Red
-" highlight PmenuSbar ctermbg=7 guibg=DarkGray
-" highlight PmenuThumb guibg=Black
 
 " debugger keyboard shortcuts
 let g:vim_debug_disable_mappings = 1
