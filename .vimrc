@@ -249,6 +249,13 @@ let g:pymode_folding = 0
 " don't load rope by default. Change to 1 to use rope
 let g:pymode_rope = 0
 
+" neocomplcache settings
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_enable_auto_select = 1
+let g:neocomplcache_enable_fuzzy_completion = 1
+let g:neocomplcache_fuzzy_completion_start_length = 1
+
 " rope (from python-mode) settings
 nmap ,d :RopeGotoDefinition<CR>
 nmap ,D :tab split<CR>:RopeGotoDefinition<CR>
