@@ -44,7 +44,7 @@ Most important features include:
 
 * **Plugins managed using Vundle**! You can easily install or remove plugins, and they are installed into ``.vim/bundle/``. More info `here <https://github.com/gmarik/vundle>`_
 
-* **Smart autocompletion as you type**, sometimes using python instrospection (completion of module names, instance methods and attributes) and sometimes text-based (used words) (from version 4.0, it's even more intelligent! (if you enable rope)). Most of the time is automatically displayed, but you can force it to appear using ``Ctrl-space``.
+* **Smart autocompletion as you type**, sometimes using python instrospection (completion of module names, instance methods and attributes) and sometimes text-based (used words) (from version 4.0, it's even more intelligent! (if you enable rope)). And with neocomplcache, it even can autocomplete with typos, thanks to the fuzzy completion settings.
 
 * **Fuzzy file, code and command finder** (like Textmante or Sublime Text 2):
 
@@ -267,7 +267,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Debugger (vim-debug) <http://github.com/jabapyth/vim-debug/>`_
 * `GVim color scheme (wombat) <http://www.vim.org/scripts/script.php?script_id=1778>`_
 * `Consoles as buffers (ConqueShell) <http://www.vim.org/scripts/script.php?script_id=2771>`_
-* `Autocompletion (autocomplpop) <http://www.vim.org/scripts/script.php?script_id=1879>`_
+* `Autocompletion (neocomplcache) <https://github.com/Shougo/neocomplcache.vim>`_
 * `Better file browser (NERDTree) <https://github.com/scrooloose/nerdtree>`_
 * `Class/module browser (Tagbar) <https://github.com/majutsushi/tagbar>`_
 * `Pending tasks list (TaskList) <http://www.vim.org/scripts/script.php?script_id=2607>`_
