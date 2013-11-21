@@ -252,6 +252,9 @@ let g:neocomplcache_auto_completion_start_length = 1
 let g:neocomplcache_manual_completion_start_length = 1
 let g:neocomplcache_min_keyword_length = 1
 let g:neocomplcache_min_syntax_length = 1
+" complete with workds from any opened file
+let g:neocomplcache_same_filetype_lists = {}
+let g:neocomplcache_same_filetype_lists._ = '_'
 
 " rope (from python-mode) settings
 nmap ,d :RopeGotoDefinition<CR>
