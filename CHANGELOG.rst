@@ -266,3 +266,11 @@ Changelog
 * Version 5.3
 
   * Fixed problem with SnipMate and AutocomplPop, changing the mapping for SnipMate
+
+* Version 6.0
+
+  * Back to python-mode, the (rope powered) completion is better than jedi-vim
+  * Removed a bunch of plugins that are replaced by python-mode
+  * SnipMate plugin mapping back to the default (``tab``)
+  * Replaced AutoComplPop with NeoComplCache, for better and fuzzy completion
+  * Removed isort python dependency, because the latest vim-isort includes it
