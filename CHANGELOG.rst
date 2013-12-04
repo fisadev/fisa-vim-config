@@ -274,3 +274,8 @@ Changelog
   * SnipMate plugin mapping back to the default (``tab``)
   * Replaced AutoComplPop with NeoComplCache, for better and fuzzy completion
   * Removed isort python dependency, because the latest vim-isort includes it
+
+* Version 6.1
+
+  * Updated docs for font patching
+  * Updated setting name of python-mode
