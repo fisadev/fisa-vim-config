@@ -237,6 +237,9 @@ let g:pymode_lint_signs = 0
 let g:pymode_folding = 0
 " don't load rope by default. Change to 1 to use rope
 let g:pymode_rope = 0
+" open definitions on same window, and with my custom mapping
+let g:pymode_rope_goto_definition_bind = ',d'
+let g:pymode_rope_goto_definition_cmd = 'e'
 
 " neocomplcache settings
 let g:neocomplcache_enable_at_startup = 1
@@ -257,8 +260,7 @@ let g:neocomplcache_same_filetype_lists = {}
 let g:neocomplcache_same_filetype_lists._ = '_'
 
 " rope (from python-mode) settings
-nmap ,d :RopeGotoDefinition<CR>
-nmap ,D :tab split<CR>:RopeGotoDefinition<CR>
+nmap ,D :tab split<CR>:PymodePython rope.goto()<CR>
 nmap ,o :RopeFindOccurrences<CR>
 
 " don't let pyflakes allways override the quickfix list
