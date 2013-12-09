@@ -279,3 +279,7 @@ Changelog
 
   * Updated docs for font patching
   * Updated setting name of python-mode
+
+* Version 6.2
+
+  * Fixed goto definition mappings (python-mode changed commands)
