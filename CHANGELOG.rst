@@ -283,3 +283,7 @@ Changelog
 * Version 6.2
 
   * Fixed goto definition mappings (python-mode changed commands)
+
+* Version 6.3
+
+  * Fixed python linter mappings (python-mode changed commands)
