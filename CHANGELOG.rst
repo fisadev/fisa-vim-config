@@ -287,3 +287,7 @@ Changelog
 * Version 6.3
 
   * Fixed python linter mappings (python-mode changed commands)
+
+* Version 6.4
+
+  * Restored isort pip dependency, due to changes in vim-isort (**new python package dependency: isort**)

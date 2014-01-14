@@ -211,7 +211,7 @@ Super easy installation
   ::
 
     sudo apt-get install vim exuberant-ctags git
-    sudo pip install dbgp vim-debug pep8 flake8 pyflakes
+    sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort
 
   (if you don't have Pip, find it here: `pip <http://pypi.python.org/pypi/pip>`_)
 
