@@ -199,6 +199,8 @@ Most important features include:
 
 * **Automatically sort python imports** using ``:Isort``.
 
+* **Better paths** for temporary swap files, backups, and persistent undos (all of them stored under ``~/.vim/dirs``).
+
 Super easy installation
 -----------------------
 
