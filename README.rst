@@ -261,6 +261,11 @@ Thanks to some people from `Pyar <http://python.org.ar>`_, who show me vim for t
 * Facundo Batista
 * Luciano Bello
 
+Also, thanks to:
+
+* Felipe Lerena
+* Ivan Alejandro
+
 And thanks to all the developers of the plugins that I simply use here:
 
 * `Plugins manager (Vundle) <https://github.com/gmarik/vundle>`_
