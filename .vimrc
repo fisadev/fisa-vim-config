@@ -168,9 +168,6 @@ imap <C-J> <C-X><C-O>
 " show pending tasks list
 map <F2> :TaskList<CR>
 
-" store yankring history file hidden
-let g:yankring_history_file = '.yankring_history'
-
 " save as sudo
 ca w!! w !sudo tee "%"
 
@@ -303,6 +300,9 @@ set backupdir=~/.vim/dirs/backups " where to put backup files
 set undofile                      " persistent undos - undo after you re-open the file
 set undodir=~/.vim/dirs/undos
 set viminfo+=n~/.vim/dirs/viminfo
+" store yankring history file there too
+let g:yankring_history_dir = '~/.vim/dirs/'
+
 
 " Create needed directories if they don't exist
 if !isdirectory(&backupdir)
