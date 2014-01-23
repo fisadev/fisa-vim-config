@@ -98,7 +98,7 @@ Most important features include:
 
 * Some settings for better **tabs and spaces handling**.
 
-* **Better file browser**, toggle it with ``F3``.
+* **Better file browser**, toggle it with ``F3``, or open it with your current file selected using ``,t``.
 
 * **Results count** while searching text.
 
