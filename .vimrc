@@ -327,6 +327,7 @@ vmap <expr> <S-M-LEFT> DVB_Drag('left')
 vmap <expr> <S-M-RIGHT> DVB_Drag('right')
 vmap <expr> <S-M-DOWN> DVB_Drag('down')
 vmap <expr> <S-M-UP> DVB_Drag('up')
+vmap <expr> D DVB_Duplicate()
 
 " to use fancy symbols for airline, uncomment the following lines and use a
 " patched font (more info on the README.rst)
