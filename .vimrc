@@ -322,7 +322,7 @@ let g:airline_powerline_fonts = 0
 let g:airline_theme = 'bubblegum'
 let g:airline#extensions#whitespace#enabled = 0
 
-" dragvisuals settings
+" dragvisuals mappings
 vmap <expr> <S-M-LEFT> DVB_Drag('left')
 vmap <expr> <S-M-RIGHT> DVB_Drag('right')
 vmap <expr> <S-M-DOWN> DVB_Drag('down')
