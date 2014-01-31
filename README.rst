@@ -201,7 +201,7 @@ Most important features include:
 
 * **Better paths** for temporary swap files, backups, and persistent undos (all of them stored under ``~/.vim/dirs``).
 
-* **Drag visual blocks** (blocks selected on ``Ctrl-v`` and ``Shift-v`` visual modes) with ``Shift-Alt-arrows``.
+* **Drag visual blocks** (blocks selected on ``Ctrl-v`` and ``Shift-v`` visual modes) with ``Shift-Alt-arrows``, or even **duplicate** them with ``D``.
 
 Super easy installation
 -----------------------
