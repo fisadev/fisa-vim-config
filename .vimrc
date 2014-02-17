@@ -70,6 +70,8 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'airblade/vim-gitgutter'
 " Automatically sort python imports
 Bundle 'fisadev/vim-isort'
+" Drag visual blocks arround
+Bundle 'fisadev/dragvisuals.vim'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
@@ -134,6 +136,7 @@ let g:tagbar_autofocus = 1
 
 " NERDTree (better file browser) toggle
 map <F3> :NERDTreeToggle<CR>
+nmap ,t :NERDTreeFind<CR>
 
 " tab navigation
 map tn :tabn<CR>
@@ -166,9 +169,6 @@ imap <C-J> <C-X><C-O>
 
 " show pending tasks list
 map <F2> :TaskList<CR>
-
-" store yankring history file hidden
-let g:yankring_history_file = '.yankring_history'
 
 " save as sudo
 ca w!! w !sudo tee "%"
@@ -295,10 +295,39 @@ set wildmode=list:longest
 " Fix to let ESC work as espected with Autoclose plugin
 let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 
+" Better backup, swap and undos storage
+set directory=~/.vim/dirs/tmp     " directory to place swap files in
+set backup                        " make backup files
+set backupdir=~/.vim/dirs/backups " where to put backup files
+set undofile                      " persistent undos - undo after you re-open the file
+set undodir=~/.vim/dirs/undos
+set viminfo+=n~/.vim/dirs/viminfo
+" store yankring history file there too
+let g:yankring_history_dir = '~/.vim/dirs/'
+
+
+" Create needed directories if they don't exist
+if !isdirectory(&backupdir)
+    call mkdir(&backupdir, "p")
+endif
+if !isdirectory(&directory)
+    call mkdir(&directory, "p")
+endif
+if !isdirectory(&undodir)
+    call mkdir(&undodir, "p")
+endif
+
 " vim-airline settings
 let g:airline_powerline_fonts = 0
 let g:airline_theme = 'bubblegum'
 let g:airline#extensions#whitespace#enabled = 0
+
+" dragvisuals mappings
+vmap <expr> <S-M-LEFT> DVB_Drag('left')
+vmap <expr> <S-M-RIGHT> DVB_Drag('right')
+vmap <expr> <S-M-DOWN> DVB_Drag('down')
+vmap <expr> <S-M-UP> DVB_Drag('up')
+vmap <expr> D DVB_Duplicate()
 
 " to use fancy symbols for airline, uncomment the following lines and use a
 " patched font (more info on the README.rst)

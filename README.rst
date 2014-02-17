@@ -98,7 +98,7 @@ Most important features include:
 
 * Some settings for better **tabs and spaces handling**.
 
-* **Better file browser**, toggle it with ``F3``.
+* **Better file browser**, toggle it with ``F3``, or open it with your current file selected using ``,t``.
 
 * **Results count** while searching text.
 
@@ -199,6 +199,12 @@ Most important features include:
 
 * **Automatically sort python imports** using ``:Isort``.
 
+* **Persistent undos** modify file, exit vim, reopen file, and you can undo changes done on the previous session.
+
+* **Better paths** for temporary swap files, backups, and persistent undos (all of them stored under ``~/.vim/dirs``).
+
+* **Drag visual blocks** (blocks selected on ``Ctrl-v`` and ``Shift-v`` visual modes) with ``Shift-Alt-arrows``, or even **duplicate** them with ``D``.
+
 Super easy installation
 -----------------------
 
@@ -259,6 +265,11 @@ Thanks to some people from `Pyar <http://python.org.ar>`_, who show me vim for t
 * Facundo Batista
 * Luciano Bello
 
+Also, thanks to:
+
+* Felipe Lerena
+* Ivan Alejandro
+
 And thanks to all the developers of the plugins that I simply use here:
 
 * `Plugins manager (Vundle) <https://github.com/gmarik/vundle>`_
@@ -292,6 +303,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `SnipMate snippets compilation <http://github.com/honza/vim-snippets>`_
 * `Font patcher, grabbed from the original vim-powerline repo <https://github.com/Lokaltog/vim-powerline>`_
 * `Python imports sorter <https://github.com/fisadev/vim-isort>`_
+* `Visual blocks dragger <https://github.com/fisadev/dragvisuals.vim>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------
