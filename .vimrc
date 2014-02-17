@@ -71,7 +71,7 @@ Bundle 'airblade/vim-gitgutter'
 " Automatically sort python imports
 Bundle 'fisadev/vim-isort'
 " Drag visual blocks arround
-Bundle 'jondkinney/dragvisuals.vim'
+Bundle 'fisadev/dragvisuals.vim'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 

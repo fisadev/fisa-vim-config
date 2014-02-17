@@ -301,7 +301,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `SnipMate snippets compilation <http://github.com/honza/vim-snippets>`_
 * `Font patcher, grabbed from the original vim-powerline repo <https://github.com/Lokaltog/vim-powerline>`_
 * `Python imports sorter <https://github.com/fisadev/vim-isort>`_
-* `Visual blocks dragger <https://github.com/jondkinney/dragvisuals.vim>`_
+* `Visual blocks dragger <https://github.com/fisadev/dragvisuals.vim>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------
