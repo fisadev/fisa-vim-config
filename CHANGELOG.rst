@@ -291,3 +291,10 @@ Changelog
 * Version 6.4
 
   * Restored isort pip dependency, due to changes in vim-isort (**new python package dependency: isort**)
+
+* Version 6.5
+
+  * Added dragvisuals plugin and mappings/settings
+  * Persistent undos
+  * Mapping to open NERDTree positioned on the current file
+  * Moved temporary files to internal vim folders
