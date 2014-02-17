@@ -199,6 +199,8 @@ Most important features include:
 
 * **Automatically sort python imports** using ``:Isort``.
 
+* **Persistent undos** modify file, exit vim, reopen file, and you can undo changes done on the previous session.
+
 * **Better paths** for temporary swap files, backups, and persistent undos (all of them stored under ``~/.vim/dirs``).
 
 * **Drag visual blocks** (blocks selected on ``Ctrl-v`` and ``Shift-v`` visual modes) with ``Shift-Alt-arrows``, or even **duplicate** them with ``D``.
