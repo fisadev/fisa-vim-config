@@ -205,6 +205,8 @@ Most important features include:
 
 * **Drag visual blocks** (blocks selected on ``Ctrl-v`` and ``Shift-v`` visual modes) with ``Shift-Alt-arrows``, or even **duplicate** them with ``D``.
 
+* **Simple window chooser**: press ``-`` and you will see big green letters for each window. Just press the letter of the window you want to activate.
+
 Super easy installation
 -----------------------
 
@@ -304,6 +306,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Font patcher, grabbed from the original vim-powerline repo <https://github.com/Lokaltog/vim-powerline>`_
 * `Python imports sorter <https://github.com/fisadev/vim-isort>`_
 * `Visual blocks dragger <https://github.com/fisadev/dragvisuals.vim>`_
+* `Window chooser <https://github.com/t9md/vim-choosewin>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------

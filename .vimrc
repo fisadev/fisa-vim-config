@@ -72,6 +72,8 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'fisadev/vim-isort'
 " Drag visual blocks arround
 Bundle 'fisadev/dragvisuals.vim'
+" Window chooser
+Bundle 't9md/vim-choosewin'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
@@ -328,6 +330,10 @@ vmap <expr> <S-M-RIGHT> DVB_Drag('right')
 vmap <expr> <S-M-DOWN> DVB_Drag('down')
 vmap <expr> <S-M-UP> DVB_Drag('up')
 vmap <expr> D DVB_Duplicate()
+
+" window chooser mappings and settings
+nmap  -  <Plug>(choosewin)
+let g:choosewin_overlay_enable = 1
 
 " to use fancy symbols for airline, uncomment the following lines and use a
 " patched font (more info on the README.rst)
