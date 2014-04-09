@@ -69,7 +69,7 @@ Most important features include:
 
 * **Pending tasks browser** pressing ``F2``. This reads the current file searching for comments that start with "TODO", "FIXME", and such, and shows them on a list that allows navigation similar to the class browser.
 
-* **Error checking of python code** using Pyflakes (it will detect unused variables or imports, syntax errors, and such) and PyLint.
+* **Error checking of code** using Syntastic (it will detect unused variables or imports, syntax errors, and such), for several languages (obviously including python).
 
 * Run **PEP8 validator** on the current python file with ``\8``, which also displays python errors found with Pyflakes and PyLint.
 
@@ -284,7 +284,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Better file browser (NERDTree) <https://github.com/scrooloose/nerdtree>`_
 * `Class/module browser (Tagbar) <https://github.com/majutsushi/tagbar>`_
 * `Pending tasks list (TaskList) <http://www.vim.org/scripts/script.php?script_id=2607>`_
-* `Python code checker (Pyflakes-vim) <http://www.vim.org/scripts/script.php?script_id=2441>`_
+* `Code checker (Syntastic) <https://github.com/scrooloose/syntastic>`_
 * `Search results counter (IndexedSearch) <http://www.vim.org/scripts/script.php?script_id=1682>`_
 * `Code commenter (NERDCommenter) <https://github.com/scrooloose/nerdcommenter>`_
 * `HTML/XML tags navigation (Matchit) <http://www.vim.org/scripts/script.php?script_id=39>`_

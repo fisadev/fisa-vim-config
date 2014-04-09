@@ -74,6 +74,8 @@ Bundle 'fisadev/vim-isort'
 Bundle 'fisadev/dragvisuals.vim'
 " Window chooser
 Bundle 't9md/vim-choosewin'
+" Python and other languages code checker
+Bundle 'scrooloose/syntastic'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
@@ -83,8 +85,6 @@ Bundle 't9md/vim-choosewin'
 
 " Bundles from vim-scripts repos
 
-" Python code checker
-Bundle 'pyflakes.vim'
 " Search results counter
 Bundle 'IndexedSearch'
 " XML/HTML tags navigation
@@ -264,9 +264,6 @@ let g:neocomplcache_same_filetype_lists._ = '_'
 " rope (from python-mode) settings
 nmap ,D :tab split<CR>:PymodePython rope.goto()<CR>
 nmap ,o :RopeFindOccurrences<CR>
-
-" don't let pyflakes allways override the quickfix list
-let g:pyflakes_use_quickfix = 0
 
 " tabman shortcuts
 let g:tabman_toggle = 'tl'
