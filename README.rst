@@ -179,7 +179,7 @@ Most important features include:
 
   Learn more on the plugin `site <https://github.com/mattn/zencoding-vim/>`_.
 
-* **Git integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Also includes key mappings and syntax highlighting for git displays. And displays icons on the side of each line based on the result of a git diff of the current file (example: if you added a line and still didn't commit the file, that line will have a green ``+`` on its side).
+* **Git and other vcs integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Key mappings and syntax highlighting for git displays. Displays icons on the side of each line based on the result of a diff of the current file (example: if you added a line and still didn't commit the file, that line will have a green ``+`` on its side). And finally, when on a changed file you can **jump through changes** using ``\sn`` and ``\sp``.
 
 * **Better python indentation**.
 
