@@ -179,7 +179,7 @@ Most important features include:
 
   Learn more on the plugin `site <https://github.com/mattn/zencoding-vim/>`_.
 
-* **Git integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Also includes key mappings and syntax highlighting for git displays. And displays icons on the side of each line based on the result of a git diff of the current file (example: if you added a line and still didn't commit the file, that line will have a green ``+`` on its side).
+* **Git and other vcs integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Key mappings and syntax highlighting for git displays. Displays icons on the side of each line based on the result of a diff of the current file (example: if you added a line and still didn't commit the file, that line will have a green ``+`` on its side). And finally, when on a changed file you can **jump through changes** using ``\sn`` and ``\sp``.
 
 * **Better python indentation**.
 
@@ -299,7 +299,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `AutoClose <https://github.com/Townk/vim-autoclose>`_
 * `YankRing <http://www.vim.org/scripts/script.php?script_id=1234>`_
 * `Indent object <http://github.com/michaeljsmith/vim-indent-object>`_
-* `Git diff icons <http://github.com/airblade/vim-gitgutter>`_
+* `Git and other vcs diff icons <http://github.com/mhinz/vim-signify>`_
 * `Relative line numbers <http://github.com/myusuf3/numbers.vim>`_
 * `Snippets manager (SnipMate) <http://github.com/garbas/vim-snipmate>`_ (plus dependencies `addon-mw-utils <http://github.com/MarcWeber/vim-addon-mw-utils>`_ and `tlib <http://github.com/tomtom/tlib_vim>`_ )
 * `SnipMate snippets compilation <http://github.com/honza/vim-snippets>`_
