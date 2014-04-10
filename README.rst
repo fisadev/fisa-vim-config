@@ -69,9 +69,7 @@ Most important features include:
 
 * **Pending tasks browser** pressing ``F2``. This reads the current file searching for comments that start with "TODO", "FIXME", and such, and shows them on a list that allows navigation similar to the class browser.
 
-* **Error checking of code** using Syntastic (it will detect unused variables or imports, syntax errors, and such), for several languages (obviously including python).
-
-* Run **PEP8 validator** on the current python file with ``\8``, which also displays python errors found with Pyflakes and PyLint.
+* **Error checking of code** using Syntastic (it will detect unused variables or imports, syntax errors, and such), for several languages, highlighting the errors and warnings in the code. You can open an errors list with ``\e``. In python, the error checking includes **pep8** validation, and **pylint**.
 
 * A really nice **python and php debugger**. `Here <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_ is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
 
