@@ -225,15 +225,22 @@ nmap ,r :RecurGrepFast
 nmap ,wR :RecurGrep <cword><CR>
 nmap ,wr :RecurGrepFast <cword><CR>
 
+" show list of errors and warnings on the current file with \e
+nmap <leader>e :Errors<CR>
+" ignore line too long
+let g:syntastic_check_on_open = 1
+" don't put icons on the sign column (it hides the vcs status icons of signify)
+let g:syntastic_enable_signs = 0
+" custom icons (enable them if you use a patched font, and enable the previous 
+" setting)
+"let g:syntastic_error_symbol = '✗'
+"let g:syntastic_warning_symbol = '⚠'
+"let g:syntastic_style_error_symbol = '✗'
+"let g:syntastic_style_warning_symbol = '⚠'
+
 " python-mode settings
-" don't show lint result every time we save a file
+" don't use linter, we use syntastic for that
 let g:pymode_lint_on_write = 0
-" run pep8+pyflakes+pylint validator with \8
-autocmd FileType python map <buffer> <leader>8 :PymodeLint<CR>
-" rules to ignore (example: "E501,W293")
-let g:pymode_lint_ignore = ""
-" don't add extra column for error icons (on console vim creates a 2-char-wide
-" extra column)
 let g:pymode_lint_signs = 0
 " don't fold python code on open
 let g:pymode_folding = 0
