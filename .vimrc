@@ -225,6 +225,7 @@ nmap ,r :RecurGrepFast
 nmap ,wR :RecurGrep <cword><CR>
 nmap ,wr :RecurGrepFast <cword><CR>
 
+" syntastic settings and mappings
 " show list of errors and warnings on the current file with \e
 nmap <leader>e :Errors<CR>
 " ignore line too long
