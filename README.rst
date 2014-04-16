@@ -69,9 +69,7 @@ Most important features include:
 
 * **Pending tasks browser** pressing ``F2``. This reads the current file searching for comments that start with "TODO", "FIXME", and such, and shows them on a list that allows navigation similar to the class browser.
 
-* **Error checking of python code** using Pyflakes (it will detect unused variables or imports, syntax errors, and such) and PyLint.
-
-* Run **PEP8 validator** on the current python file with ``\8``, which also displays python errors found with Pyflakes and PyLint.
+* **Error checking of code** using Syntastic (it will detect unused variables or imports, syntax errors, and such), for several languages, highlighting the errors and warnings in the code. You can open an errors list with ``\e``. In python, the error checking includes **pep8** validation, and **pylint**.
 
 * A really nice **python and php debugger**. `Here <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_ is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
 
@@ -179,7 +177,7 @@ Most important features include:
 
   Learn more on the plugin `site <https://github.com/mattn/zencoding-vim/>`_.
 
-* **Git integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Also includes key mappings and syntax highlighting for git displays. And displays icons on the side of each line based on the result of a git diff of the current file (example: if you added a line and still didn't commit the file, that line will have a green ``+`` on its side).
+* **Git and other vcs integration**, with commands such as: ``:GitStatus``, ``:GitDiff``, ``:GitBlame``, ``:GitLog``, ``:GitCommit``, or simply ``:Git`` with your own command. Key mappings and syntax highlighting for git displays. Displays icons on the side of each line based on the result of a diff of the current file (example: if you added a line and still didn't commit the file, that line will have a green ``+`` on its side). And finally, when on a changed file you can **jump through changes** using ``\sn`` and ``\sp``.
 
 * **Better python indentation**.
 
@@ -204,6 +202,8 @@ Most important features include:
 * **Better paths** for temporary swap files, backups, and persistent undos (all of them stored under ``~/.vim/dirs``).
 
 * **Drag visual blocks** (blocks selected on ``Ctrl-v`` and ``Shift-v`` visual modes) with ``Shift-Alt-arrows``, or even **duplicate** them with ``D``.
+
+* **Simple window chooser**: press ``-`` and you will see big green letters for each window. Just press the letter of the window you want to activate.
 
 Super easy installation
 -----------------------
@@ -282,7 +282,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Better file browser (NERDTree) <https://github.com/scrooloose/nerdtree>`_
 * `Class/module browser (Tagbar) <https://github.com/majutsushi/tagbar>`_
 * `Pending tasks list (TaskList) <http://www.vim.org/scripts/script.php?script_id=2607>`_
-* `Python code checker (Pyflakes-vim) <http://www.vim.org/scripts/script.php?script_id=2441>`_
+* `Code checker (Syntastic) <https://github.com/scrooloose/syntastic>`_
 * `Search results counter (IndexedSearch) <http://www.vim.org/scripts/script.php?script_id=1682>`_
 * `Code commenter (NERDCommenter) <https://github.com/scrooloose/nerdcommenter>`_
 * `HTML/XML tags navigation (Matchit) <http://www.vim.org/scripts/script.php?script_id=39>`_
@@ -297,13 +297,14 @@ And thanks to all the developers of the plugins that I simply use here:
 * `AutoClose <https://github.com/Townk/vim-autoclose>`_
 * `YankRing <http://www.vim.org/scripts/script.php?script_id=1234>`_
 * `Indent object <http://github.com/michaeljsmith/vim-indent-object>`_
-* `Git diff icons <http://github.com/airblade/vim-gitgutter>`_
+* `Git and other vcs diff icons <http://github.com/mhinz/vim-signify>`_
 * `Relative line numbers <http://github.com/myusuf3/numbers.vim>`_
 * `Snippets manager (SnipMate) <http://github.com/garbas/vim-snipmate>`_ (plus dependencies `addon-mw-utils <http://github.com/MarcWeber/vim-addon-mw-utils>`_ and `tlib <http://github.com/tomtom/tlib_vim>`_ )
 * `SnipMate snippets compilation <http://github.com/honza/vim-snippets>`_
 * `Font patcher, grabbed from the original vim-powerline repo <https://github.com/Lokaltog/vim-powerline>`_
 * `Python imports sorter <https://github.com/fisadev/vim-isort>`_
 * `Visual blocks dragger <https://github.com/fisadev/dragvisuals.vim>`_
+* `Window chooser <https://github.com/t9md/vim-choosewin>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------
