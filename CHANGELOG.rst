@@ -298,3 +298,10 @@ Changelog
   * Persistent undos
   * Mapping to open NERDTree positioned on the current file
   * Moved temporary files to internal vim folders
+
+* Version 7.0
+
+  * Added window chooser plugin
+  * Replaced git-gutter with vim-signify
+  * Replaced pyflakes with syntastic
+  * Code polishing (sections, comments)
