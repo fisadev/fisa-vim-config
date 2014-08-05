@@ -168,6 +168,11 @@ imap <M-Down> <ESC><c-w>j
 " old autocomplete keyboard shortcut
 imap <C-J> <C-X><C-O>
 
+" Comment this line to enable autocompletion preview window
+" (displays documentation related to the selected completion option)
+" Disabled by default because preview makes the window flicker
+set completeopt-=preview
+
 " save as sudo
 ca w!! w !sudo tee "%"
 

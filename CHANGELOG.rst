@@ -309,3 +309,7 @@ Changelog
 * Version 7.1
 
   * Added plugin to paint css color definitions with the actual color
+
+* Version 7.1.1
+
+  * Disable preview window by default, to avoid flicker
