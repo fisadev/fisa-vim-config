@@ -205,6 +205,8 @@ Most important features include:
 
 * **Simple window chooser**: press ``-`` and you will see big green letters for each window. Just press the letter of the window you want to activate.
 
+* **Paint css color** values with the actual color.
+
 Super easy installation
 -----------------------
 
@@ -305,6 +307,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Python imports sorter <https://github.com/fisadev/vim-isort>`_
 * `Visual blocks dragger <https://github.com/fisadev/dragvisuals.vim>`_
 * `Window chooser <https://github.com/t9md/vim-choosewin>`_
+* `Css colors painter <https://github.com/lilydjwg/colorizer>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------
