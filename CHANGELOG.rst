@@ -305,3 +305,7 @@ Changelog
   * Replaced git-gutter with vim-signify
   * Replaced pyflakes with syntastic
   * Code polishing (sections, comments)
+
+* Version 7.1
+
+  * Added plugin to paint css color definitions with the actual color
