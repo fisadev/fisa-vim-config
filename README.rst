@@ -11,7 +11,7 @@ What is this?
 My personal `Vim <http://www.vim.org/>`_ configuration, built according to my personal preferences, without any justification to think it's the best possible vim configuration. If you like it, great! :)
 It's mainly oriented to python software development, but many of its features are useful for other languages and editing tasks.
 
-Feel free to distribute it (it's GPL licensed), and I'm not responsible for any good or bad consecuences of using it (I don't know how a vim configuration can harm you, but you should never underestimate the power of vim :p).
+Feel free to distribute it (it's GPL licensed), and I'm not responsible for any good or bad consequences of using it (I don't know how a vim configuration can harm you, but you should never underestimate the power of vim :p).
 
 You can report any issue on the `Issues <https://github.com/fisadev/fisa-vim-config/issues>`_ section. And if you need/want to contact me, my gmail account is "fisadev".
 
