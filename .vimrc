@@ -256,7 +256,7 @@ map <F2> :TaskList<CR>
 
 " Vim-debug ------------------------------
 
-" disable default mappings, have a lot of conflicts with oter plugins
+" disable default mappings, have a lot of conflicts with other plugins
 let g:vim_debug_disable_mappings = 1
 " add some useful mappings
 map <F5> :Dbg over<CR>
