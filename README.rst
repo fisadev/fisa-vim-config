@@ -207,6 +207,8 @@ Most important features include:
 
 * **Paint css color** values with the actual color.
 
+* **Format Python code*** using yapf.
+
 Super easy installation
 -----------------------
 
@@ -219,7 +221,7 @@ Super easy installation
   ::
 
     sudo apt-get install vim exuberant-ctags git
-    sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort
+    sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort yapf
 
   (if you don't have Pip, find it here: `pip <http://pypi.python.org/pypi/pip>`_)
 
@@ -308,6 +310,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Visual blocks dragger <https://github.com/fisadev/dragvisuals.vim>`_
 * `Window chooser <https://github.com/t9md/vim-choosewin>`_
 * `Css colors painter <https://github.com/lilydjwg/colorizer>`_
+* `VIM integration for YAPF <https://github.com/pignacio/vim-yapf-format>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------
