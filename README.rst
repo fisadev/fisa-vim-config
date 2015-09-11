@@ -207,6 +207,18 @@ Most important features include:
 
 * **Paint css color** values with the actual color.
 
+* **Custom configs by folder** add a ``.vim.custom`` file in the project's root folder and put whatever config you want to customize for that project.
+  For example, if you have bellow project tree and you want to exclude ``folder_x`` from FuzzyFinder put ``let g:ctrlp_custom_ignore["dir"] = g:ctrlp_custom_ignore["dir"] . '|\v[\/]folder_x$'`` in .vim.custom file.
+
+     ::
+
+          project
+          ├── folder_1
+          ├── folder_2
+          ├── folder_x
+          └── .vim.custom
+
+
 Super easy installation
 -----------------------
 
