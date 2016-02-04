@@ -322,3 +322,10 @@ Changelog
 * Version 7.1.3
 
   * Fixed typo (PR #75)
+
+* Version 7.1.4
+
+  * Web file formats (html, js) use 4 spaces for tabs, not 2 (too many complaints, better to go with the standard)
+  * Added 'nodemodules' to the dirs to ignore on autocompletion
+  * Able to use 256 colors if under neovim
+  * Updated airline repo address, and added the airline themes plugin (PR by @orges)
