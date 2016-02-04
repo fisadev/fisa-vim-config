@@ -299,7 +299,7 @@ nmap ,wc :call CtrlPWithSearchText(expand('<cword>'), 'CmdPalette')<CR>
 let g:ctrlp_working_path_mode = 0
 " ignore these files and folders on file finder
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.git|\.hg|\.svn)$',
+  \ 'dir':  '\v[\/](\.git|\.hg|\.svn|node_modules)$',
   \ 'file': '\.pyc$\|\.pyo$',
   \ }
 
