@@ -1,7 +1,7 @@
 fisa-vim-config
 ===============
 
-my vim configuration (lot of python, autocompletion, fuzzy finder, debugger, ...)
+my vim configuration (lot of python, autocompletion, fuzzy finder, ...)
 
 What is this?
 -------------
@@ -70,23 +70,6 @@ Most important features include:
 * **Pending tasks browser** pressing ``F2``. This reads the current file searching for comments that start with "TODO", "FIXME", and such, and shows them on a list that allows navigation similar to the class browser.
 
 * **Error checking of code** using Syntastic (it will detect unused variables or imports, syntax errors, and such), for several languages, highlighting the errors and warnings in the code. You can open an errors list with ``\e``. In python, the error checking includes **pep8** validation, and **pylint**.
-
-* A really nice **python and php debugger**. `Here <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_ is a small tutorial about it, and I added some keyboard shortcuts to easy its usage (they should be used only once the debugger started!):
-
-  * ``F5`` = step over
-  * ``F6`` = step into
-  * ``F7`` = step out
-  * ``F8`` = execute until cursor position is reached
-  * ``F9`` = toggle breakpoint
-  * ``F10`` = evaluate expressions on the expressions window (watch)
-  * ``F11`` = go down on the stack
-  * ``F12`` = go up on the stack
-
-  You should watch the `video tutorial <http://www.youtube.com/watch?v=kairdgZCD1U&feature=player_embedded>`_, I can't explain all its usage here.
-
-  FAQ: Why there isn't a keyboard shortcut to start the debugger?
-
-  Because there where no more "Fx" keys free, and starting the debugger is something you do only once on every debugging session, compared to the multiple times you will use the other functions on that session. Disagree? Change it! Edit the ``.vimrc`` file, is really simple and well documented :).  (The command **to start the debugger on the current file** is ``:Dbg .``)
 
 * **Grep code recursively** and navigate the results:
 
@@ -219,7 +202,7 @@ because fisa-vim-config 8.0 uses a different plugin manager than previous versio
   ::
 
     sudo apt-get install vim exuberant-ctags git ack-grep
-    sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort
+    sudo pip install dbgp pep8 flake8 pyflakes isort
 
   (if you don't have Pip, find it here: `pip <http://pypi.python.org/pypi/pip>`_)
 
@@ -279,7 +262,6 @@ And thanks to all the developers of the plugins that I simply use here:
 
 * `Plugins manager (Vim-plug) <https://github.com/junegunn/vim-plug>`_
 * `Python mode (smarter autocompletion, smarter go to definition and find occurrences, better python indentation, doc, refactor utilities, lints and pep8 checkers, python motion and operators, better python highlighting, run python and ipdb breakpoints) <https://github.com/klen/python-mode>`_
-* `Debugger (vim-debug) <http://github.com/jabapyth/vim-debug/>`_
 * `GVim color scheme (wombat) <http://www.vim.org/scripts/script.php?script_id=1778>`_
 * `Consoles as buffers (ConqueShell) <http://www.vim.org/scripts/script.php?script_id=2771>`_
 * `Autocompletion (neocomplcache) <https://github.com/Shougo/neocomplcache.vim>`_
