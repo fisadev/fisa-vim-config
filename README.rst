@@ -42,7 +42,7 @@ fuzzy code finder (next step: mind reader)
 
 Most important features include:
 
-* **Plugins managed using Vundle**! You can easily install or remove plugins, and they are installed into ``.vim/bundle/``. More info `here <https://github.com/gmarik/vundle>`_
+* **Plugins managed using Vim-plug**! You can easily install or remove plugins, and they are installed into ``.vim/plugged/``. More info `here <https://github.com/junegunn/vim-plug>`_
 
 * **Smart autocompletion as you type**, sometimes using python instrospection (completion of module names, instance methods and attributes) and sometimes text-based (used words) (from version 4.0, it's even more intelligent! (if you enable rope)). And with neocomplcache, it even can autocomplete with typos, thanks to the fuzzy completion settings.
 
@@ -211,7 +211,8 @@ Super easy installation
 
 (you will need a vim compiled with python support. Check it with ``vim --version | grep +python``)
 
-(**if you have your own .vim folder or have a version of fisa-vim-config older than 3.0, you should move it to a backup location and start with no .vim folder!**)
+(**if you have your own .vim folder or have a version of fisa-vim-config older than 8.0, you should move it to a backup location and start with no .vim folder! This is 
+because fisa-vim-config 8.0 uses a different plugin manager than previous versions.**)
 
 * **Dependencies**
 
@@ -230,7 +231,7 @@ Super easy installation
 
 * **Open vim**
 
-  Simply run ``vim`` on your terminal, and it will try to install the plugins. They will be installed into the ``.vim/bundle`` folder.
+  Simply run ``vim`` on your terminal, and it will try to install the plugins. They will be installed into the ``.vim/plugged`` folder.
 
   Wait for the installation to finish...
 
@@ -247,11 +248,11 @@ After downloading the new version of the ``.vimrc`` file, you should close vim, 
 
   ::
 
-    vim +BundleClean +BundleInstall! +qa 
+    vim +PlugClean +PlugUpdate +qa 
 
 (this will remove plugins no longer used, install any new plugins, and update the existing ones to the last versions). 
 
-You can also run ``:BundleInstall!`` from inside vim at any time to update the installed plugins (and restart vim after it finishes).
+You can also run ``:PlugUpdate`` from inside vim at any time to update the installed plugins (and restart vim after it finishes).
 
 Sources
 -------
@@ -273,8 +274,7 @@ Also, thanks to:
 
 And thanks to all the developers of the plugins that I simply use here:
 
-* `Plugins manager (Vundle) <https://github.com/gmarik/vundle>`_
-* `Vundle autoinstalation <http://www.erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/>`_
+* `Plugins manager (Vim-plug) <https://github.com/junegunn/vim-plug>`_
 * `Python mode (smarter autocompletion, smarter go to definition and find occurrences, better python indentation, doc, refactor utilities, lints and pep8 checkers, python motion and operators, better python highlighting, run python and ipdb breakpoints) <https://github.com/klen/python-mode>`_
 * `Debugger (vim-debug) <http://github.com/jabapyth/vim-debug/>`_
 * `GVim color scheme (wombat) <http://www.vim.org/scripts/script.php?script_id=1778>`_
