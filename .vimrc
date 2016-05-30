@@ -85,6 +85,8 @@ Bundle 't9md/vim-choosewin'
 Bundle 'scrooloose/syntastic'
 " Paint css colors with the real color
 Bundle 'lilydjwg/colorizer'
+" Ack code search (requires ack installed in the system)
+Bundle 'mileszs/ack.vim'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
@@ -178,15 +180,8 @@ set completeopt-=preview
 ca w!! w !sudo tee "%"
 
 " simple recursive grep
-" both recursive grep commands with internal or external (fast) grep
-command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
-command! -nargs=1 RecurGrepFast silent exec 'lgrep! <q-args> ./**/*.*' | lopen
-" mappings to call them
-nmap ,R :RecurGrep 
-nmap ,r :RecurGrepFast 
-" mappings to call them with the default word as search text
-nmap ,wR :RecurGrep <cword><CR>
-nmap ,wr :RecurGrepFast <cword><CR>
+nmap ,r :Ack 
+nmap ,wr :Ack <cword><CR>
 
 " use 256 colors when possible
 if (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256') || has('nvim')
