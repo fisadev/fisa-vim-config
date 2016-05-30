@@ -84,6 +84,8 @@ Plug 'scrooloose/syntastic'
 Plug 'lilydjwg/colorizer'
 " Ack code search (requires ack installed in the system)
 Plug 'mileszs/ack.vim'
+" YAPF formatter for Python
+Plug 'pignacio/vim-yapf-format'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
@@ -401,3 +403,10 @@ let g:airline#extensions#whitespace#enabled = 0
 "let g:airline_symbols.branch = '⭠'
 "let g:airline_symbols.readonly = '⭤'
 "let g:airline_symbols.linenr = '⭡'
+
+" YAPF format ------------------------------
+
+" mapping
+map <C-o> :%YapfFormat<CR>
+imap <C-o> <ESC>:YapfFormat<CR>i
+vmap <C-o> :YapfFormat<CR>
