@@ -1,122 +1,126 @@
 " ============================================================================
-" Vundle initialization
+" Vim-plug initialization
 " Avoid modify this section, unless you are very sure of what you are doing
 
-" no vi-compatible
-set nocompatible
-
-" Setting up Vundle - the vim plugin bundler
-let iCanHazVundle=1
-let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
-if !filereadable(vundle_readme)
-    echo "Installing Vundle..."
+let vim_plug_just_installed = 0
+let vim_plug_path = expand('~/.vim/autoload/plug.vim')
+if !filereadable(vim_plug_path)
+    echo "Installing VimPlug..."
     echo ""
-    silent !mkdir -p ~/.vim/bundle
-    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-    let iCanHazVundle=0
+    silent !mkdir -p ~/.vim/autoload
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    let vim_plug_just_installed = 1
 endif
 
-filetype off
+" manually load vim-plug the first time
+if vim_plug_just_installed
+    :execute 'source '.fnameescape(vim_plug_path)
+endif
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+" Obscure hacks done, you can now modify the rest of the .vimrc as you wish :)
 
 " ============================================================================
 " Active plugins
 " You can disable or add new ones here:
 
+" this needs to be here, so vim-plug knows we are declaring the plugins we
+" want to use
+call plug#begin('~/.vim/plugged')
+
 " Plugins from github repos:
 
 " Python and PHP Debugger
-Bundle 'fisadev/vim-debug.vim'
+Plug 'fisadev/vim-debug.vim'
 " Better file browser
-Bundle 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 " Code commenter
-Bundle 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'
 " Class/module browser
-Bundle 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 " Code and files fuzzy finder
-Bundle 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 " Extension to ctrlp, for fuzzy command finder
-Bundle 'fisadev/vim-ctrlp-cmdpalette'
+Plug 'fisadev/vim-ctrlp-cmdpalette'
 " Zen coding
-Bundle 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
 " Git integration
-Bundle 'motemen/git-vim'
+Plug 'motemen/git-vim'
 " Tab list panel
-Bundle 'kien/tabman.vim'
+Plug 'kien/tabman.vim'
 " Airline
-Bundle 'vim-airline/vim-airline'
-Bundle 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " Terminal Vim with 256 colors colorscheme
-Bundle 'fisadev/fisa-vim-colorscheme'
+Plug 'fisadev/fisa-vim-colorscheme'
 " Consoles as buffers
-Bundle 'rosenfeld/conque-term'
+Plug 'rosenfeld/conque-term'
 " Pending tasks list
-Bundle 'fisadev/FixedTaskList.vim'
+Plug 'fisadev/FixedTaskList.vim'
 " Surround
-Bundle 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 " Autoclose
-Bundle 'Townk/vim-autoclose'
+Plug 'Townk/vim-autoclose'
 " Indent text object
-Bundle 'michaeljsmith/vim-indent-object'
+Plug 'michaeljsmith/vim-indent-object'
 " Python mode (indentation, doc, refactor, lints, code checking, motion and
 " operators, highlighting, run and ipdb breakpoints)
-Bundle 'klen/python-mode'
+Plug 'klen/python-mode'
 " Better autocompletion
-Bundle 'Shougo/neocomplcache.vim'
+Plug 'Shougo/neocomplcache.vim'
 " Snippets manager (SnipMate), dependencies, and snippets repo
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'honza/vim-snippets'
-Bundle 'garbas/vim-snipmate'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'honza/vim-snippets'
+Plug 'garbas/vim-snipmate'
 " Git/mercurial/others diff icons on the side of the file lines
-Bundle 'mhinz/vim-signify'
+Plug 'mhinz/vim-signify'
 " Automatically sort python imports
-Bundle 'fisadev/vim-isort'
+Plug 'fisadev/vim-isort'
 " Drag visual blocks arround
-Bundle 'fisadev/dragvisuals.vim'
+Plug 'fisadev/dragvisuals.vim'
 " Window chooser
-Bundle 't9md/vim-choosewin'
+Plug 't9md/vim-choosewin'
 " Python and other languages code checker
-Bundle 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 " Paint css colors with the real color
-Bundle 'lilydjwg/colorizer'
+Plug 'lilydjwg/colorizer'
 " Ack code search (requires ack installed in the system)
-Bundle 'mileszs/ack.vim'
+Plug 'mileszs/ack.vim'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
 " numbering every time you go to normal mode. Author refuses to add a setting 
 " to avoid that)
-" Bundle 'myusuf3/numbers.vim'
+" Plug 'myusuf3/numbers.vim'
 
 " Plugins from vim-scripts repos:
 
 " Search results counter
-Bundle 'IndexedSearch'
+Plug 'IndexedSearch'
 " XML/HTML tags navigation
-Bundle 'matchit.zip'
+Plug 'matchit.zip'
 " Gvim colorscheme
-Bundle 'Wombat'
+Plug 'Wombat'
 " Yank history navigation
-Bundle 'YankRing.vim'
+Plug 'YankRing.vim'
+
+" Tell vim-plug we finished declaring plugins, so it can load them
+call plug#end()
 
 " ============================================================================
 " Install plugins the first time vim runs
 
-if iCanHazVundle == 0
+if vim_plug_just_installed
     echo "Installing Bundles, please ignore key map error messages"
-    echo ""
-    :BundleInstall
+    :PlugInstall
 endif
 
 " ============================================================================
 " Vim settings and mappings
 " You can edit them as you wish
+
+" no vi-compatible
+set nocompatible
 
 " allow plugins by file type (required for plugins!)
 filetype plugin on
