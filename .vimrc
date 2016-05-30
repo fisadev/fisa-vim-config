@@ -403,10 +403,3 @@ let g:airline#extensions#whitespace#enabled = 0
 "let g:airline_symbols.branch = '⭠'
 "let g:airline_symbols.readonly = '⭤'
 "let g:airline_symbols.linenr = '⭡'
-
-" YAPF format ------------------------------
-
-" mapping
-map <C-o> :%YapfFormat<CR>
-imap <C-o> <ESC>:YapfFormat<CR>i
-vmap <C-o> :YapfFormat<CR>
