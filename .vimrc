@@ -180,15 +180,8 @@ set completeopt-=preview
 ca w!! w !sudo tee "%"
 
 " simple recursive grep
-" both recursive grep commands with internal or external (fast) grep
-command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
-command! -nargs=1 RecurGrepFast silent exec 'lgrep! <q-args> ./**/*.*' | lopen
-" mappings to call them
-nmap ,R :RecurGrep 
-nmap ,r :RecurGrepFast 
-" mappings to call them with the default word as search text
-nmap ,wR :RecurGrep <cword><CR>
-nmap ,wr :RecurGrepFast <cword><CR>
+nmap ,r :Ack 
+nmap ,wr :Ack <cword><CR>
 
 " use 256 colors when possible
 if (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256') || has('nvim')
