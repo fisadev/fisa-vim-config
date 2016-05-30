@@ -85,6 +85,8 @@ Bundle 't9md/vim-choosewin'
 Bundle 'scrooloose/syntastic'
 " Paint css colors with the real color
 Bundle 'lilydjwg/colorizer'
+" Ack code search (requires ack installed in the system)
+Bundle 'mileszs/ack.vim'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
