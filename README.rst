@@ -88,11 +88,10 @@ Most important features include:
 
   Because there where no more "Fx" keys free, and starting the debugger is something you do only once on every debugging session, compared to the multiple times you will use the other functions on that session. Disagree? Change it! Edit the ``.vimrc`` file, is really simple and well documented :).  (The command **to start the debugger on the current file** is ``:Dbg .``)
 
-* **Grep text recursively** and navigate the results:
+* **Grep code recursively** and navigate the results:
 
-  * ``,r`` uses the system grep (faster).
-  * ``,R`` uses vimgrep (slower).
-  * ``,wr`` and ``,wR`` do the same, but searching the word under the cursor.
+  * ``,r`` uses the ack command (a kind of grep optimized for code search), lists the found matches, and allows you to open them with ENTER.
+  * ``,wr`` does the same, but searching the word under the cursor.
 
 * Some settings for better **tabs and spaces handling**.
 
@@ -218,7 +217,7 @@ Super easy installation
 
   ::
 
-    sudo apt-get install vim exuberant-ctags git
+    sudo apt-get install vim exuberant-ctags git ack-grep
     sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort
 
   (if you don't have Pip, find it here: `pip <http://pypi.python.org/pypi/pip>`_)
