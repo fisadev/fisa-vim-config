@@ -189,6 +189,8 @@ Most important features include:
 
 * **Paint css color** values with the actual color.
 
+* **Format Python code*** using yapf (``:YapfFullFormat`` formats the whole file, and has other commands as well, explained `here <https://github.com/pignacio/vim-yapf-format>`_).
+
 Super easy installation
 -----------------------
 
@@ -202,7 +204,7 @@ because fisa-vim-config 8.0 uses a different plugin manager than previous versio
   ::
 
     sudo apt-get install vim exuberant-ctags git ack-grep
-    sudo pip install dbgp pep8 flake8 pyflakes isort
+    sudo pip install dbgp pep8 flake8 pyflakes isort yapf
 
   (if you don't have Pip, find it here: `pip <http://pypi.python.org/pypi/pip>`_)
 
@@ -293,6 +295,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Window chooser <https://github.com/t9md/vim-choosewin>`_
 * `Css colors painter <https://github.com/lilydjwg/colorizer>`_
 * `Code grepper <https://github.com/mileszs/ack.vim>`_
+* `VIM integration for YAPF <https://github.com/pignacio/vim-yapf-format>`_
 
 Optional: fancy symbols and breadcrumbs in the status line
 ----------------------------------------------------------
