@@ -8,6 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/ideal-image-slider/ideal-image-slider.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/ideal-image-slider/themes/default.css">
   </head>
   <body>
     <section class="page-header">
@@ -41,21 +43,14 @@
 
       <h3><a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features!</h3>
       <p>
-        Magic powered autocompletion:
-        <img src="images/autocomplete.png" />
+        Some of the best features are:
       </p>
-      <p>
-        Fuzzy code finder (next step: mind reader)
-        <img src="images/fuzzy_finder.png" />
-      </p>
-      <p>
-        Class browser:
-        <img src="images/class_browser.png" />
-      </p>
-      <p>
-        Detecting errors:
-        <img src="images/errors.png" />
-      </p>
+      <div id="slider">
+        <img src="" data-src="images/autocomplete.gif" alt="Magic powered autocompletion" />
+        <img src="" data-src="images/fuzzy_finder.gif" alt="Fuzzy file, code, and commands finder (next step: mind reader)." />
+        <img src="" data-src="images/errors.gif" alt="Errors detection." />
+        <img src="" data-src="images/class_browser.gif" alt="Class browser." />
+      </div>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/fisadev/fisa-vim-config">Fisa-vim-config</a> is maintained by <a href="https://github.com/fisadev">fisadev</a>.</span>
@@ -64,6 +59,15 @@
 
     </section>
 
-  
+    <script src="javascript/ideal-image-slider.min.js"></script> 
+    <script src="javascript/iis-captions.js"></script> 
+    <script>
+        var slider = new IdealImageSlider.Slider({
+            selector: '#slider',
+            interval: 0,
+            transitionDuration: 0,
+        });
+        slider.addCaptions();
+    </script>
   </body>
 </html>
