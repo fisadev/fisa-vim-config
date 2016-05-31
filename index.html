@@ -57,15 +57,14 @@
       </p>
 
       <h3><a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Super easy installation</h3>
-      <h4>1) Dependencies</h4>
       <p>
-        You will need a vim compiled with python support. Check it with <code>vim --version | grep +python</code> 
+        <strong>0)</strong> You will need a vim compiled with python support. Check it with <code>vim --version | grep +python</code> 
       </p>
       <p>
         Also, your <code>.vim</code> folder should be empty. If you have one, rename it or move to a different location (to keep a backup, just in case you want to go back).
       </p>
       <p>
-        Once you are sure about both things, install the required packages:
+        <strong>1)</strong> Once you are sure about both things, install the required dependencies:
       </p>
         <pre>
 sudo apt-get install vim exuberant-ctags git ack-grep
@@ -73,24 +72,17 @@ sudo pip install dbgp pep8 flake8 pyflakes isort yapf
         </pre>
         (if you don't have Pip, you can find it <a href="http://pypi.python.org/pypi/pip">here</a>.)
       </p>
-      <h4>2) Put the configuration file where it belongs</h4>
       <p>
-        Place the <code>.vimrc</code> file on your linux home folder.
+        <strong>2)</strong> Place the downloaded <code>.vimrc</code> file in your linux home folder.
       </p>
       <p>
         Example: my linux user is "fisa", so now I have: <code>/home/fisa/.vimrc</code>
       </p>
-      <h4>3) Open vim</h4>
       <p>
-        Simply run <code>vim</code> on your terminal, and it will try to install the plugins. They will be installed into the <code>.vim/plugged</code> folder.
-      </p>
-      <p>
+        <strong>3)</strong> Simply open vim (run <code>vim</code> in your terminal) and it will try to install all the plugins. 
         Wait for the installation to finish...
+        and done! You now have your new shiny powerful vim :)
       </p>
-      <p>
-        Done! You have your new shiny powerful vim :)
-      </p>
-
       <h4>Optional: fancy symbols and breadcrumbs</h4>
       <p>
         If you want fancy symbols and breadcrumbs on your status line, check <a href="https://github.com/fisadev/fisa-vim-config/blob/master/docs/fancy_symbols.rst">this small tutorial</a>.
@@ -107,13 +99,13 @@ sudo pip install dbgp pep8 flake8 pyflakes isort yapf
         If you come from an older version of fisa-vim-config and want to upgrade it to the lastest release, just follow these steps:
       </p>
       <p>
-        1) Dowload the new version of the <code>.vimrc</code> file and replace the old one you have.
+        <strong>1)</strong> Dowload the new version of the <code>.vimrc</code> file and replace the old one you have.
       </p>
       <p>
-        2) Install the dependencies listed in the <a href="#installation">installation</a> section.
+        <strong>2)</strong> Install the dependencies listed in the <a href="#installation">installation</a> section.
       </p>
       <p>
-        3) Open vim and run:
+        <strong>3)</strong> Open vim and run:
       </p>
       <pre>
 :PlugClean 
