@@ -147,6 +147,6 @@ Most important features include:
 
 * **Paint css color** values with the actual color.
 
-* **Format Python code*** using yapf (``:YapfFullFormat`` formats the whole file, and has other commands as well, explained `here <https://github.com/pignacio/vim-yapf-format>`_. **Works only if you have a vim compiled with python 2, not python 3**).
+* **Format Python code** using yapf (``:YapfFullFormat`` formats the whole file, and has other commands as well, explained `here <https://github.com/pignacio/vim-yapf-format>`_. **Works only if you have a vim compiled with python 2, not python 3**).
 
 
