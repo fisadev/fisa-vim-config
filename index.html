@@ -35,9 +35,10 @@
         -- Juan Pedro Fisanotti
       </p>
       <p>
-        <strong>IMPORTANT!
-          Upgrading from a previous version? check the <a href="#install">install</a> section for newer dependencies and read the upgrading instructions. 
-          It can also be useful to look at the <a href="https://github.com/fisadev/fisa-vim-config/blob/master/CHANGELOG.rst">CHANGELOG</a>
+        <strong>
+          IMPORTANT!
+          Upgrading from a previous version? check the <a href="#upgrading">upgrading</a> section. 
+          It can also be useful to look at the <a href="https://github.com/fisadev/fisa-vim-config/blob/master/docs/changelog.rst">changelog</a>
         </strong>
       </p>
 
@@ -46,11 +47,79 @@
         Some of the best features are:
       </p>
       <div id="slider">
-        <img src="" data-src="images/autocomplete.gif" alt="Magic powered autocompletion" />
+        <img src="" data-src="images/autocompletion.gif" alt="Magic powered autocompletion" />
         <img src="" data-src="images/fuzzy_finder.gif" alt="Fuzzy file, code, and commands finder (next step: mind reader)." />
         <img src="" data-src="images/errors.gif" alt="Errors detection." />
         <img src="" data-src="images/class_browser.gif" alt="Class browser." />
       </div>
+      <p>
+        But it also has tons of other things. <a href="https://github.com/fisadev/fisa-vim-config/blob/master/docs/features.rst">Read the full list.</a>
+      </p>
+
+      <h3><a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Super easy installation</h3>
+      <h4>1) Dependencies</h4>
+      <p>
+        You will need a vim compiled with python support. Check it with <code>vim --version | grep +python</code> 
+      </p>
+      <p>
+        Also, your <code>.vim</code> folder should be empty. If you have one, rename it or move to a different location (to keep a backup, just in case you want to go back).
+      </p>
+      <p>
+        Once you are sure about both things, install the required packages:
+      </p>
+        <pre>
+sudo apt-get install vim exuberant-ctags git ack-grep
+sudo pip install dbgp pep8 flake8 pyflakes isort yapf
+        </pre>
+        (if you don't have Pip, you can find it <a href="http://pypi.python.org/pypi/pip">here</a>.)
+      </p>
+      <h4>2) Put the configuration file where it belongs</h4>
+      <p>
+        Place the <code>.vimrc</code> file on your linux home folder.
+      </p>
+      <p>
+        Example: my linux user is "fisa", so now I have: <code>/home/fisa/.vimrc</code>
+      </p>
+      <h4>3) Open vim</h4>
+      <p>
+        Simply run <code>vim</code> on your terminal, and it will try to install the plugins. They will be installed into the <code>.vim/plugged</code> folder.
+      </p>
+      <p>
+        Wait for the installation to finish...
+      </p>
+      <p>
+        Done! You have your new shiny powerful vim :)
+      </p>
+
+      <h4>Optional: fancy symbols and breadcrumbs</h4>
+      <p>
+        If you want fancy symbols and breadcrumbs on your status line, check <a href="https://github.com/fisadev/fisa-vim-config/blob/master/docs/fancy_symbols.rst">this small tutorial</a>.
+      </p>
+      <h3><a id="upgrading" class="anchor" href="#upgrading" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Upgrading from previous versions: keeping your vim up-to-date</h3>
+      <p>
+        <strong>
+          IMPORTANT!
+          If you come from a version of fisa-vim-config older than 8.0, you should move your <code>.vim</code> folder to a backup location and perform a clean installation.
+          This is because of the new plugin manager.
+        </strong>
+      </p>
+      <p>
+        If you come from an older version of fisa-vim-config and want to upgrade it to the lastest release, just dowload the new version of the <code>.vimrc</code> file, open vim and run:
+      </p>
+      <pre>
+:PlugClean 
+:PlugInstall
+:PlugUpdate
+      </pre>
+      <p>
+        This will remove plugins no longer used, install any new plugins, and update the existing ones to the last versions. 
+      </p>
+      <p>
+      </p>
+      <h3><a id="sources" class="anchor" href="#sources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sources and acknowledgements</h3>
+      <p>
+        This config exists thanks to the work of lots of other people, a small list is <a href="https://github.com/fisadev/fisa-vim-config/blob/master/docs/acknowledgements.rst">here</a>.
+      </p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/fisadev/fisa-vim-config">Fisa-vim-config</a> is maintained by <a href="https://github.com/fisadev">fisadev</a>.</span>
