@@ -1,7 +1,7 @@
 Sources and acknowledgements
 ----------------------------
 
-Thanks to some people from `Pyar <http://python.org.ar>`_, who show me vim for the first time and shared their configurations with me on the PyCamp 2010 :). Some of my tweaks were copied from their configurations.
+Thanks to some people from `PyAr <http://python.org.ar>`_, who show me vim for the first time and shared their configurations with me on the PyCamp 2010 :). Some of my tweaks were copied from their configurations.
 
 * Hector Sanchez
 * Juanjo Conti
