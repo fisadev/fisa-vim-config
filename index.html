@@ -8,8 +8,6 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/ideal-image-slider/ideal-image-slider.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/ideal-image-slider/themes/default.css">
   </head>
   <body>
     <section class="page-header">
@@ -30,13 +28,8 @@
       <p>
         Some of the best features are (<a href="https://github.com/fisadev/fisa-vim-config/blob/master/docs/features.rst">full list</a>):
       </p>
-      <div id="slider">
-        <img src="" data-src="images/autocompletion.gif" alt="Magic powered autocompletion" />
-        <img src="" data-src="images/fuzzy_finder.gif" alt="Fuzzy file, code, and commands finder (next step: mind reader)." />
-        <img src="" data-src="images/errors.gif" alt="Errors detection." />
-        <img src="" data-src="images/class_browser.gif" alt="Class browser." />
-      </div>
       <p>
+        <img src="images/demo.gif" alt="Demo" />
       </p>
 
       <h3><a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Super easy installation</h3>
@@ -70,6 +63,7 @@ sudo pip install dbgp pep8 flake8 pyflakes isort yapf
       <p>
         If you want fancy symbols and breadcrumbs on your status line, check <a href="https://github.com/fisadev/fisa-vim-config/blob/master/docs/fancy_symbols.rst">this small tutorial</a>.
       </p>
+
       <h3><a id="upgrading" class="anchor" href="#upgrading" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Upgrading from previous versions: keeping your vim up-to-date</h3>
       <p>
         <strong>
@@ -113,15 +107,5 @@ sudo pip install dbgp pep8 flake8 pyflakes isort yapf
 
     </section>
 
-    <script src="javascript/ideal-image-slider.min.js"></script> 
-    <script src="javascript/iis-captions.js"></script> 
-    <script>
-        var slider = new IdealImageSlider.Slider({
-            selector: '#slider',
-            interval: 0,
-            transitionDuration: 0,
-        });
-        slider.addCaptions();
-    </script>
   </body>
 </html>
