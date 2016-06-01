@@ -1,5 +1,6 @@
 .tab-link:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .tab-link.inactive {
