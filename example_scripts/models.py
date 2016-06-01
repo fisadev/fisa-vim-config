@@ -52,4 +52,3 @@ class Member(models.Model):
     status = models.CharField(max_length=100)
     status_extra = models.TextField()
     status_date = models.DateTimeField(auto_now=True)
-
