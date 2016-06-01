@@ -8,6 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/tabs.css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
   </head>
   <body>
     <section class="page-header">
@@ -29,63 +31,64 @@
         <img src="images/demo.gif" alt="Demo" />
       </p>
 
-      <h1><a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h1>
-      <p>
-        <strong>0)</strong> You will need a vim compiled with python support. Check it with <code>vim --version | grep +python</code> 
-      </p>
-      <p>
-        Also, your <code>.vim</code> folder should be empty. If you have one, rename it or move to a different location (to keep a backup, just in case you want to go back).
-      </p>
-      <p>
-        <strong>1)</strong> Install the required dependencies:
-      </p>
-        <pre>
+      <h1><a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><span id="tab-link-install" class="tab-link">Install</span> / <span id="tab-link-upgrade" class="tab-link">Upgrade</span></h1>
+      <div id="tab-install" class="tab">
+        <p>
+          <strong>0)</strong> You will need a vim compiled with python support. Check it with <code>vim --version | grep +python</code> 
+        </p>
+        <p>
+          Also, your <code>.vim</code> folder should be empty. If you have one, rename it or move to a different location (to keep a backup, just in case you want to go back).
+        </p>
+        <p>
+          <strong>1)</strong> Install the required dependencies:
+        </p>
+          <pre>
 sudo apt-get install vim exuberant-ctags git ack-grep
-sudo pip install pep8 flake8 pyflakes isort yapf
-        </pre>
-      </p>
-      <p>
-        <strong>2)</strong> Download the <a href="https://raw.github.com/fisadev/fisa-vim-config/master/.vimrc"><code>.vimrc</code></a> file and place it in your linux home folder.
-      </p>
-      <p>
-        <strong>3)</strong> Open vim and it will continue the installation by itself.
-        Wait for it to finish...
-        and done! You now have your new shiny powerful vim :)
-      </p>
-      <p>
-        <strong>Optional:</strong>If you want fancy symbols and breadcrumbs on your status line, check <a href="https://github.com/fisadev/fisa-vim-config/blob/master/docs/fancy_symbols.rst">this small tutorial</a>.
-      </p>
+sudo pip install pep8 flake8 pyflakes isort yapf</pre>
+        </p>
+        <p>
+          <strong>2)</strong> Download the <a href="https://raw.github.com/fisadev/fisa-vim-config/master/.vimrc"><code>.vimrc</code></a> file and place it in your linux home folder.
+        </p>
+        <p>
+          <strong>3)</strong> Open vim and it will continue the installation by itself.
+          Wait for it to finish...
+          and done! You now have your new shiny powerful vim :)
+        </p>
+        <p>
+          <strong>Optional:</strong>If you want fancy symbols and breadcrumbs on your status line, check <a href="https://github.com/fisadev/fisa-vim-config/blob/master/docs/fancy_symbols.rst">this small tutorial</a>.
+        </p>
+      </div>
 
-      <h1><a id="upgrading" class="anchor" href="#upgrading" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Upgrade from previous versions</h1>
-      <p>
-        <strong>
-          IMPORTANT!
-          If you come from a version of fisa-vim-config older than 8.0, you should move your <code>.vim</code> folder to a backup location and perform a clean installation.
-          This is because of the new plugin manager. The config version is specified in the third line of the <code>.vimrc</code> file. If it's not there, then it's older 
-          than 8.0.
-        </strong>
-      </p>
-      <p>
-        If you come from an older version of fisa-vim-config and want to upgrade it to the latest release, follow these steps:
-      </p>
-      <p>
-        <strong>1)</strong> Dowload the new version of the <code>.vimrc</code> file and replace the old one you have.
-      </p>
-      <p>
-        <strong>2)</strong> Install the dependencies listed in the <a href="#installation">installation</a> section.
-      </p>
-      <p>
-        <strong>3)</strong> Open vim and run:
-      </p>
-      <pre>
+      <div id="tab-upgrade" class="tab">
+        <p>
+          <strong>
+            IMPORTANT!
+            If you come from a version of fisa-vim-config older than 8.0, you should move your <code>.vim</code> folder to a backup location and perform a clean installation.
+            This is because of the new plugin manager. The config version is specified in the third line of the <code>.vimrc</code> file. If it's not there, then it's older 
+            than 8.0.
+          </strong>
+        </p>
+        <p>
+          If you come from an older version of fisa-vim-config and want to upgrade it to the latest release, follow these steps:
+        </p>
+        <p>
+          <strong>1)</strong> Dowload the new version of the <code>.vimrc</code> file and replace the old one you have.
+        </p>
+        <p>
+          <strong>2)</strong> Install the dependencies listed in the install section.
+        </p>
+        <p>
+          <strong>3)</strong> Open vim and run:
+        </p>
+        <pre>
 :PlugClean 
 :PlugInstall
-:PlugUpdate
-      </pre>
-      <p>
-        This will remove plugins no longer used, install any new plugins, and update the existing ones to the last versions. 
-        It can be useful to look at the <a href="https://github.com/fisadev/fisa-vim-config/blob/master/docs/changelog.rst">changelog</a>.
-      </p>
+:PlugUpdate</pre>
+        <p>
+          This will remove plugins no longer used, install any new plugins, and update the existing ones to the last versions. 
+          It can be useful to look at the <a href="https://github.com/fisadev/fisa-vim-config/blob/master/docs/changelog.rst">changelog</a>.
+        </p>
+      </div>
 
       <h3><a id="sources" class="anchor" href="#sources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sources and acknowledgements</h3>
       <p>
@@ -98,6 +101,23 @@ sudo pip install pep8 flake8 pyflakes isort yapf
       </footer>
 
     </section>
+
+    <script>
+        function tabLinkOnClick(e) {
+            var activeLink = $(e.target);
+            var activeTab = $('#' + activeLink.attr('id').replace('-link', ''));
+
+            $('.tab').not(activeTab).hide();
+            activeTab.show();
+
+            activeLink.removeClass('inactive');
+            $('.tab-link').not(activeLink).addClass('inactive');
+        }
+        $(function() {
+            $('.tab-link').click(tabLinkOnClick);
+            $('#tab-link-install').click();
+        });
+    </script>
 
   </body>
 </html>
