@@ -105,7 +105,7 @@ sudo pip install pep8 flake8 pyflakes isort yapf</pre>
             var activeTab = $('#' + activeLink.attr('id').replace('-link', ''));
 
             $('.tab').not(activeTab).hide();
-            activeTab.show();
+            activeTab.fadeIn();
 
             activeLink.removeClass('inactive');
             $('.tab-link').not(activeLink).addClass('inactive');
