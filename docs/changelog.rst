@@ -329,3 +329,14 @@ Changelog
   * Added 'nodemodules' to the dirs to ignore on autocompletion
   * Able to use 256 colors if under neovim
   * Updated airline repo address, and added the airline themes plugin (PR by @orges)
+
+* Version 8.0
+
+  * New plugin manager! Vim-plug, which **requires a clean installation**
+  * CtrlP replaced with newer version (different repository)
+  * Added the Ack plugin, with replaced mappings from the old greppers to this new plugin (**new requirement: ack-grep**)
+  * Removed the old unused and problematic Vim-debug plugin
+  * Added Yapf formatter plugin (**new python requirement: yapf**)
+  * Config version added to .vimrc
+  * New project homepage! (code in gh-pages branch), installation instructions simplified, gif with main features, the rest removed from home
+  * Repo and docs new organization: docs in specific folder, readme points to webpage, and webpage points to specific bits of docs
