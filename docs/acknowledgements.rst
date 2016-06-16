@@ -46,6 +46,7 @@ And thanks to all the developers of the plugins that I simply use here:
 * `AutoClose <https://github.com/Townk/vim-autoclose>`_
 * `YankRing <http://www.vim.org/scripts/script.php?script_id=1234>`_
 * `Indent object <http://github.com/michaeljsmith/vim-indent-object>`_
+* `Indentation based movements <https://github.com/jeetsukumaran/vim-indentwise>`_
 * `Relative line numbers <http://github.com/myusuf3/numbers.vim>`_
 * `Snippets manager (SnipMate) <http://github.com/garbas/vim-snipmate>`_ (plus dependencies `addon-mw-utils <http://github.com/MarcWeber/vim-addon-mw-utils>`_ and `tlib <http://github.com/tomtom/tlib_vim>`_ )
 * `SnipMate snippets compilation <http://github.com/honza/vim-snippets>`_
