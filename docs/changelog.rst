@@ -340,3 +340,7 @@ Changelog
   * Config version added to .vimrc
   * New project homepage! (code in gh-pages branch), installation instructions simplified, gif with main features, the rest removed from home
   * Repo and docs new organization: docs in specific folder, readme points to webpage, and webpage points to specific bits of docs
+
+* Version 8.1
+
+  * Added indentation based movements plugin

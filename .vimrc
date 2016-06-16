@@ -1,6 +1,6 @@
 " Fisa-vim-config
 " http://fisadev.github.io/fisa-vim-config/
-" version: 8.0
+" version: 8.1
 
 " ============================================================================
 " Vim-plug initialization
