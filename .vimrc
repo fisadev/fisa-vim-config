@@ -64,6 +64,8 @@ Plug 'tpope/vim-surround'
 Plug 'Townk/vim-autoclose'
 " Indent text object
 Plug 'michaeljsmith/vim-indent-object'
+" Indentation based movements
+Plug 'jeetsukumaran/vim-indentwise'
 " Python mode (indentation, doc, refactor, lints, code checking, motion and
 " operators, highlighting, run and ipdb breakpoints)
 Plug 'klen/python-mode'
