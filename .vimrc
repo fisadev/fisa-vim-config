@@ -33,6 +33,8 @@ call plug#begin('~/.vim/plugged')
 
 " Plugins from github repos:
 
+" Override configs by directory 
+Plug 'arielrossanigo/dir-configs-override.vim'
 " Better file browser
 Plug 'scrooloose/nerdtree'
 " Code commenter
