@@ -151,4 +151,13 @@ Most important features include:
 
 * **Format Python code** using yapf (``:YapfFullFormat`` formats the whole file, and has other commands as well, explained `here <https://github.com/pignacio/vim-yapf-format>`_. **Works only if you have a vim compiled with python 2, not python 3**).
 
+* **Custom configs by folder** add a ``.vim.custom`` file in the project's root folder and put whatever config you want to customize for that project in it.
+  For example, if you have bellow project tree and you want to exclude ``folder_x`` from FuzzyFinder put ``let g:ctrlp_custom_ignore["dir"] = g:ctrlp_custom_ignore["dir"] . '|\v[\/]folder_x$'`` in .vim.custom file.
 
+     ::
+
+          project
+          ├── folder_1
+          ├── folder_2
+          ├── folder_x
+          └── .vim.custom
