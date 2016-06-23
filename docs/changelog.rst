@@ -344,3 +344,7 @@ Changelog
 * Version 8.1
 
   * Added indentation based movements plugin
+
+* Version 8.2
+
+  * Added custom configs by folder plugin
