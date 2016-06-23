@@ -57,3 +57,4 @@ And thanks to all the developers of the plugins that I simply use here:
 * `Css colors painter <https://github.com/lilydjwg/colorizer>`_
 * `Code grepper <https://github.com/mileszs/ack.vim>`_
 * `VIM integration for YAPF <https://github.com/pignacio/vim-yapf-format>`_
+* `Custom configs by folder <https://github.com/arielrossanigo/dir-configs-override.vim>`_
