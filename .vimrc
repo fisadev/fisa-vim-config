@@ -1,6 +1,6 @@
 " Fisa-vim-config
 " http://fisadev.github.io/fisa-vim-config/
-" version: 8.1
+" version: 8.2
 
 " ============================================================================
 " Vim-plug initialization
@@ -33,6 +33,8 @@ call plug#begin('~/.vim/plugged')
 
 " Plugins from github repos:
 
+" Override configs by directory 
+Plug 'arielrossanigo/dir-configs-override.vim'
 " Better file browser
 Plug 'scrooloose/nerdtree'
 " Code commenter
