@@ -129,7 +129,7 @@ Most important features include:
 
 * **Python class and method/function text objects** for the editing language, named ``C`` and ``M``. For example, you can change an entire function content with ``ciM``, or delete a class including its header with ``daC``.
 
-* **Run the curren python file** and display the output on a split with ``\r``.
+* **Run the current python file** and display the output on a split with ``\r``.
 
 * **Insert and remove ipdb breakpoints** with ``\b``.
 
