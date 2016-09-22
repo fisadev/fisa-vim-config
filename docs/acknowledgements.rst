@@ -19,6 +19,7 @@ Also, thanks to:
 * Angel Freire
 * Ariel Rossanigo
 * Cassio Botaro
+* Fede Gonzalez (docker image mantainer)
 
 And thanks to all the developers of the plugins that I simply use here:
 
