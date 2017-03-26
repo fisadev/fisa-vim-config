@@ -10,6 +10,16 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/tabs.css" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+    <style>
+        #good-news-neovim {
+            background: #2DD6BA; 
+            padding: 20px;
+        }
+        #warning-neovim {
+            background: #E8D768; 
+            padding: 20px;
+        }
+    </style>
   </head>
   <body>
     <section class="page-header">
@@ -26,9 +36,17 @@
         This is my personal Vim configuration, built according to my personal preferences, without any justification to think it's the best possible vim configuration. 
         If you like it, great! :) It's mainly oriented to python software development, but many of its features are useful for other languages and editing tasks.
       </p>
-      <p>
-        <strong>Using Neovim?</strong> Stay tuned, I'll release a Neovim config in a few days!
-      </p>
+      <div id="good-news-neovim">
+          <p><strong>Using Neovim?</strong></p> 
+          <p>Good news!! I have a newer <a href="http://nvim.fisadev.com">Neovim config</a> :)</p>
+      </div>
+      <div id="warning-neovim">
+          <p><strong>Warning: Feature freeze</strong></p> 
+          <p>
+            I have switched to Neovim. I'll keep fixing issues to this config, but I won't be adding new features or improvements.
+            I recommend you making the jump and switching to Neovim, with my <a href="http://nvim.fisadev.com">Neovim config</a> :)
+          </p>
+      </div>
       <p>
         Some of the best features (<a href="https://github.com/fisadev/fisa-vim-config/blob/master/docs/features.rst">full list here</a>):
       </p>
