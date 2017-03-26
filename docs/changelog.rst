@@ -348,3 +348,7 @@ Changelog
 * Version 8.2
 
   * Added custom configs by folder plugin
+
+* Version 8.3
+
+  * Removed python-mode, added jedi-vim which works far better
