@@ -1,6 +1,6 @@
 " Fisa-vim-config
 " http://fisadev.github.io/fisa-vim-config/
-" version: 8.3
+" version: 8.3.1
 
 " ============================================================================
 " Vim-plug initialization
@@ -105,13 +105,13 @@ endif
 " Plugins from vim-scripts repos:
 
 " Search results counter
-Plug 'IndexedSearch'
+Plug 'vim-scripts/IndexedSearch'
 " XML/HTML tags navigation
-Plug 'matchit.zip'
+Plug 'vim-scripts/matchit.zip'
 " Gvim colorscheme
-Plug 'Wombat'
+Plug 'vim-scripts/Wombat'
 " Yank history navigation
-Plug 'YankRing.vim'
+Plug 'vim-scripts/YankRing.vim'
 
 " Tell vim-plug we finished declaring plugins, so it can load them
 call plug#end()
