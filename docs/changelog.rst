@@ -352,3 +352,7 @@ Changelog
 * Version 8.3
 
   * Removed python-mode, added jedi-vim which works far better
+
+* Version 8.3.1
+
+  * Updated Plug paths pointing to vim-scripts (old way of just the plugin name is deprecated).
