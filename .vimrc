@@ -1,6 +1,6 @@
-" Fisa-vim-config
+" Fisa-vim-config, a config for both Vim and NeoVim
 " http://fisadev.github.io/fisa-vim-config/
-" version: 8.3.1
+" version: 9.0.0
 
 " ============================================================================
 " Vim-plug initialization
