@@ -75,7 +75,9 @@ Plug 'junegunn/fzf.vim'
 " Pending tasks list
 Plug 'fisadev/FixedTaskList.vim'
 " Async autocompletion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
 " Python autocompletion
 Plug 'deoplete-plugins/deoplete-jedi'
 " Completion from other opened files
@@ -138,6 +140,10 @@ call plug#end()
 if vim_plug_just_installed
     echo "Installing Bundles, please ignore key map error messages"
     :PlugInstall
+    if using_neovim
+        " required by Deoplete
+        autocmd! VimEnter UpdateRemotePlugins
+    endif
 endif
 
 " ============================================================================
