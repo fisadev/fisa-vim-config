@@ -2,6 +2,7 @@
 " http://fisadev.github.io/fisa-vim-config/
 " version: 9.0.0
 
+set encoding=utf-8
 let using_neovim = has('nvim')
 let using_vim = !using_neovim
 
