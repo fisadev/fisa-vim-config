@@ -271,7 +271,14 @@ let NERDTreeDirArrowExpandable = "\u00a0"
 let NERDTreeDirArrowCollapsible = "\u00a0"
 let NERDTreeNodeDelimiter = "\x07"
 
+" Autorefresh on tree focus
+function! NERDTreeRefresh()
+    if &filetype == "nerdtree"
+        silent exe substitute(mapcheck("R"), "<CR>", "", "")
+    endif
+endfunction
 
+autocmd BufEnter * call NERDTreeRefresh()
 " Tasklist ------------------------------
 
 " show pending tasks list
