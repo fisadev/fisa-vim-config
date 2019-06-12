@@ -337,7 +337,7 @@ nmap ,D :tab split<CR>:call jedi#goto()<CR>
 
 " mappings
 nmap ,r :Ack 
-nmap ,wr :Ack <cword><CR>
+nmap ,wr :execute ":Ack " . expand('<cword>')<CR>
 
 " Window Chooser ------------------------------
 
