@@ -126,8 +126,11 @@ Plug 'neomake/neomake'
 " numbering every time you go to normal mode. Author refuses to add a setting
 " to avoid that)
 Plug 'myusuf3/numbers.vim'
-" Nice icons
-Plug 'ryanoasis/vim-devicons'
+" Nice icons in the file explorer and file type status line.
+" If you want them, you will need to use a font from 
+" https://github.com/ryanoasis/nerd-fonts . Also, check at the end 
+" of the config for more fancy icons stuff.
+" Plug 'ryanoasis/vim-devicons'
 
 if using_vim
     " Consoles as buffers (neovim has its own consoles as buffers)
@@ -423,17 +426,20 @@ let g:airline_theme = 'bubblegum'
 let g:airline#extensions#whitespace#enabled = 0
 
 " to use fancy symbols for airline, uncomment the following lines and use a
-" patched font (more info on docs/fancy_symbols.rst)
-if !exists('g:airline_symbols')
-   let g:airline_symbols = {}
-endif
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = '⭠'
-let g:airline_symbols.readonly = '⭤'
-let g:airline_symbols.linenr = '⭡'
+" font from https://github.com/ryanoasis/nerd-fonts (if you aren't using one 
+" of their fonts, you will see funny characters here. Turst me, they look 
+" nice with those fonts). If you do this, go to the plugins section and 
+" enable the devicons plugin too, it's awesome.
+" if !exists('g:airline_symbols')
+"    let g:airline_symbols = {}
+" endif
+" let g:airline_left_sep = ''
+" let g:airline_left_alt_sep = ''
+" let g:airline_right_sep = ''
+" let g:airline_right_alt_sep = ''
+" let g:airline_symbols.branch = '⭠'
+" let g:airline_symbols.readonly = '⭤'
+" let g:airline_symbols.linenr = '⭡'
 
 " Custom configurations ----------------
 
