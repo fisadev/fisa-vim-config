@@ -136,6 +136,11 @@ if using_vim
     Plug 'vim-scripts/matchit.zip'
 endif
 
+" Code searcher. If you enable it, you should also configure g:hound_base_url 
+" and g:hound_port, pointing to your hound instance
+" Plug 'mattn/webapi-vim'
+" Plug 'jfo/hound.vim'
+
 " Tell vim-plug we finished declaring plugins, so it can load them
 call plug#end()
 
