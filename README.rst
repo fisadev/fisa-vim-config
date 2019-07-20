@@ -1,7 +1,7 @@
-fisa-vim-config
+Fisa vim config
 ===============
 
-A vim configuration for the modern pythonista (plus some other goodies)
+A Vim and NeoVim configuration for the modern pythonista (plus some other goodies).
 
-Installation instructions and docs `here <http://fisadev.github.io/fisa-vim-config/>`_.
+Installation instructions and docs at `vim.fisadev.com <https://vim.fisadev.com>`_.
 
