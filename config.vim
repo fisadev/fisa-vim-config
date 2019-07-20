@@ -1,5 +1,5 @@
 " Fisa-vim-config, a config for both Vim and NeoVim
-" http://fisadev.github.io/fisa-vim-config/
+" http://vim.fisadev.com
 " version: 12.0.0
 
 set encoding=utf-8
