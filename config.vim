@@ -1,6 +1,6 @@
 " Fisa-vim-config, a config for both Vim and NeoVim
 " http://fisadev.github.io/fisa-vim-config/
-" version: 9.0.0
+" version: 12.0.0
 
 set encoding=utf-8
 let using_neovim = has('nvim')

@@ -4,7 +4,7 @@ Changelog
 **Versions 9.1 to 11.1** where NeoVim exclusive versions. Before that there are Vim exclusive versions, 
 and from **12.1** onwards, this config works both with Vim and NeoVim :)
 
-* 12.1  THE BIG UNIFICATION
+* 12.0.0  THE BIG UNIFICATION
 
   * Many of the changes are from the merge of the NeoVim config into the Vim config, so not new if you were using the NeoVim config. 
     If you were using the Vim version, I recommend you look down until version 9.1 to see more details. 
