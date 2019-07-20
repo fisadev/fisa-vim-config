@@ -6,7 +6,28 @@ and from **12.1** onwards, this config works both with Vim and NeoVim :)
 
 * 12.1  THE BIG UNIFICATION
 
-  * TODO
+  * Many of the changes are from the merge of the NeoVim config into the Vim config, so not new if you were using the NeoVim config. 
+    If you were using the Vim version, I recommend you look down until version 9.1 to see more details. 
+    But here are the main changes.
+  * Replaced CtrlP with Fzf.vim for all the fuzzy finding features.
+  * Replaced Vim-git with Fugitive for the git integration.
+  * Deoplete is the new aotucompletion engine. Faster, because it's async.
+  * Replaced Syntastic with NeoMake, also faster because of asynciness.
+  * Removed some plugins and configs that had very little use (you can add them if you use them!):
+      * Tabman (vertical tab manager).
+      * SnipMate (code snippets).
+      * Dragvisuals (visually move blocks of code).
+      * YAPF (Python code formatter).
+      * Tab length exceptions on some file types.
+  * Changed tab movement shortcuts: now just use Alt+horizontal arrows to move between tabs.
+  * Removed window movement mappings, which had a lot of conflicts with different terminals and environments.
+  * Use NerdFonts for the fancy symbols, no more need for manual font patching.
+  * Added vim-polyglot plugin (better language packs).
+  * The emmet-vim plugin is back (fancy html generation).
+  * Code checks assume python3 by default (you can comment the settings after "Check code as python3 by default").
+  * Added optional nice file icons using Devicons.
+  * Load custom configs at the end of the file, if present.
+  * Mapping to add python breakpoints with ipdb (but easily configurable to something else).
 
 * 11.1
 
