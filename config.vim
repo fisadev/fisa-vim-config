@@ -2,6 +2,13 @@
 " http://vim.fisadev.com
 " version: 12.0.0
 
+" To use fancy symbols wherever possible, change this setting from 0 to 1
+" and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal 
+" (if you aren't using one of those fonts, you will see funny characters here. 
+" Turst me, they look nice when using one of those fonts).
+let fancy_symbols_enabled = 0
+
+
 set encoding=utf-8
 let using_neovim = has('nvim')
 let using_vim = !using_neovim
@@ -127,10 +134,7 @@ Plug 'neomake/neomake'
 " to avoid that)
 Plug 'myusuf3/numbers.vim'
 " Nice icons in the file explorer and file type status line.
-" If you want them, you will need to use a font from 
-" https://github.com/ryanoasis/nerd-fonts . Also, check at the end 
-" of the config for more fancy icons stuff.
-" Plug 'ryanoasis/vim-devicons'
+Plug 'ryanoasis/vim-devicons'
 
 if using_vim
     " Consoles as buffers (neovim has its own consoles as buffers)
@@ -425,21 +429,25 @@ let g:airline_powerline_fonts = 0
 let g:airline_theme = 'bubblegum'
 let g:airline#extensions#whitespace#enabled = 0
 
-" to use fancy symbols for airline, uncomment the following lines and use a
-" font from https://github.com/ryanoasis/nerd-fonts (if you aren't using one 
-" of their fonts, you will see funny characters here. Turst me, they look 
-" nice with those fonts). If you do this, go to the plugins section and 
-" enable the devicons plugin too, it's awesome.
-" if !exists('g:airline_symbols')
-"    let g:airline_symbols = {}
-" endif
-" let g:airline_left_sep = ''
-" let g:airline_left_alt_sep = ''
-" let g:airline_right_sep = ''
-" let g:airline_right_alt_sep = ''
-" let g:airline_symbols.branch = '⭠'
-" let g:airline_symbols.readonly = '⭤'
-" let g:airline_symbols.linenr = '⭡'
+" Fancy Symbols!!
+
+if fancy_symbols_enabled
+    let g:webdevicons_enable = 1
+
+    " custom airline symbols
+    if !exists('g:airline_symbols')
+       let g:airline_symbols = {}
+    endif
+    let g:airline_left_sep = ''
+    let g:airline_left_alt_sep = ''
+    let g:airline_right_sep = ''
+    let g:airline_right_alt_sep = ''
+    let g:airline_symbols.branch = '⭠'
+    let g:airline_symbols.readonly = '⭤'
+    let g:airline_symbols.linenr = '⭡'
+else
+    let g:webdevicons_enable = 0
+endif
 
 " Custom configurations ----------------
 
