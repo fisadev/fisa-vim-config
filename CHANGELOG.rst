@@ -28,6 +28,7 @@ and from **12.1** onwards, this config works both with Vim and NeoVim :)
   * Added optional nice file icons using Devicons.
   * Load custom configs at the end of the file, if present.
   * Mapping to add python breakpoints with ipdb (but easily configurable to something else).
+  * Fancy symbols control with a setting!
 
 * 11.1
 
