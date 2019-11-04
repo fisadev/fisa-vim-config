@@ -70,10 +70,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 " Search results counter
 Plug 'vim-scripts/IndexedSearch'
-" Terminal Vim with 256 colors colorscheme
-Plug 'fisadev/fisa-vim-colorscheme'
-" Gvim colorscheme
-Plug 'vim-scripts/Wombat'
+" A couple of nice colorschemes
+" Plug 'fisadev/fisa-vim-colorscheme'
+Plug 'patstockwell/vim-monokai-tasty'
 " Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -217,15 +216,13 @@ set nu
 set fillchars+=vert:\ 
 
 " use 256 colors when possible
-if (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256') || using_neovim
-	let &t_Co = 256
-    colorscheme fisa
+if has('gui_running') || using_neovim || (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256')
+    if !has('gui_running')
+        let &t_Co = 256
+    endif
+    colorscheme vim-monokai-tasty
 else
     colorscheme delek
-endif
-" colors for guis
-if has('gui_running')
-    colorscheme wombat
 endif
 
 " needed so deoplete can auto select the first suggestion
