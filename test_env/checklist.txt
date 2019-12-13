@@ -1,0 +1,28 @@
+These are tests for stuff that can usually break between versions, either because 
+of the complexity of the plugins and dependencies, or because of weird interactions
+between them and/or the editors.
+
+(gosh, I whish I could automate this)
+
+- Installation
+    Open editor (vim / nvim) for the first time and wait for installation.
+    Close editor.
+    Re open editor.
+    Shouldn't raise any errors during the whole process.
+- Fuzzy finder
+    Find main.py file with `,e`
+    Find another_function with `,g`
+- Class browser
+    Show with `F4`
+- Autocompletion
+    Open main.py and type `x.` at the end.
+    Should show string methods.
+- Go to definition
+    Open main.py and go to the do_something call. Press `,d`.
+    Should open a_lib.py and place yuo in the function.
+- Errors and style
+    Open main.py, add `x.foo()` at the end and save.
+    Should see error on that line, and warnings of style on missing docstrings and x.
+- Ack-grep code finder
+    Be sure to be under /root, go to the do_something call. Press `,wr`
+    Should list a bunch of files where it found "do_something".

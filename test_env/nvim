@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+/root/nvim.appimage --appimage-extract-and-run

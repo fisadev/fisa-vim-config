@@ -16,7 +16,7 @@ You can only consider reading the sections relevant to what you are going to do:
 
 # Asking for help
 
-If there's something about the project or its concepts that you don't understand, please contact the project creator, fisadev (https://github.com/fisadev)
+If there's something about the project or its concepts that you don't understand, please contact the project creator, fisadev (https://github.com/fisadev , fisadev@gmail.com)
 
 # Reporting issues
 
@@ -32,4 +32,4 @@ Code contributions are welcome. In any case, feel free to ask questions about co
 
 # Pull Request
 
-Submit your contirbution against the `master` branch. You should not use your master branch to modify fisa-vim-config, this branch is considered to be read-only.
+Submit your contirbution against the `develop` branch. You should not use your master branch to modify fisa-vim-config, this branch is considered to be read-only and for releases only.
