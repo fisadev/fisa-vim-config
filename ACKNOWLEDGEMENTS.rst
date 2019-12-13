@@ -21,4 +21,4 @@ Also, thanks to:
 * Cassio Botaro
 * Fede Gonzalez (docker image mantainer)
 
-And thanks to all the developers of the plugins that I simply use here.
+Thanks to all the developers of the plugins that I simply use here. And to the many other contributors that helped over the years (you can check them at github's contributors page).
