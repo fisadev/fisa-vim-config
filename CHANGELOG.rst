@@ -4,6 +4,10 @@ Changelog
 **Versions 9.1 to 11.1** where NeoVim exclusive versions. Before that there are Vim exclusive versions, 
 and from **12.1** onwards, this config works both with Vim and NeoVim :)
 
+* 12.0.1
+
+  * Fix for change in deoplete config format.
+
 * 12.0.0  THE BIG UNIFICATION
 
   * Many of the changes are from the merge of the NeoVim config into the Vim config, so not new if you were using the NeoVim config. 
