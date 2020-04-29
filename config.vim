@@ -1,6 +1,6 @@
 " Fisa-vim-config, a config for both Vim and NeoVim
 " http://vim.fisadev.com
-" version: 12.0.0
+" version: 12.0.1
 
 " To use fancy symbols wherever possible, change this setting from 0 to 1
 " and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal 
@@ -352,8 +352,10 @@ nmap ,c :Commands<CR>
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_ignore_case = 1
-let g:deoplete#enable_smart_case = 1
+call deoplete#custom#option({
+\   'ignore_case': v:true,
+\   'smart_case': v:true,
+\})
 " complete with words from any opened file
 let g:context_filetype#same_filetypes = {}
 let g:context_filetype#same_filetypes._ = '_'
