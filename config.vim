@@ -5,7 +5,7 @@
 " To use fancy symbols wherever possible, change this setting from 0 to 1
 " and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal 
 " (if you aren't using one of those fonts, you will see funny characters here. 
-" Turst me, they look nice when using one of those fonts).
+" Trust me, they look nice when using one of those fonts).
 let fancy_symbols_enabled = 0
 
 
