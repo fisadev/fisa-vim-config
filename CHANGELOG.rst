@@ -4,6 +4,10 @@ Changelog
 **Versions 9.1 to 11.1** where NeoVim exclusive versions. Before that there are Vim exclusive versions, 
 and from **12.1** onwards, this config works both with Vim and NeoVim :)
 
+* PENDING RELEASE
+
+  * Fix: use the correct python interpreter when in NeoVim
+
 * 12.0.1
 
   * Fix for change in deoplete config format.
