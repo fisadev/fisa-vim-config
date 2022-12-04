@@ -8,7 +8,7 @@
 " Trust me, they look nice when using one of those fonts).
 let fancy_symbols_enabled = 0
 
-let transparent_background = 1
+let transparent_background = 0
 
 set encoding=utf-8
 let using_neovim = has('nvim')
