@@ -8,6 +8,8 @@
 " Trust me, they look nice when using one of those fonts).
 let fancy_symbols_enabled = 0
 
+" To use the background color of your terminal app, change this setting from 0
+" to 1
 let transparent_background = 0
 
 set encoding=utf-8
