@@ -8,6 +8,9 @@
 " Trust me, they look nice when using one of those fonts).
 let fancy_symbols_enabled = 0
 
+" To use the background color of your terminal app, change this setting from 0
+" to 1
+let transparent_background = 0
 
 set encoding=utf-8
 let using_neovim = has('nvim')
@@ -230,6 +233,11 @@ if has('gui_running') || using_neovim || (&term =~? 'mlterm\|xterm\|xterm-256\|s
     colorscheme vim-monokai-tasty
 else
     colorscheme delek
+endif
+
+if transparent_background
+    highlight Normal ctermbg=none
+    highlight NonText ctermbg=none
 endif
 
 " needed so deoplete can auto select the first suggestion

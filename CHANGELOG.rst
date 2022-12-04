@@ -7,6 +7,7 @@ and from **12.1** onwards, this config works both with Vim and NeoVim :)
 * PENDING RELEASE
 
   * Fix: use the correct python interpreter when in NeoVim
+  * Ability to set a transparent background (to use the terminal app background color), by setting transparent_background = 1
 
 * 12.0.1
 
