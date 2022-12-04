@@ -1,17 +1,27 @@
 " Fisa-vim-config, a config for both Vim and NeoVim
 " http://vim.fisadev.com
-" version: 12.0.1
+" version: 12.1.0
 
 " To use fancy symbols wherever possible, change this setting from 0 to 1
 " and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal 
 " (if you aren't using one of those fonts, you will see funny characters here. 
-" Turst me, they look nice when using one of those fonts).
+" Trust me, they look nice when using one of those fonts).
 let fancy_symbols_enabled = 0
 
+" To use the background color of your terminal app, change this setting from 0
+" to 1
+let transparent_background = 0
 
 set encoding=utf-8
 let using_neovim = has('nvim')
 let using_vim = !using_neovim
+
+" Figure out the system Python for Neovim.
+if exists("$VIRTUAL_ENV")
+    let g:python3_host_prog=substitute(system("which -a python3 | head -n2 | tail -n1"), "\n", '', 'g')
+else
+    let g:python3_host_prog=substitute(system("which python3"), "\n", '', 'g')
+endif
 
 " ============================================================================
 " Vim-plug initialization
@@ -223,6 +233,11 @@ if has('gui_running') || using_neovim || (&term =~? 'mlterm\|xterm\|xterm-256\|s
     colorscheme vim-monokai-tasty
 else
     colorscheme delek
+endif
+
+if transparent_background
+    highlight Normal ctermbg=none
+    highlight NonText ctermbg=none
 endif
 
 " needed so deoplete can auto select the first suggestion
