@@ -1,6 +1,6 @@
 " Fisa-vim-config, a config for both Vim and NeoVim
 " http://vim.fisadev.com
-" version: 12.1.0
+" version: 12.2.0
 
 " To use fancy symbols wherever possible, change this setting from 0 to 1
 " and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal 
@@ -119,7 +119,7 @@ Plug 'sheerun/vim-polyglot'
 " Ack code search (requires ack installed in the system)
 Plug 'mileszs/ack.vim'
 " Paint css colors with the real color
-Plug 'lilydjwg/colorizer'
+Plug 'ap/vim-css-color'
 " Window chooser
 Plug 't9md/vim-choosewin'
 " Automatically sort python imports
