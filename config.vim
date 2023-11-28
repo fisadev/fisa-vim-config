@@ -119,7 +119,7 @@ Plug 'sheerun/vim-polyglot'
 " Ack code search (requires ack installed in the system)
 Plug 'mileszs/ack.vim'
 " Paint css colors with the real color
-Plug 'lilydjwg/colorizer'
+Plug 'ap/vim-css-color'
 " Window chooser
 Plug 't9md/vim-choosewin'
 " Automatically sort python imports
