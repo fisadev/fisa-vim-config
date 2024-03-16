@@ -4,6 +4,10 @@ Changelog
 **Versions 9.1 to 11.1** where NeoVim exclusive versions. Before that there are Vim exclusive versions, 
 and from **12.1** onwards, this config works both with Vim and NeoVim :)
 
+* 12.2.1
+
+  * Fix transparent background for some modern terminal apps like Alacritty
+
 * 12.2.0
 
   * Lots of performance gains by replacing the colorizer plugin (the one that paints CSS colors with their actual color)
