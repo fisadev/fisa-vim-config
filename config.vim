@@ -236,6 +236,7 @@ else
 endif
 
 if transparent_background
+    highlight Normal guibg=none
     highlight Normal ctermbg=none
     highlight NonText ctermbg=none
 endif
