@@ -3,8 +3,8 @@
 " version: 12.2.1
 
 " To use fancy symbols wherever possible, change this setting from 0 to 1
-" and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal 
-" (if you aren't using one of those fonts, you will see funny characters here. 
+" and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal
+" (if you aren't using one of those fonts, you will see funny characters here.
 " Trust me, they look nice when using one of those fonts).
 let fancy_symbols_enabled = 0
 
@@ -45,9 +45,9 @@ if vim_plug_just_installed
     :execute 'source '.fnameescape(vim_plug_path)
 endif
 
-" Obscure hacks done, you can now modify the rest of the config down below 
+" Obscure hacks done, you can now modify the rest of the config down below
 " as you wish :)
-" IMPORTANT: some things in the config are vim or neovim specific. It's easy 
+" IMPORTANT: some things in the config are vim or neovim specific. It's easy
 " to spot, they are inside `if using_vim` or `if using_neovim` blocks.
 
 " ============================================================================
@@ -142,7 +142,7 @@ if using_vim
     Plug 'vim-scripts/matchit.zip'
 endif
 
-" Code searcher. If you enable it, you should also configure g:hound_base_url 
+" Code searcher. If you enable it, you should also configure g:hound_base_url
 " and g:hound_port, pointing to your hound instance
 " Plug 'mattn/webapi-vim'
 " Plug 'jfo/hound.vim'
@@ -161,7 +161,7 @@ endif
 " ============================================================================
 " Vim settings and mappings
 " You can edit them as you wish
- 
+
 if using_vim
     " A bunch of things that are set by default in neovim, but not in vim
 
@@ -263,7 +263,7 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 
 " fix problems with uncommon shells (fish, xonsh) and plugins running commands
 " (neomake, ...)
-set shell=/bin/bash 
+set shell=/bin/bash
 
 " Ability to add python breakpoints
 " (I use ipdb, but you can change it to whatever tool you use for debugging)
