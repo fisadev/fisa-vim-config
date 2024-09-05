@@ -1,10 +1,10 @@
 " Fisa-vim-config, a config for both Vim and NeoVim
 " http://vim.fisadev.com
-" version: 12.2.1
+" version: 12.3.0
 
 " To use fancy symbols wherever possible, change this setting from 0 to 1
-" and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal 
-" (if you aren't using one of those fonts, you will see funny characters here. 
+" and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal
+" (if you aren't using one of those fonts, you will see funny characters here.
 " Trust me, they look nice when using one of those fonts).
 let fancy_symbols_enabled = 0
 
@@ -15,6 +15,9 @@ let transparent_background = 0
 set encoding=utf-8
 let using_neovim = has('nvim')
 let using_vim = !using_neovim
+
+let config_dir = has('nvim') ? stdpath('config') : '~/.vim'
+let data_dir = has('nvim') ? stdpath('data') .. '/site' : '~/.vim'
 
 " Figure out the system Python for Neovim.
 if exists("$VIRTUAL_ENV")
@@ -28,21 +31,12 @@ endif
 " Avoid modifying this section, unless you are very sure of what you are doing
 
 let vim_plug_just_installed = 0
-if using_neovim
-    let vim_plug_path = expand('~/.config/nvim/autoload/plug.vim')
-else
-    let vim_plug_path = expand('~/.vim/autoload/plug.vim')
-endif
+let vim_plug_path = data_dir .. '/autoload/plug.vim'
 if !filereadable(vim_plug_path)
     echo "Installing Vim-plug..."
     echo ""
-    if using_neovim
-        silent !mkdir -p ~/.config/nvim/autoload
-        silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    else
-        silent !mkdir -p ~/.vim/autoload
-        silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    endif
+    silent execute "!curl -fLo " .. vim_plug_path .. " --create-dirs "
+      \ .. "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
     let vim_plug_just_installed = 1
 endif
 
@@ -51,9 +45,9 @@ if vim_plug_just_installed
     :execute 'source '.fnameescape(vim_plug_path)
 endif
 
-" Obscure hacks done, you can now modify the rest of the config down below 
+" Obscure hacks done, you can now modify the rest of the config down below
 " as you wish :)
-" IMPORTANT: some things in the config are vim or neovim specific. It's easy 
+" IMPORTANT: some things in the config are vim or neovim specific. It's easy
 " to spot, they are inside `if using_vim` or `if using_neovim` blocks.
 
 " ============================================================================
@@ -62,11 +56,7 @@ endif
 
 " this needs to be here, so vim-plug knows we are declaring the plugins we
 " want to use
-if using_neovim
-    call plug#begin("~/.config/nvim/plugged")
-else
-    call plug#begin("~/.vim/plugged")
-endif
+call plug#begin(data_dir .. "/plugged")
 
 " Now the actual plugins:
 
@@ -152,7 +142,7 @@ if using_vim
     Plug 'vim-scripts/matchit.zip'
 endif
 
-" Code searcher. If you enable it, you should also configure g:hound_base_url 
+" Code searcher. If you enable it, you should also configure g:hound_base_url
 " and g:hound_port, pointing to your hound instance
 " Plug 'mattn/webapi-vim'
 " Plug 'jfo/hound.vim'
@@ -171,7 +161,7 @@ endif
 " ============================================================================
 " Vim settings and mappings
 " You can edit them as you wish
- 
+
 if using_vim
     " A bunch of things that are set by default in neovim, but not in vim
 
@@ -273,7 +263,7 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 
 " fix problems with uncommon shells (fish, xonsh) and plugins running commands
 " (neomake, ...)
-set shell=/bin/bash 
+set shell=/bin/bash
 
 " Ability to add python breakpoints
 " (I use ipdb, but you can change it to whatever tool you use for debugging)
@@ -430,7 +420,11 @@ let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 " Yankring -------------------------------
 
 if using_neovim
-    let g:yankring_history_dir = '~/.config/nvim/'
+    if has('nvim-0.8')
+        let g:yankring_history_dir = stdpath('state')
+    else
+        let g:yankring_history_dir = data_dir
+    endif
     " Fix for yankring and neovim problem when system has non-text things
     " copied in clipboard
     let g:yankring_clipboard_monitor = 0
@@ -467,11 +461,7 @@ endif
 " Custom configurations ----------------
 
 " Include user's custom nvim configurations
-if using_neovim
-    let custom_configs_path = "~/.config/nvim/custom.vim"
-else
-    let custom_configs_path = "~/.vim/custom.vim"
-endif
+let custom_configs_path = config_dir .. "/custom.vim"
 if filereadable(expand(custom_configs_path))
   execute "source " . custom_configs_path
 endif
