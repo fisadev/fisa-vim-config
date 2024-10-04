@@ -4,6 +4,10 @@ Changelog
 **Versions 9.1 to 11.1** where NeoVim exclusive versions. Before that there are Vim exclusive versions, 
 and from **12.1** onwards, this config works both with Vim and NeoVim :)
 
+* 12.4.0
+
+  * Fix fancy icons to be compatible with modern NerdFonts.
+
 * 12.3.0
 
   * Lots of improvements on config and data dirs handling by Baco, simplified hackish bits on the config dealing with paths.
