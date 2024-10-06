@@ -1,6 +1,6 @@
 " Fisa-vim-config, a config for both Vim and NeoVim
 " http://vim.fisadev.com
-" version: 12.4.0
+" version: 12.4.1
 
 " To use fancy symbols wherever possible, change this setting from 0 to 1
 " and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal
@@ -16,8 +16,8 @@ set encoding=utf-8
 let using_neovim = has('nvim')
 let using_vim = !using_neovim
 
-let config_dir = has('nvim') ? stdpath('config') : '~/.vim'
-let data_dir = has('nvim') ? stdpath('data') .. '/site' : '~/.vim'
+let config_dir = has('nvim') ? stdpath('config') : expand('~/.vim')
+let data_dir = has('nvim') ? stdpath('data') .. '/site' : expand('~/.vim')
 
 " Figure out the system Python for Neovim.
 if exists("$VIRTUAL_ENV")
