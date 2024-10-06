@@ -16,8 +16,8 @@ set encoding=utf-8
 let using_neovim = has('nvim')
 let using_vim = !using_neovim
 
-let config_dir = has('nvim') ? stdpath('config') : '~/.vim'
-let data_dir = has('nvim') ? stdpath('data') .. '/site' : '~/.vim'
+let config_dir = has('nvim') ? stdpath('config') : expand('~/.vim')
+let data_dir = has('nvim') ? stdpath('data') .. '/site' : expand('~/.vim')
 
 " Figure out the system Python for Neovim.
 if exists("$VIRTUAL_ENV")
